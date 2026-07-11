@@ -1,0 +1,14 @@
+{
+  "id": "com.universaltill.language-de",
+  "name": "German (Deutsch)",
+  "version": "1.0.0",
+  "description": "German language pack for Universal Till — translates the full till interface.",
+  "author": "Universal Till",
+  "website": "https://universaltill.com",
+  "canonical_type": "language",
+  "runtime": "none",
+  "device_arch": "any",
+  "min_pos_version": "1.0.0",
+  "permissions": ["ui.locale"],
+  "locales": ["de"]
+}
