@@ -162,5 +162,11 @@
   "journal.detail.online": "online",
   "journal.detail.offline": "offline",
   "journal.detail.sync": "Sync",
-  "journal.detail.sku": "Artikelnr."
+  "journal.detail.sku": "Artikelnr.",
+  "pfand.action": "Pfandrückgabe",
+  "pfand.modal.title": "Pfandrückgabe",
+  "pfand.modal.amount": "Betrag",
+  "pfand.modal.cancel": "Abbrechen",
+  "pfand.modal.confirm": "Auszahlen",
+  "pfand.modal.manager_pin": "Manager-PIN"
 }
