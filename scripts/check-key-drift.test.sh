@@ -374,6 +374,62 @@ a.two
 TXT
 assert_fail_containing "unsorted/duplicated baseline" "not sorted/deduplicated"
 
+# --- case 15: placeholder tokens present and matching in both values ->
+#              pass (token parity, ut-docs#297: {{...}}-style and
+#              printf-style %verbs both survive translation intact) -------
+fresh_case "token-parity-ok"
+cat > "$core_json" <<'JSON'
+{
+  "pos.toast.customer_linked": "Customer %s linked",
+  "greeting.named": "Hello {{name}}, till {0} is yours"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "pos.toast.customer_linked": "Kunde %s verknüpft",
+  "greeting.named": "Hallo {{name}}, Kasse {0} gehört Ihnen"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_pass "matching placeholder tokens pass" run_check
+
+# --- case 16: translation dropped a %s token -> fail (a dropped token
+#              renders broken output in production while every key-set
+#              check stays green) ------------------------------------------
+fresh_case "token-dropped"
+cat > "$core_json" <<'JSON'
+{
+  "pos.toast.customer_linked": "Customer %s linked"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "pos.toast.customer_linked": "Kunde verknüpft"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "dropped %s token" "placeholder token(s)" "pos.toast.customer_linked"
+
+# --- case 17: translation altered a {{...}} token (translated the token
+#              name itself) -> fail -- the token must survive byte-for-byte,
+#              only the surrounding text is translatable --------------------
+fresh_case "token-altered"
+cat > "$core_json" <<'JSON'
+{
+  "greeting.named": "Hello {{name}}"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "greeting.named": "Hallo {{Name}}"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "altered {{...}} token" "placeholder token(s)" "greeting.named"
+
 echo
 if [ "$FAILS" -ne 0 ]; then
     echo "check-key-drift.test.sh: ${FAILS} test(s) FAILED"

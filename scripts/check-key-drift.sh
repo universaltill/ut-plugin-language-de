@@ -56,6 +56,16 @@
 #     that is no longer byte-identical (translated since, or core's string
 #     changed) or whose key no longer exists must FAIL so it gets pruned.
 #
+# TOKEN PARITY (ut-docs#297): interpolation/placeholder tokens inside a
+# string ({{...}}-style, printf-style %verbs like %s/%d/%v, and
+# {0}-style) must survive translation byte-for-byte -- core substitutes
+# them at render time, so a translated value that drops, duplicates or
+# alters one produces broken output in production (a literal "%!s(MISSING)"
+# or a lost customer name) while every key-set check stays green. For
+# every key present in BOTH core and de.json, the multiset of tokens
+# extracted from the English value must equal the multiset extracted from
+# the German value -- FAIL on any difference.
+#
 # A missing/unreachable core source is a HARD failure, never a skip: a
 # guard that quietly exits 0 when it can't fetch its own input is the
 # exact silent-gap failure mode this script exists to close.
@@ -137,7 +147,9 @@ else
 fi
 
 python3 - "$CORE_EN_JSON" "$DE_LOCALE" "$BASELINE" "$ALLOWLIST" "$MODE" "${CORE_SHA:-unknown}" <<'PY'
+import collections
 import json
+import re
 import sys
 
 core_path, de_path, baseline_path, allowlist_path, mode, core_sha = sys.argv[1:7]
@@ -221,6 +233,24 @@ identical_to_en = {k for k in (core_keys & de_keys) if k not in empty_keys and d
 untranslated_present = sorted(identical_to_en - allowlist)
 stale_allowlist = sorted(k for k in allowlist if k not in identical_to_en)
 
+# Token parity (ut-docs#297): for every key present in BOTH core and
+# de.json, the interpolation tokens in the English value must survive in
+# the German value byte-for-byte -- same multiset, so a dropped, added or
+# duplicated token all fail. Covers {{...}}-style, printf-style %verbs
+# (%s, %d, %v, %.2f, ...) and {0}-style numbered placeholders.
+TOKEN_RE = re.compile(r"\{\{[^}]*\}\}|%[0-9.+\-#]*[a-zA-Z]|\{\d+\}")
+
+def token_counts(s):
+    return collections.Counter(TOKEN_RE.findall(s))
+
+def token_list(s):
+    return sorted(token_counts(s).elements())
+
+token_mismatch = sorted(
+    k for k in (core_keys & de_keys)
+    if token_counts(core[k]) != token_counts(de[k])
+)
+
 fail = False
 
 if new_drift:
@@ -259,6 +289,12 @@ if stale_allowlist:
     for k in stale_allowlist:
         print(f"  - {k}")
 
+if token_mismatch:
+    fail = True
+    print(f"check-key-drift: {len(token_mismatch)} key(s) in {de_path} have placeholder token(s) that do not match core's English value (dropped/added/altered interpolation token):")
+    for k in token_mismatch:
+        print(f"  - {k}: en tokens {token_list(core[k])} != de tokens {token_list(de[k])}")
+
 print(f"check-key-drift: core commit: {core_sha}")
 
 if fail:
@@ -267,5 +303,5 @@ if fail:
 translated = len(core_keys) - len(missing)
 print(f"check-key-drift: ok -- {translated}/{len(core_keys)} core keys translated, "
       f"{len(missing)} known-untranslated (baseline), {len(allowlist)} known-same-as-English (allowlist), "
-      f"0 drift, 0 orphans, 0 empty values, 0 untranslated-present")
+      f"0 drift, 0 orphans, 0 empty values, 0 untranslated-present, 0 token mismatches")
 PY

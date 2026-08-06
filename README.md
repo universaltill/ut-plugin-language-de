@@ -5,17 +5,22 @@ ADR-0010). Ships `locales/de.json`; the till merges it as an overlay on
 install — base strings always win on key conflict, so packs add locales but
 cannot hijack core text. The nav language switcher picks up DE automatically.
 
-**Coverage today: a growing subset of core's `web/locales/en.json` keys are
-translated.** A key this pack doesn't yet cover falls back to English —
-that fallback chain (`de → de → en → en`) is `I18n.T()` in core's
-`internal/config/i18n.go`, not something ADR-0010 itself specifies — so
-untranslated strings degrade gracefully rather than breaking the till, but
-they're still a real gap. `i18n-baseline/de.untranslated.txt` is the
-tracked baseline of that gap: every core key `de.json` doesn't yet
-translate, one per line. `i18n-baseline/de.same-as-en.txt` is a second,
-much shorter list: keys where `de.json`'s value is deliberately identical
-to core's English string (proper nouns, brand names, words that are
-genuinely the same in German). Neither file ships to customer tills —
+**Coverage today: every key in core's `web/locales/en.json` is translated
+(full parity as of v1.1.0, ut-docs#297).** A key this pack doesn't cover
+(i.e. any key core adds after this pack's last update) falls back to
+English — that fallback chain (`de → de → en → en`) is `I18n.T()` in
+core's `internal/config/i18n.go`, not something ADR-0010 itself specifies
+— so untranslated strings degrade gracefully rather than breaking the
+till, but they're still a real gap. `i18n-baseline/de.untranslated.txt` is
+the tracked baseline of that gap: every core key `de.json` doesn't yet
+translate, one per line. **It is empty at full parity — and because the
+guard treats any untranslated core key not listed there as new drift, an
+empty baseline enforces exact key parity from here on: every future core
+key fails CI until it is translated (or deliberately added to the
+baseline).** `i18n-baseline/de.same-as-en.txt` is a second, short list:
+keys where `de.json`'s value is deliberately identical to core's English
+string (proper nouns, brand names, words that are genuinely the same in
+German). Neither file ships to customer tills —
 `scripts/package.sh` only bundles `manifest.json`, `locales/`, and
 `README.md` (see ADR-0010: a language pack ships `locales/<code>.json` and
 nothing else; these are developer bookkeeping, not a shipped asset).
@@ -37,7 +42,14 @@ offline/CI use) and fails loudly if:
   ut-docs#292 bug: a key present with the verbatim, never-translated
   English string passes a key-set-only check);
 - an allowlist entry is no longer identical to core, or its key no longer
-  exists (stale — must be pruned).
+  exists (stale — must be pruned);
+- a key present in both core and `de.json` has mismatched
+  placeholder/interpolation tokens (ut-docs#297): the multiset of
+  `{{...}}`-style, printf-style `%s`/`%d`/`%v`-style, and `{0}`-style
+  tokens extracted from the English value must equal the one extracted
+  from the German value — a translation that drops, duplicates or alters
+  a token renders broken output in production while every key-set check
+  stays green.
 
 Neither file can grow *silently* — new entries only land through a
 deliberate, reviewed edit (`scripts/check-key-drift.sh --update-baseline` /
@@ -58,6 +70,18 @@ best-effort backstop, not a durable guarantee; it also has
 runs the same guard before a tag can publish, so drift can't ship in a
 new pack version either. `scripts/check-key-drift.test.sh` covers the
 guard itself.
+
+`scripts/report-length-flags.sh` is a **non-blocking** layout report (not
+a CI gate — a byte-length heuristic can't verify actual rendered layout):
+it lists every key whose German value is more than 40% longer (by
+character count) than core's English value, sorted by ratio descending, as
+a markdown table, and marks keys whose dot-path suggests a small
+fixed-width UI element (button/tab/chip/column-header labels, or the
+tender/nav/status/common/osk/basket/sync chrome). Regenerate with
+`UT_CORE_EN_JSON=<path> scripts/report-length-flags.sh >
+docs/de-length-flags.md`; the checked-in `docs/de-length-flags.md` is the
+spot-check list a reviewer/tester uses to drive the sale screen at
+10-inch/kiosk sizes and eyeball the highest-risk strings.
 
 `scripts/validate.sh` (run by CI and by `package.sh`) additionally asserts
 every value in every `locales/*.json` file is a non-empty string — core's
