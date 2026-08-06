@@ -338,6 +338,7 @@ import.ready
 import.skipped
 import.status
 import.title
+import.warned
 import.with_issues
 inventory.authorize_override
 inventory.cost_optional
