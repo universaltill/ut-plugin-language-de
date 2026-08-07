@@ -438,6 +438,121 @@ cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
 TXT
 assert_pass "matching tokens (mixed styles) pass" run_check
 
+# run_update_baseline [EXTRA_ARG]
+# Like run_check but invokes --update-baseline (optionally + --allow-growth),
+# from inside case_dir, matching how the real script expects to be run.
+run_update_baseline() {
+    (cd "$case_dir" && UT_CORE_EN_JSON="$core_json" bash "scripts/check-key-drift.sh" --update-baseline ${1:-})
+}
+
+# assert_fail_containing_growth NAME NEEDLE [NEEDLE...]
+# Same contract as assert_fail_containing, but against run_update_baseline
+# (no --allow-growth) instead of the default check -- assert_fail_containing
+# itself is hardcoded to run_check, so this is its --update-baseline sibling.
+assert_fail_containing_growth() {
+    local name="$1"
+    shift
+    local out rc
+    set +e
+    out="$(run_update_baseline 2>&1)"
+    rc=$?
+    set -e
+    if [ "$rc" -eq 0 ]; then
+        echo "FAIL [$name]: expected non-zero exit, got 0. Output:"
+        echo "$out"
+        FAILS=$((FAILS + 1))
+        return
+    fi
+    local needle
+    for needle in "$@"; do
+        if ! grep -qF -- "$needle" <<<"$out"; then
+            echo "FAIL [$name]: exited non-zero (good) but output did not mention expected reason ('$needle'). Output:"
+            echo "$out"
+            FAILS=$((FAILS + 1))
+            return
+        fi
+    done
+    echo "ok   [$name]"
+}
+
+# --- case 18: --update-baseline on a NON-empty baseline needs no flag -----
+# Ratchet mode is unaffected by the ut-docs#297 exact-parity guard -- only
+# an already-empty (full-parity) baseline is protected.
+fresh_case "update-baseline (already non-empty, no flag needed)"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "a.two": "Two",
+  "a.three": "Three"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+a.two
+TXT
+assert_pass "update-baseline, already non-empty" run_update_baseline
+
+# --- case 19: --update-baseline on an EMPTY (full-parity) baseline, ------
+# NO --allow-growth -> refuse (ut-docs#297).
+fresh_case "update-baseline (full parity, no --allow-growth)"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "a.two": "Two"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins"
+}
+JSON
+: > "${case_dir}/i18n-baseline/de.untranslated.txt"
+assert_fail_containing_growth "update-baseline refuses to reopen full parity" \
+    "currently at full parity" "refusing to reopen it" "1 new untranslated"
+
+# --- case 20: --update-baseline --allow-growth on an empty baseline ------
+# -> proceeds, and the baseline file actually gets the new entry.
+fresh_case "update-baseline --allow-growth (deliberate reopen)"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "a.two": "Two"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins"
+}
+JSON
+: > "${case_dir}/i18n-baseline/de.untranslated.txt"
+assert_pass "update-baseline --allow-growth proceeds" run_update_baseline "--allow-growth"
+if ! grep -qF "a.two" "${case_dir}/i18n-baseline/de.untranslated.txt"; then
+    echo "FAIL [update-baseline --allow-growth writes the entry]: a.two missing from baseline after update"
+    FAILS=$((FAILS + 1))
+else
+    echo "ok   [update-baseline --allow-growth writes the entry]"
+fi
+
+# --- case 21: --update-baseline on an empty baseline with NOTHING missing -
+# -> still full parity, no growth attempted -> succeeds without the flag.
+fresh_case "update-baseline (still full parity, nothing to add)"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins"
+}
+JSON
+: > "${case_dir}/i18n-baseline/de.untranslated.txt"
+assert_pass "update-baseline, nothing missing, no flag needed" run_update_baseline
+
 echo
 if [ "$FAILS" -ne 0 ]; then
     echo "check-key-drift.test.sh: ${FAILS} test(s) FAILED"

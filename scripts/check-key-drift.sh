@@ -2,18 +2,30 @@
 #
 # Ratcheting key-parity guard against core's base locale (ut-docs#292).
 #
-# WHY A RATCHET, NOT EXACT PARITY: this pack only translates 170 of core's
-# 1087 web/locales/en.json keys today -- 917 keys are legitimately
-# untranslated (ADR-0010: a language pack is an asset-only overlay; core's
-# T() falls back de -> en on a missing key, so an untranslated key degrades
-# gracefully to English rather than breaking the till). Demanding this
-# script fail until every one of those 917 gaps is translated would make it
-# useless noise from day one, so the check is NOT "de.json == en.json"; it's
-# "the untranslated set today is EXACTLY the untranslated set the baseline
-# file says we already know about, no more, no less" -- PLUS: every key
-# de.json claims to translate must actually carry a real, non-empty,
-# actually-German value (see "value checks" below), because a key present
-# in de.json is not by itself evidence of a translation.
+# WHY A RATCHET, NOT A HARDCODED "de.json == en.json": ADR-0010 makes a
+# language pack an asset-only overlay -- core's T() falls back de -> en on a
+# missing key, so an untranslated key degrades gracefully to English rather
+# than breaking the till, which means a temporary gap (core ships a key
+# today, this pack translates it next week) is a legitimate, trackable
+# state, not automatically a bug. So the check is not a literal file-equality
+# assertion; it's "the untranslated set today is EXACTLY the untranslated
+# set the baseline file says we already know about, no more, no less" --
+# PLUS: every key de.json claims to translate must actually carry a real,
+# non-empty, actually-German value (see "value checks" below), because a key
+# present in de.json is not by itself evidence of a translation.
+#
+# EXACT PARITY, ENFORCED (ut-docs#297): as of the 2026-08 translation pass,
+# the baseline is 0 entries -- de.json covers every core key. That makes the
+# ratchet's existing behavior into a de facto exact-parity check already
+# (with an empty baseline, ANY newly-missing key is unconditionally
+# "not in the baseline" = new drift = FAIL; see the missing/new_drift logic
+# below, unchanged). What's added here so that isn't just an accident of the
+# current state: `--update-baseline` (the one command that can reopen debt)
+# now REFUSES to grow an empty baseline unless the caller also passes
+# `--allow-growth`. Regressing from 100% coverage back into ratchet mode is
+# still possible -- core will keep adding keys this pack won't always
+# translate same-day -- but it now takes a second, explicitly-named flag,
+# not just re-running the normal update command out of habit.
 #
 # What actually broke in #292: core shipped 6 new pfand.* keys and this
 # pack was never updated, so a German till silently rendered English
@@ -71,6 +83,10 @@
 # Usage:
 #   scripts/check-key-drift.sh                 # run the check (default)
 #   scripts/check-key-drift.sh --update-baseline    # rewrite the baseline
+#   scripts/check-key-drift.sh --update-baseline --allow-growth  # ...even
+#                                                    if that reopens debt on
+#                                                    a baseline currently at
+#                                                    full parity (ut-docs#297)
 #   scripts/check-key-drift.sh --update-allowlist   # rewrite the allowlist
 # Both --update-* flags resolve core's base locale exactly like the check
 # does (UT_CORE_EN_JSON / UT_CORE_EN_URL / CORE_EN_URL below), so there is
@@ -79,16 +95,19 @@
 set -euo pipefail
 
 MODE="check"
-case "${1:-}" in
-    --update-baseline) MODE="update-baseline" ;;
-    --update-allowlist) MODE="update-allowlist" ;;
-    "") ;;
-    *)
-        echo "check-key-drift: unknown argument: $1" >&2
-        echo "usage: $0 [--update-baseline|--update-allowlist]" >&2
-        exit 1
+ALLOW_GROWTH="0"
+for arg in "$@"; do
+    case "$arg" in
+        --update-baseline) MODE="update-baseline" ;;
+        --update-allowlist) MODE="update-allowlist" ;;
+        --allow-growth) ALLOW_GROWTH="1" ;;
+        *)
+            echo "check-key-drift: unknown argument: $arg" >&2
+            echo "usage: $0 [--update-baseline [--allow-growth]|--update-allowlist]" >&2
+            exit 1
         ;;
-esac
+    esac
+done
 
 # Resolve UT_CORE_EN_JSON against the CALLER's cwd before we cd -- a
 # relative path here is meant to be relative to wherever the caller ran
@@ -144,12 +163,13 @@ else
     fi
 fi
 
-python3 - "$CORE_EN_JSON" "$DE_LOCALE" "$BASELINE" "$ALLOWLIST" "$MODE" "${CORE_SHA:-unknown}" <<'PY'
+python3 - "$CORE_EN_JSON" "$DE_LOCALE" "$BASELINE" "$ALLOWLIST" "$MODE" "${CORE_SHA:-unknown}" "$ALLOW_GROWTH" <<'PY'
 import json
 import re
 import sys
 
-core_path, de_path, baseline_path, allowlist_path, mode, core_sha = sys.argv[1:7]
+core_path, de_path, baseline_path, allowlist_path, mode, core_sha, allow_growth = sys.argv[1:8]
+allow_growth = allow_growth == "1"
 
 # Ordered format-token extraction (ut-docs#297): printf-style verbs (%s, %d,
 # %g, ...), template tokens ({{name}}), and positional tokens ({0}). The
@@ -209,6 +229,29 @@ de_keys = set(de.keys())
 
 if mode == "update-baseline":
     missing = sorted(core_keys - de_keys)
+    # ut-docs#297 exact-parity guard: once the baseline has reached 0 (full
+    # coverage), regenerating it into a non-empty file is REOPENING debt,
+    # not routine bookkeeping -- require the caller to say so explicitly
+    # rather than let a routine `--update-baseline` silently regress
+    # 100% coverage back into ratchet mode.
+    try:
+        current_baseline = load_keylist(baseline_path, "baseline")
+    except SystemExit:
+        current_baseline = None  # unreadable/missing -- not our concern here, let the rewrite proceed
+    if current_baseline == set() and missing and not allow_growth:
+        print(
+            f"check-key-drift: {baseline_path} is currently at full parity (0 entries) -- "
+            f"refusing to reopen it with {len(missing)} new untranslated key(s) via a plain "
+            "--update-baseline.",
+            file=sys.stderr,
+        )
+        print(
+            "check-key-drift: pass --update-baseline --allow-growth if this is a deliberate "
+            "decision to accept new untranslated debt (e.g. core just shipped a batch of keys "
+            "this pack hasn't caught up on yet) -- translating the new keys instead is preferred.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
     rewrite_body(baseline_path, missing)
     print(f"check-key-drift: wrote {len(missing)} entries to {baseline_path}")
     sys.exit(0)
