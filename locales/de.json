@@ -763,6 +763,7 @@
   "setup.done.title": "Alles bereit!",
   "setup.error.save_failed": "Ihre Einstellungen konnten nicht gespeichert werden — bitte erneut versuchen.",
   "setup.finish": "Verkauf starten",
+  "setup.join.discover_help": "Oder finden Sie die Hauptkasse automatisch: Stellen Sie sicher, dass sie eingeschaltet und mit diesem Netzwerk verbunden ist, drücken Sie „Hauptkasse in diesem Netzwerk finden“, wählen Sie sie aus der Liste aus und geben Sie dieser Kasse einen Namen. Beide Bildschirme zeigen dann denselben 6-stelligen Code — die Managerin oder der Manager der Hauptkasse vergleicht sie und bestätigt.",
   "setup.join.help": "Gibt es in diesem Geschäft schon eine Universal Till? Öffnen Sie dort Einstellungen → Kassen → Kopplungscode anzeigen und scannen Sie den Code oder fügen Sie ihn hier ein. Diese Kasse übernimmt das ganze Geschäft — Artikel, Preise, Mitarbeiter-PINs — und startet neu.",
   "setup.join.title": "Bestehendem Geschäft beitreten",
   "setup.language.title": "Wählen Sie Ihre Sprache",
