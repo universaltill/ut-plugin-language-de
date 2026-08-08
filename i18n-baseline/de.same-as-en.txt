@@ -34,6 +34,7 @@ help.feat.backups.title
 help.plugins
 import.export_title
 import.status
+issuereport.my_reports.status
 issuereport.screenshot_label
 journal.col.sync
 journal.detail.offline
