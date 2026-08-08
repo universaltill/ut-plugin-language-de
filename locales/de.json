@@ -74,6 +74,7 @@
   "plugins.manage.disabled": "Deaktiviert",
   "plugins.manage.update_available": "Update:",
   "plugins.manage.action.disable": "Deaktivieren",
+  "plugins.manage.action.docs": "Dokumentation",
   "plugins.manage.action.enable": "Aktivieren",
   "plugins.manage.action.update": "Aktualisieren",
   "plugins.manage.action.export": "Exportieren",
