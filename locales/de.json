@@ -512,7 +512,6 @@
   "plugins.import.warning": "Installieren Sie nur Plugins aus vertrauenswürdigen Quellen. Manuelle Importe umgehen die Marketplace-Prüfung.",
   "plugins.install": "Installieren",
   "plugins.permission.granted": "Berechtigung erteilt",
-  "plugins.marketplace.install_success": "Plugin erfolgreich installiert",
   "plugins.permission.revoked": "Berechtigung entzogen",
   "plugins.install.error.forbidden": "Nur ein Manager kann Plugins installieren.",
   "plugins.none_found": "Keine Plugins gefunden",
