@@ -46,6 +46,7 @@ nav.designer
 nav.github
 nav.journal
 nav.plugins
+orders.col.status
 plugins.import.name
 plugins.import.version
 plugins.manage.title
