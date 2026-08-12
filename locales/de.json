@@ -1243,5 +1243,13 @@
   "orders.err.bad_status": "Unbekannter Status",
   "orders.err.not_found": "Bestellung nicht gefunden",
   "orders.print.kitchen_failed": "Küchenbon-Druck fehlgeschlagen",
-  "orders.print.receipt_failed": "Belegdruck fehlgeschlagen"
+  "orders.print.receipt_failed": "Belegdruck fehlgeschlagen",
+  "reports.period.day": "Tag",
+  "reports.period.week": "Woche",
+  "reports.period.month": "Monat",
+  "reports.period.year": "Jahr",
+  "reports.period.custom": "Benutzerdefiniert",
+  "reports.period.anchor": "Stichtag",
+  "reports.business_day_start.label": "Geschäftstag beginnt um",
+  "reports.business_day_start.help": "Wann ein Geschäftstag endet und der nächste für Berichte und die Tag/Woche/Monat/Jahr-Zeitraumauswahl beginnt — stellen Sie dies später als Mitternacht ein, wenn Sie über Mitternacht hinaus geöffnet haben (z. B. eine Bar oder eine späte Küche), damit die Einnahmen einer Nacht nicht auf zwei Berichtstage aufgeteilt werden."
 }
