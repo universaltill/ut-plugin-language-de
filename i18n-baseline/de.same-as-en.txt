@@ -40,6 +40,8 @@ journal.col.sync
 journal.detail.offline
 journal.detail.online
 journal.title
+kitchenstations.col.name
+kitchenstations.col.status
 locations.col.name
 locations.col.status
 nav.designer
