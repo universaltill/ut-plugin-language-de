@@ -1241,5 +1241,7 @@
   "orders.status.cancelled": "Storniert",
   "orders.btn.cancel": "Bestellung stornieren",
   "orders.err.bad_status": "Unbekannter Status",
-  "orders.err.not_found": "Bestellung nicht gefunden"
+  "orders.err.not_found": "Bestellung nicht gefunden",
+  "orders.print.kitchen_failed": "Küchenbon-Druck fehlgeschlagen",
+  "orders.print.receipt_failed": "Belegdruck fehlgeschlagen"
 }
