@@ -479,6 +479,8 @@
   "kitchen.print.no_receipt": "Keine Bestellung ausgewählt",
   "kitchen.print.off": "Kein Küchendrucker eingerichtet",
   "kitchen.print.partial": "Einige Küchenbons konnten nicht gedruckt werden",
+  "kitchen.ticket.order_label": "BESTELLUNG",
+  "kitchen.ticket.station_default": "KÜCHE",
   "menu.back_to_sale": "Zurück zum Verkauf",
   "modifiers.add_to_cart": "In den Warenkorb",
   "modifiers.cancel": "Abbrechen",
