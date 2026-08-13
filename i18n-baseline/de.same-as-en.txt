@@ -60,6 +60,8 @@ plugins.type.hardware
 plugins.type.import
 plugins.type.integration
 plugins.type.popup
+promotions.col.code
+promotions.col.status
 settings.backup.title
 settings.display.window_mode_kiosk
 settings.retention.export_format_label
