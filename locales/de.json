@@ -1316,5 +1316,10 @@
   "settings.data.restore_title": "Import von einer anderen Kasse",
   "settings.data.restore_help": "Sie haben bei der Einrichtung „Später fragen\" gewählt. Sie können Ihre Produkte jederzeit aus dem CSV-/Excel-Export Ihres alten Systems übertragen.",
   "settings.data.restore_resume_btn": "Import von einer anderen Kasse",
-  "settings.data.restore_dismiss_btn": "Nein, danke"
+  "settings.data.restore_dismiss_btn": "Nein, danke",
+  "plugins.manage.broken": "Defekt",
+  "plugins.status.broken_binary": "Die Dateien dieses Plugins fehlen auf diesem Gerät oder sind nicht lesbar. Aus dem Store installierte Plugins werden automatisch neu installiert; ein aus einer Datei importiertes Plugin muss auf diesem Gerät erneut importiert werden.",
+  "pos.toast.tax_unavailable": "Verkauf kann nicht abgeschlossen werden: Der Steuersatz für „%s\" ist nicht verfügbar, solange das zugehörige Steuer-Plugin repariert wird. Entfernen Sie den Artikel oder versuchen Sie es gleich noch einmal.",
+  "pos.toast.tax_unavailable_all": "Kasse vorübergehend nicht verfügbar — das Steuer-Plugin wird repariert. Bitte versuchen Sie es in Kürze erneut.",
+  "selforder.checkout.tax_unavailable": "Einige Artikel können hier gerade nicht bestellt werden — bitte zahlen Sie an der Theke."
 }
