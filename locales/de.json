@@ -1305,5 +1305,16 @@
   "setup.shop_type.other": "Sonstiges",
   "setup.shop_type.retail": "Einzelhandel",
   "setup.shop_type.service": "Dienstleistung",
-  "setup.shop_type.title": "Welche Art von Geschäft betreiben Sie?"
+  "setup.shop_type.title": "Welche Art von Geschäft betreiben Sie?",
+  "setup.restore.title": "Wechseln Sie von einem anderen Kassensystem?",
+  "setup.restore.hint": "Wenn Sie von einer anderen Kasse oder einem anderen EPOS-System wechseln, können wir Ihnen helfen, Ihre Produkte zu übertragen.",
+  "setup.restore.yes": "Ja",
+  "setup.restore.no": "Nein, ich fange neu an",
+  "setup.restore.later": "Später fragen",
+  "setup.restore.csv_excel": "CSV-/Excel-Export aus meinem alten System",
+  "setup.restore.no_plugins_yet": "Wir haben noch keinen speziellen Import für einzelne Systeme — CSV/Excel funktioniert für jedes System, das einen solchen Export unterstützt.",
+  "settings.data.restore_title": "Import von einer anderen Kasse",
+  "settings.data.restore_help": "Sie haben bei der Einrichtung „Später fragen\" gewählt. Sie können Ihre Produkte jederzeit aus dem CSV-/Excel-Export Ihres alten Systems übertragen.",
+  "settings.data.restore_resume_btn": "Import von einer anderen Kasse",
+  "settings.data.restore_dismiss_btn": "Nein, danke"
 }
