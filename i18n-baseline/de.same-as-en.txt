@@ -28,6 +28,7 @@ auth.setup.pin
 catalog.barcode
 catalog.barcodes
 catalog.col.name
+countrysettings.col.symbol
 designer.code
 designer.receipt.logo_title
 help.feat.backups.title
