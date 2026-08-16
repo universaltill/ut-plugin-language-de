@@ -588,6 +588,7 @@
   "products.empty": "Noch keine Produkte. Fügen Sie welche im Designer hinzu.",
   "products.title": "Produkte",
   "products.uncategorized": "Ohne Kategorie",
+  "receipt.auth_code": "Autorisierung",
   "receipt.auto_reset": "Automatisches Zurücksetzen in 60 s …",
   "receipt.change": "Rückgeld",
   "receipt.new_customer": "Neuer Kunde",
