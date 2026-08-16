@@ -1462,5 +1462,19 @@
   "permissions.lockout_hint": "Immer erteilt — ein Entzug würde jeden Super-Admin von dieser Seite aussperren.",
   "permissions.saved": "Gespeichert",
   "permissions.title": "Berechtigungen",
-  "users.role.super_admin": "Super-Admin"
+  "users.role.super_admin": "Super-Admin",
+  "elevation.prompt_title": "Genehmigung durch einen Manager erforderlich",
+  "elevation.prompt_help": "Geben Sie die PIN einer berechtigten Person ein, um fortzufahren.",
+  "elevation.pin_label": "Manager-PIN",
+  "elevation.pin_placeholder": "PIN eingeben",
+  "elevation.submit": "Bestätigen",
+  "elevation.error_invalid_pin": "Ungültige PIN",
+  "elevation.error_locked_out": "Zu viele Versuche, bitte in Kürze erneut versuchen",
+  "elevation.error_insufficient_role": "Diese PIN hat keine Berechtigung für diese Aktion",
+  "elevation.error_unavailable": "Die Genehmigung ist auf diesem Gerät derzeit nicht verfügbar.",
+  "elevation.hint": "Genehmigung durch einen Manager erforderlich — siehe Dialog.",
+  "elevation.summary.backup_now": "Jetzt ein neues lokales Backup erstellen.",
+  "elevation.summary.sync_promote": "Diese Kasse zu einer eigenständigen Primärkasse hochstufen und die Synchronisierung mit der aktuellen Primärkasse beenden.",
+  "elevation.summary.permission_grant": "Der Rolle %s die Berechtigung \"%s\" erteilen.",
+  "elevation.summary.permission_revoke": "Die Berechtigung \"%s\" von der Rolle %s entziehen."
 }
