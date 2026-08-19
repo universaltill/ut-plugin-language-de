@@ -621,6 +621,7 @@
   "reports.ask.placeholder": "z. B. Was hat sich diese Woche am besten verkauft?",
   "reports.ask.thinking": "Denkt nach …",
   "reports.ask.title": "Fragen Sie Ihre Kasse",
+  "reports.by_cash_adjustment_reason": "Bargeld-Korrekturen nach Grund",
   "reports.by_department": "Umsatz nach Warengruppe",
   "reports.by_till": "Umsatz nach Kasse",
   "reports.eod.auto": "Automatisch um",
