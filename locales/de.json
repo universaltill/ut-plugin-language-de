@@ -1300,6 +1300,7 @@
   "fiscal.banner.override_active": "TSE-Ausnahme aktiv — Verkäufe werden bis zu diesem Zeitpunkt ohne TSE-Signatur aufgezeichnet:",
   "receipt.fiscal.unsigned_override": "Erfasst während eines dokumentierten TSE-Ausfalls, unter einer befristeten Ausnahme des Inhabers.",
   "receipt.fiscal.unsigned_signing": "Die TSE-Signierung war bei der Erfassung dieses Verkaufs nicht verfügbar; die Signierung wird automatisch erneut versucht.",
+  "receipt.fiscal.unsigned_cannot_sign": "Dieser Verkauf konnte in der vorliegenden Form nicht signiert werden; die Signierung wird automatisch erneut versucht.",
   "receipt.fiscal.tse.title": "TSE-Signatur",
   "receipt.fiscal.tse.serial_number": "TSE-Seriennummer",
   "receipt.fiscal.tse.transaction_number": "TSE-Transaktionsnummer",
