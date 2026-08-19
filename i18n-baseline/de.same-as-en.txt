@@ -70,6 +70,7 @@ setup.country.ir
 setup.country.pk
 status.offline
 status.online
+tables.col.status
 tender.scan.barcode
 tills.col_name
 users.col.pin
