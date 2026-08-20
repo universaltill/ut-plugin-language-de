@@ -43,6 +43,7 @@
   "plugins.install.error.configuration": "Die Marketplace-Installation ist nicht konfiguriert.",
   "plugins.install.error.replica_use_primary": "Diese Kasse folgt einer Hauptkasse — installieren Sie Plugins auf der Hauptkasse; sie erreichen jede Kasse automatisch innerhalb von etwa einer halben Minute.",
   "plugins.install.error.not_entitled": "Für dieses Plugin ist eine Freigabe erforderlich, bevor es installiert werden kann — bitten Sie Ihren Manager, es im Marketplace-Portal freizugeben.",
+  "plugins.install.error.registered_required": "Dieses Plugin erfordert ein beanspruchtes Ladenkonto — melden Sie sich an und beanspruchen Sie Ihren Laden, um es zu installieren.",
   "designer.title": "Kassen-Designer",
   "designer.add_button": "Taste hinzufügen",
   "designer.label": "Beschriftung",
