@@ -967,6 +967,7 @@
   "users.role.admin": "Admin",
   "users.role.cashier": "Kassierer",
   "users.role.manager": "Manager",
+  "users.saved": "Gespeichert.",
   "users.set_pin": "PIN festlegen",
   "users.title": "Benutzer",
   "locations.title": "Standorte",
@@ -1528,5 +1529,10 @@
   "elevation.summary.eod_settings_enabled": "Den automatischen Tagesabschlussbericht einschalten, geplant für %s.",
   "elevation.summary.eod_settings_disabled": "Den automatischen Tagesabschlussbericht ausschalten.",
   "elevation.summary.report_retention": "Den Aufbewahrungsmodus für Berichte auf %s ändern.",
-  "elevation.summary.archive_export": "Das Berichtsarchiv für %s – %s (%s) exportieren."
+  "elevation.summary.archive_export": "Das Berichtsarchiv für %s – %s (%s) exportieren.",
+  "elevation.summary.user_create": "Benutzer %s mit der Rolle %s anlegen.",
+  "elevation.summary.user_pin_set": "Eine neue PIN für %s festlegen.",
+  "elevation.summary.user_activate": "%s aktivieren.",
+  "elevation.summary.user_deactivate": "%s deaktivieren.",
+  "elevation.summary.user_role_change": "Die Rolle von %s von %s auf %s ändern."
 }
