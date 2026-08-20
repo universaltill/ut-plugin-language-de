@@ -1517,8 +1517,16 @@
   "elevation.error_insufficient_role": "Diese PIN hat keine Berechtigung für diese Aktion",
   "elevation.error_unavailable": "Die Genehmigung ist auf diesem Gerät derzeit nicht verfügbar.",
   "elevation.hint": "Genehmigung durch einen Manager erforderlich — siehe Dialog.",
+  "elevation.approved": "Genehmigt und gespeichert.",
   "elevation.summary.backup_now": "Jetzt ein neues lokales Backup erstellen.",
   "elevation.summary.sync_promote": "Diese Kasse zu einer eigenständigen Primärkasse hochstufen und die Synchronisierung mit der aktuellen Primärkasse beenden.",
   "elevation.summary.permission_grant": "Der Rolle %s die Berechtigung \"%s\" erteilen.",
-  "elevation.summary.permission_revoke": "Die Berechtigung \"%s\" von der Rolle %s entziehen."
+  "elevation.summary.permission_revoke": "Die Berechtigung \"%s\" von der Rolle %s entziehen.",
+  "elevation.summary.eod_run": "Den heutigen Tagesabschlussbericht jetzt ausführen.",
+  "elevation.summary.eod_reprint": "Den Tagesabschlussbericht für %s erneut drucken.",
+  "elevation.summary.eod_range_export": "Einen Z-Bericht für %s – %s exportieren.",
+  "elevation.summary.eod_settings_enabled": "Den automatischen Tagesabschlussbericht einschalten, geplant für %s.",
+  "elevation.summary.eod_settings_disabled": "Den automatischen Tagesabschlussbericht ausschalten.",
+  "elevation.summary.report_retention": "Den Aufbewahrungsmodus für Berichte auf %s ändern.",
+  "elevation.summary.archive_export": "Das Berichtsarchiv für %s – %s (%s) exportieren."
 }
