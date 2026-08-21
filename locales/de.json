@@ -1540,5 +1540,13 @@
   "elevation.summary.user_pin_set": "Eine neue PIN für %s festlegen.",
   "elevation.summary.user_activate": "%s aktivieren.",
   "elevation.summary.user_deactivate": "%s deaktivieren.",
-  "elevation.summary.user_role_change": "Die Rolle von %s von %s auf %s ändern."
+  "elevation.summary.user_role_change": "Die Rolle von %s von %s auf %s ändern.",
+  "elevation.summary.payments_default": "Die bevorzugte Zahlungsmethode auf %s setzen.",
+  "elevation.summary.payments_fee": "Die Gebühr für die Zahlungsmethode %s auf %s %% zuzüglich %s fest pro Transaktion setzen.",
+  "elevation.summary.remove_demo_data": "Alle unberührten Beispieldaten (Katalogartikel, Kunden und Aktionscodes) endgültig entfernen.",
+  "elevation.summary.shop_type": "Die Geschäftsart auf %s ändern.",
+  "elevation.summary.till_name": "Diese Kasse in \"%s\" umbenennen.",
+  "elevation.summary.till_register": "Diese Kasse dem Kassenplatz %s zuweisen.",
+  "elevation.summary.store_save": "Änderungen an Währung, Land, Region oder Steuersatz des Geschäfts speichern.",
+  "elevation.summary.setting_upsert": "Die Einstellung \"%s\" auf \"%s\" setzen."
 }
