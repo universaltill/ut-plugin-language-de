@@ -487,6 +487,7 @@
   "journal.reprinted": "Beleg an den Drucker gesendet",
   "journal.till_last_synced": "Letzter Kontakt von %s: %s",
   "journal.till_unknown": "Unbekannte Kasse",
+  "journal.truncated": "Die letzten 100 werden angezeigt — grenzen Sie nach Kasse oder Tag ein, um den Rest zu sehen.",
   "kiosk.offline": "Offline-Modus",
   "kitchen.print.done": "Küchenbon gesendet",
   "kitchen.print.failed": "Küchenbon fehlgeschlagen",
