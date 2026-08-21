@@ -1548,5 +1548,17 @@
   "elevation.summary.till_name": "Diese Kasse in \"%s\" umbenennen.",
   "elevation.summary.till_register": "Diese Kasse dem Kassenplatz %s zuweisen.",
   "elevation.summary.store_save": "Änderungen an Währung, Land, Region oder Steuersatz des Geschäfts speichern.",
-  "elevation.summary.setting_upsert": "Die Einstellung \"%s\" auf \"%s\" setzen."
+  "elevation.summary.setting_upsert": "Die Einstellung \"%s\" auf \"%s\" setzen.",
+  "elevation.summary.dismiss_pending_base_plugin": "Das ausstehende Basis-Plugin %s verwerfen, ohne es zu installieren.",
+  "elevation.summary.dismiss_restore_prompt": "Die Aufforderung zur Wiederherstellung von einer anderen Kasse verwerfen, ohne etwas zu importieren.",
+  "elevation.summary.display_mode": "Das Geräteprofil dieser Kasse auf %s setzen.",
+  "elevation.summary.enrol_claim_code": "Einen neuen Store-Anspruchscode und QR-Link generieren.",
+  "elevation.summary.enrol_now": "Jetzt versuchen, diese Kasse beim Marktplatz zu registrieren.",
+  "elevation.summary.idle_lock": "Das Timeout für die automatische Leerlaufsperre auf %s setzen.",
+  "elevation.summary.kiosk_idle_reset": "Das Leerlauf-Reset-Fenster des Selbstbedienungs-Kiosks auf %s setzen.",
+  "elevation.summary.launch_on_startup_off": "Den Start beim Hochfahren ausschalten.",
+  "elevation.summary.launch_on_startup_on": "Den Start beim Hochfahren einschalten.",
+  "elevation.summary.telemetry_off": "Die Telemetrie-Freigabe für Plugins ausschalten.",
+  "elevation.summary.telemetry_on": "Die Telemetrie-Freigabe für Plugins einschalten.",
+  "elevation.summary.window_mode": "Den Fenstermodus auf %s setzen."
 }
