@@ -1544,6 +1544,8 @@
   "elevation.summary.user_role_change": "Die Rolle von %s von %s auf %s ändern.",
   "elevation.summary.payments_default": "Die bevorzugte Zahlart auf %s setzen.",
   "elevation.summary.payments_fee": "Die Gebühr für %s auf %s %% zzgl. %s fest pro Transaktion setzen.",
+  "elevation.summary.printer_settings": "Druckereinstellungen ändern.",
+  "elevation.summary.invoice_seller": "Verkäuferangaben der Rechnung ändern.",
   "elevation.summary.remove_demo_data": "Alle unberührten Beispieldaten (Katalogartikel, Kunden und Aktionscodes) dauerhaft entfernen.",
   "elevation.summary.shop_type": "Die Geschäftsart auf %s ändern.",
   "elevation.summary.till_name": "Diese Kasse in \"%s\" umbenennen.",
