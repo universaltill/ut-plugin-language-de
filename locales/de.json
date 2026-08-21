@@ -1548,5 +1548,17 @@
   "elevation.summary.till_name": "Diese Kasse in \"%s\" umbenennen.",
   "elevation.summary.till_register": "Diese Kasse dem Kassenplatz %s zuweisen.",
   "elevation.summary.store_save": "Änderungen an Währung, Land, Region oder Steuersatz des Geschäfts speichern.",
-  "elevation.summary.setting_upsert": "Die Einstellung \"%s\" auf \"%s\" setzen."
+  "elevation.summary.setting_upsert": "Die Einstellung \"%s\" auf \"%s\" setzen.",
+  "elevation.summary.idle_lock": "Die Zeit für die automatische Sperre bei Inaktivität auf %s setzen.",
+  "elevation.summary.kiosk_idle_reset": "Das Zeitfenster für den Kiosk-Leerlauf-Reset auf %s setzen.",
+  "elevation.summary.window_mode": "Den Fenstermodus auf %s setzen.",
+  "elevation.summary.launch_on_startup_on": "Den Start beim Hochfahren aktivieren.",
+  "elevation.summary.launch_on_startup_off": "Den Start beim Hochfahren deaktivieren.",
+  "elevation.summary.telemetry_on": "Die Freigabe von Plugin-Telemetriedaten aktivieren.",
+  "elevation.summary.telemetry_off": "Die Freigabe von Plugin-Telemetriedaten deaktivieren.",
+  "elevation.summary.display_mode": "Das Geräteprofil dieser Kasse auf %s setzen.",
+  "elevation.summary.dismiss_restore_prompt": "Den Hinweis zur Wiederherstellung von einer anderen Kasse verwerfen, ohne etwas zu importieren.",
+  "elevation.summary.dismiss_pending_base_plugin": "Das ausstehende Basis-Plugin %s verwerfen, ohne es zu installieren.",
+  "elevation.summary.enrol_claim_code": "Einen neuen Anspruchscode für das Geschäft und einen QR-Link erstellen.",
+  "elevation.summary.enrol_now": "Jetzt versuchen, diese Kasse beim Marketplace zu registrieren."
 }
