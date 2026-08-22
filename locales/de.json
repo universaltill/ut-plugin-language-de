@@ -1073,6 +1073,7 @@
   "tables.edit.start": "Sitzplan bearbeiten",
   "tables.edit.done": "Bearbeitung beenden",
   "tables.edit.hint": "Ziehen Sie einen Tisch, um ihn zu verschieben — seine Position wird automatisch gespeichert.",
+  "tables.node.aria": "%s — mit den Pfeiltasten bewegen (Umschalttaste für größere Schritte gedrückt halten)",
   "tables.status.open_minutes": "%d Min.",
   "tables.seats_n": "%d Plätze",
   "tables.col.name": "Tisch",
