@@ -71,6 +71,7 @@ setup.country.pk
 status.offline
 status.online
 tables.col.status
+taxcodes.col.name
 tender.scan.barcode
 tills.col_name
 users.col.pin
