@@ -138,6 +138,8 @@
   "journal.detail.totals": "Summen",
   "journal.detail.payments": "Zahlungen",
   "journal.detail.change": "Rückgeld",
+  "journal.detail.terminal_id": "Terminal-ID",
+  "journal.detail.trace_id": "Trace-Nr.",
   "designer.reorder_hint": "Kacheln ziehen, um die Reihenfolge auf dem Verkaufsbildschirm festzulegen.",
   "shifts.title": "Schichten",
   "shifts.open_since": "Schicht offen seit",
