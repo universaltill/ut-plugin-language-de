@@ -1524,5 +1524,8 @@
   "registers.strand_warning": "Einen zweiten Kassenplatz anzulegen oder einen Kassenplatz zu deaktivieren, den eine andere Kasse verwenden könnte, kann die Kassenplatz-Zuordnung dieser Kasse unklar machen. Prüfen Sie danach bei jeder Kasse unter Einstellungen → Kassen → \"Kassenplatz dieser Kasse\".",
   "registers.in_use_hint": "Hat Schicht-/Verkaufsverlauf",
   "pairings.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
-  "ext.error.unreachable": "Diese Plugin-Seite ist momentan nicht erreichbar."
+  "ext.error.unreachable": "Diese Plugin-Seite ist momentan nicht erreichbar.",
+  "catalog.item_form.saving": "Wird gespeichert …",
+  "catalog.item_form.saved": "Gespeichert",
+  "catalog.keypad.failed_generic": "Zuordnung fehlgeschlagen"
 }
