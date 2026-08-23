@@ -697,6 +697,7 @@
   "settings.data.archives_purge_not_found": "Archivpaket nicht gefunden",
   "settings.data.archives_purge_purging": "wird gelöscht…",
   "settings.data.archives_purge_retained_until": "Dieses Archiv enthält echte Verkaufshistorie und ist gemäß den Aufbewahrungsregeln Ihres Landes bis zum %s geschützt — es kann vorher nicht gelöscht werden.",
+  "settings.data.archives_retained_until_row": "Aufbewahrt bis %s — geschützt durch die Aufbewahrungsregeln Ihres Landes",
   "settings.data.archives_restore_btn": "Wiederherstellen",
   "settings.data.archives_restore_confirm_dialog": "Dieses archivierte Paket wiederherstellen? Alle zugehörigen Verkäufe, Schichten und Rechnungen werden zurück in die aktive Kasse verschoben. Dies funktioniert nur, solange die Kasse keine neuen Transaktionen hat.",
   "settings.data.archives_restore_confirm_ph": "RESTORE eingeben",
