@@ -31,7 +31,6 @@ catalog.col.name
 countrysettings.col.symbol
 designer.code
 designer.receipt.logo_title
-help.feat.backups.title
 help.plugins
 import.export_title
 import.status
