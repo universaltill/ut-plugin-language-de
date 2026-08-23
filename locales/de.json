@@ -1610,5 +1610,6 @@
   "registers.error.rename": "Kassenplatz konnte nicht umbenannt werden (Name bereits vergeben?)",
   "registers.error.update": "Kassenplatz konnte nicht aktualisiert werden",
   "registers.error.last_active": "Der letzte aktive Kassenplatz kann nicht deaktiviert werden",
-  "registers.strand_warning": "Einen zweiten Kassenplatz anzulegen oder einen Kassenplatz zu deaktivieren, den eine andere Kasse verwenden könnte, kann die Kassenplatz-Zuordnung dieser Kasse unklar machen. Prüfen Sie danach bei jeder Kasse unter Einstellungen → Kassen → \"Kassenplatz dieser Kasse\"."
+  "registers.strand_warning": "Einen zweiten Kassenplatz anzulegen oder einen Kassenplatz zu deaktivieren, den eine andere Kasse verwenden könnte, kann die Kassenplatz-Zuordnung dieser Kasse unklar machen. Prüfen Sie danach bei jeder Kasse unter Einstellungen → Kassen → \"Kassenplatz dieser Kasse\".",
+  "registers.in_use_hint": "Hat Schicht-/Verkaufshistorie"
 }
