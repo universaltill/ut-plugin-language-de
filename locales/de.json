@@ -578,6 +578,7 @@
   "plugins.type.theme": "Design",
   "plugins.type_label": "Typ:",
   "products.empty": "Noch keine Produkte. Fügen Sie welche im Designer hinzu.",
+  "products.no_matches": "Keine passenden Produkte.",
   "products.title": "Produkte",
   "products.uncategorized": "Ohne Kategorie",
   "receipt.auth_code": "Autorisierung",
