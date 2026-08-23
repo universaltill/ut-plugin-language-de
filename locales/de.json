@@ -425,6 +425,7 @@
   "invoice.doc_tax_title": "MWST.-RECHNUNG",
   "invoice.doc_title": "RECHNUNG",
   "invoice.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "invoice.error.issue_failed": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "invoice.export_btn": "CSV exportieren",
   "invoice.filter": "Anzeigen",
   "invoice.for_sale": "zu Beleg",
