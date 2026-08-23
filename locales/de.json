@@ -1301,6 +1301,7 @@
   "issuereport.my_reports.attached_video": "Bildschirmaufnahme",
   "issuereport.my_reports.attached_images": "Screenshot(s)",
   "issuereport.my_reports.view_on_github": "Auf GitHub ansehen",
+  "issuereport.my_reports.more_not_shown": "%d weitere Meldung(en) nicht angezeigt — schauen Sie später wieder vorbei, sobald ältere auf GitHub erfasst oder verworfen wurden.",
   "issuereport.status.sent": "Gesendet, wird geprüft",
   "issuereport.status.received": "Empfangen",
   "issuereport.status.transcribing": "Wird transkribiert",
