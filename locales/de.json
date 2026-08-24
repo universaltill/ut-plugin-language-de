@@ -869,6 +869,7 @@
   "sync.error.bad_path": "Ungültiger Pfad",
   "sync.error.bad_batch": "Ungültiges Synchronisierungspaket",
   "sync.error.apply_failed": "Synchronisierung fehlgeschlagen",
+  "sync.error.no_lan_address": "Diese Kasse ist nicht mit dem Geschäftsnetzwerk verbunden. Verbinden Sie sie mit dem Netzwerk und versuchen Sie es erneut.",
   "taxcodes.col.active": "Aktiv",
   "taxcodes.col.name": "Name",
   "taxcodes.col.rate": "Satz",
@@ -1598,5 +1599,6 @@
   "plugins.error.grant_failed": "Die Berechtigung konnte nicht erteilt werden.",
   "plugins.error.malformed_form": "Die Anfrage konnte nicht gelesen werden. Bitte versuchen Sie es erneut.",
   "plugins.error.revoke_failed": "Die Berechtigung konnte nicht entzogen werden.",
-  "plugins.error.trust_update_failed": "Die Vertrauensstufe konnte nicht aktualisiert werden."
+  "plugins.error.trust_update_failed": "Die Vertrauensstufe konnte nicht aktualisiert werden.",
+  "plugins.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
 }
