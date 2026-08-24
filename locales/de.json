@@ -1462,6 +1462,7 @@
   "permissions.action.refund": "Erstattungen",
   "permissions.action.reports": "Berichte",
   "permissions.action.settings": "Einstellungen",
+  "permissions.action.stock_location_management": "Lagerorte & Kassen",
   "permissions.action.sync_management": "Mehrkassen-Synchronisierung",
   "permissions.action.user_management": "Benutzerverwaltung",
   "permissions.action.void": "Stornierungen",
