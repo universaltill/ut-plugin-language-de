@@ -609,6 +609,7 @@
   "refund.col.refund_qty": "Retourenmenge",
   "refund.col.remaining": "Erstattbar",
   "refund.col.sold": "Verkauft",
+  "refund.error.provider_declined": "Der Zahlungsanbieter hat diese Rückerstattung abgelehnt — versuchen Sie es erneut oder wählen Sie eine andere Methode",
   "refund.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "refund.fully_refunded": "vollständig erstattet",
   "refund.help": "Wählen Sie, wie viel von jedem Artikel zurückgenommen wird. Der Bestand geht zurück ins Geschäft, und der Erstattungsbeleg verweist auf diesen Verkauf. Eine Manager-PIN bestätigt die Erstattung.",
