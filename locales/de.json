@@ -1464,6 +1464,7 @@
   "permissions.action.settings": "Einstellungen",
   "permissions.action.stock_location_management": "Lagerorte & Kassen",
   "permissions.action.sync_management": "Mehrkassen-Synchronisierung",
+  "permissions.action.tax_code_management": "Steuerschlüssel",
   "permissions.action.user_management": "Benutzerverwaltung",
   "permissions.action.void": "Stornierungen",
   "permissions.col.action": "Aktion",
