@@ -291,6 +291,8 @@
   "catalog.autofill_placeholder": "Barcode scannen oder eingeben",
   "catalog.autofill_searching": "Barcode wird nachgeschlagen …",
   "catalog.barcode": "Barcode",
+  "catalog.barcode.force_plain": "Einfacher Code (Gewicht/Preis ignorieren)",
+  "catalog.barcode.force_plain_hint": "Diesen Code als einfachen Produkt-Barcode behandeln, auch wenn für dieses Geschäft Barcodes mit eingebettetem Gewicht/Preis aktiviert sind.",
   "catalog.barcode.remove_confirm": "Diesen Barcode entfernen?",
   "catalog.barcodes": "Barcodes",
   "catalog.brand": "Marke",
