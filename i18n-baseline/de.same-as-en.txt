@@ -25,6 +25,13 @@ app.name
 audit.col.details
 audit.system_actor
 auth.setup.pin
+barcode.symbology.CODE128
+barcode.symbology.CODE39
+barcode.symbology.EAN13
+barcode.symbology.EAN8
+barcode.symbology.GTIN14
+barcode.symbology.UPCA
+barcode.symbology.UPCE
 catalog.barcode
 catalog.barcodes
 catalog.col.name
