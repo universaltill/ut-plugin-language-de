@@ -875,9 +875,12 @@
   "taxcodes.col.takeaway_rate": "Satz außer Haus",
   "taxcodes.deactivate": "Deaktivieren",
   "taxcodes.err.duplicate_name": "Ein Steuerschlüssel mit diesem Namen existiert bereits",
+  "taxcodes.err.invalid_form": "Ungültige Steuerschlüssel-Angaben.",
   "taxcodes.err.invalid_rate": "Ungültiger Satz — geben Sie einen Wert zwischen 0 und 100 ein",
+  "taxcodes.err.list_failed": "Die Steuerschlüssel konnten nicht geladen werden.",
   "taxcodes.err.name_required": "Name ist erforderlich",
   "taxcodes.err.not_found": "Steuerschlüssel nicht gefunden",
+  "taxcodes.err.save_failed": "Der Steuerschlüssel konnte nicht gespeichert werden.",
   "taxcodes.manage_overrides_link": "Plugin-spezifische Ausnahmen verwalten",
   "taxcodes.new": "Neuer Steuerschlüssel",
   "taxcodes.reactivate": "Reaktivieren",
@@ -1586,5 +1589,14 @@
   "fiscalregister.address.submit": "Adresse speichern",
   "fiscalregister.address.error": "Adresse konnte nicht gespeichert werden",
   "fiscalregister.no_location": "Keine Betriebsstätte zugewiesen",
-  "fiscalregister.empty": "Noch keine Einträge — nutzen Sie „Eintrag hinzufügen“, um Ihre erste Kasse/TSE zu erfassen."
+  "fiscalregister.empty": "Noch keine Einträge — nutzen Sie „Eintrag hinzufügen“, um Ihre erste Kasse/TSE zu erfassen.",
+  "eod.err.archive_export_failed": "Das Berichtsarchiv konnte nicht exportiert werden.",
+  "eod.err.check_failed": "Der archivierte Bericht konnte nicht geprüft werden.",
+  "eod.err.list_failed": "Die archivierten Berichte konnten nicht geladen werden.",
+  "eod.err.range_failed": "Der Bericht für diesen Zeitraum konnte nicht erstellt werden.",
+  "eod.err.retention_save_failed": "Die Aufbewahrungseinstellung für Berichte konnte nicht gespeichert werden.",
+  "plugins.error.grant_failed": "Die Berechtigung konnte nicht erteilt werden.",
+  "plugins.error.malformed_form": "Die Anfrage konnte nicht gelesen werden. Bitte versuchen Sie es erneut.",
+  "plugins.error.revoke_failed": "Die Berechtigung konnte nicht entzogen werden.",
+  "plugins.error.trust_update_failed": "Die Vertrauensstufe konnte nicht aktualisiert werden."
 }
