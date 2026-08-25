@@ -1425,6 +1425,8 @@
   "settings.retention.mode_label": "Berichte aufbewahren auf",
   "settings.retention.mode_till": "Nur diese Kasse",
   "settings.retention.title": "Berichtsaufbewahrung",
+  "settings.service_charge.invalid_rate": "Geben Sie die Servicegebühr als Prozentsatz von 0 oder mehr an, zum Beispiel 12,5.",
+  "settings.service_charge.tr_forbidden": "Das türkische Recht verbietet eine Servicegebühr, Tischgebühr oder ein Gedeck auf der Rechnung (Fiyat Etiketi Yönetmeliği, in Kraft seit dem 30. Januar 2026). Kalkulieren Sie dies stattdessen in Ihre Menüpreise ein.",
   "settings.shop_type.help": "Die Art des Geschäfts, für das diese Kasse eingerichtet ist — bei der Einrichtung gewählt, hier änderbar.",
   "settings.shop_type.title": "Geschäftsart",
   "setup.demo_data.hint": "Ein kleiner Startkatalog mit allgemeinen Beispielprodukten — derselbe Satz unabhängig von der gewählten Geschäftsart. Jederzeit entfernbar unter Einstellungen → Daten.",
