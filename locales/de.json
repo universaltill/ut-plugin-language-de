@@ -1264,7 +1264,7 @@
   "settings.display.window_mode_no_shell": "Vollbild- und Kiosk-Modus bleiben deaktiviert, bis die Universal-Till-Desktop-App auf dieser Kasse läuft — diese App besitzt das Fenster und ermöglicht es, den Vollbildmodus wieder zu verlassen.",
   "settings.display.window_mode_normal": "Normales Fenster",
   "settings.display.window_mode_pending_note": "Wird wirksam, sobald die Fenstermodus-Unterstützung für diese Plattform verfügbar ist.",
-  "settings.display.window_mode_shell_attached": "Die Universal-Till-Desktop-App läuft und hält das Fenster dieser Kasse — Änderungen am Fenstermodus wirken sofort, und „Betriebssystem verlassen“ gibt den Bildschirm tatsächlich zurück.",
+  "settings.display.window_mode_shell_attached": "Die Universal-Till-Desktop-App läuft und hält das Fenster dieser Kasse — Änderungen am Fenstermodus wirken sofort, und „Betriebssystem verlassen“ gibt den Bildschirm tatsächlich zurück. Vollbild und Kiosk lassen die Kasse über dem eigenen Desktop dieses Computers laufen, der direkt dahinter bestehen bleibt — eine Neuinstallation auf einem Raspberry Pi mit Desktop startet automatisch auf diese Weise.",
   "settings.enrol.benefits": "Die Registrierung ist kostenlos und verbindet Ihre Kasse mit dem Plugin-Store: Plugins mit einem Fingertipp installieren und Cloud-Funktionen freischalten, sobald sie erscheinen. Sie geschieht automatisch, wenn die Kasse online ist — oder registrieren Sie jetzt mit der Taste unten.",
   "settings.enrol.claim_btn": "Dieses Geschäft übernehmen",
   "settings.enrol.claim_expires": "Der Code ist 15 Minuten gültig.",
