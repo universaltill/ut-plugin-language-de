@@ -621,6 +621,8 @@
   "refund.col.refund_qty": "Retourenmenge",
   "refund.col.remaining": "Erstattbar",
   "refund.col.sold": "Verkauft",
+  "refund.error.fiscal_never_configured": "Rückerstattung nicht abgeschlossen: Dieses Geschäft ist auf die Erfassung echter Verkäufe für Deutschland eingestellt, aber es ist keine TSE (technische Sicherheitseinrichtung) eingerichtet, daher zeichnet die Kasse diese Rückerstattung nicht auf. Richten Sie eine TSE ein — eigene Hardware, ein eigenes Cloud-Konto oder ein verwaltetes Abonnement — oder bitten Sie einen Administrator, das Geschäft bis zur Einrichtung aus dem Live-Verkaufsmodus zu nehmen.",
+  "refund.error.fiscal_tse_failing": "Rückerstattung nicht abgeschlossen: Die TSE des Geschäfts wird derzeit als ausgefallen gemeldet, daher zeichnet die Kasse diese Rückerstattung nicht auf. Ein Inhaber (Administrator) kann eine befristete Ausnahme gewähren, oder versuchen Sie es erneut, sobald die TSE wieder funktioniert.",
   "refund.error.provider_declined": "Der Zahlungsanbieter hat diese Rückerstattung abgelehnt — versuchen Sie es erneut oder wählen Sie eine andere Methode",
   "refund.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "refund.fully_refunded": "vollständig erstattet",
