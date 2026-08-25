@@ -72,6 +72,7 @@ promotions.col.code
 promotions.col.status
 registers.col.name
 registers.col.status
+reports.tips.form_note_hint
 settings.backup.title
 settings.display.window_mode_kiosk
 settings.retention.export_format_label
