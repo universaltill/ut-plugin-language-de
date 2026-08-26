@@ -75,6 +75,7 @@ registers.col.status
 reports.tips.form_note_hint
 settings.backup.title
 settings.display.window_mode_kiosk
+settings.printer.drawer_pin_5
 settings.retention.export_format_label
 setup.country.ir
 setup.country.pk
