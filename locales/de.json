@@ -188,6 +188,8 @@
   "catalog.search_placeholder": "Artikel suchen …",
   "catalog.sold_by_weight": "Verkauf nach Gewicht",
   "catalog.tax_code": "Steuerschlüssel",
+  "catalog.tax_code.inactive": "inaktiv",
+  "catalog.tax_code.none": "— keiner —",
   "catalog.upload_image": "Bild hochladen",
   "catalog.variant_image": "Variantenbild",
   "catalog.variants": "Varianten",
