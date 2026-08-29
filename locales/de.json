@@ -1751,5 +1751,6 @@
   "users.role.super_admin": "Super-Admin",
   "users.saved": "Gespeichert.",
   "users.set_pin": "PIN festlegen",
-  "users.title": "Benutzer"
+  "users.title": "Benutzer",
+  "common.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
 }
