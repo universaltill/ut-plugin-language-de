@@ -403,6 +403,7 @@
   "import.error.no_name_column": "Keine Namensspalte erkannt — ist das ein Katalog-Export?",
   "import.error.stage_expired": "Diese Vorschau ist abgelaufen — drücken Sie erneut auf Vorschau und dann auf Importieren.",
   "import.export_btn": "Katalog-CSV im Downloads-Ordner speichern",
+  "import.export_download_started": "Download gestartet — prüfen Sie Ihre Benachrichtigungen oder die Dateien-App.",
   "import.export_help": "Ihre Daten gehören Ihnen: Laden Sie den gesamten Katalog — Namen, Artikelnummern, Barcodes, Preise, Kategorien und Bestand — als CSV herunter. Die Datei lässt sich direkt wieder in jede Universal Till importieren (und in andere Systeme, die CSV lesen).",
   "import.export_save_failed": "Die CSV-Datei konnte nicht gespeichert werden.",
   "import.export_title": "Export",
