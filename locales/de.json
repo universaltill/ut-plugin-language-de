@@ -943,6 +943,7 @@
   "pos.toast.voucher_insufficient": "Das Gutschein-Guthaben deckt diese Zahlung nicht",
   "pos.toast.voucher_invalid": "Gutschein nicht gefunden oder nicht mehr gültig",
   "pos.toast.voucher_overtender": "Die Gutschein-Zahlung übersteigt den Restbetrag des Verkaufs — geben Sie stattdessen den Restbetrag ein",
+  "products.add": "Produkt hinzufügen",
   "products.empty": "Noch keine Produkte. Fügen Sie welche im Designer hinzu.",
   "products.no_matches": "Keine passenden Produkte.",
   "products.search_ph": "Produkte suchen …",
