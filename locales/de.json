@@ -104,6 +104,7 @@
   "basket.table.move": "Tisch wechseln",
   "basket.table.no_free_tables": "Keine freien Tische",
   "basket.table.none": "Kein Tisch",
+  "basket.table.occupied": "Dieser Tisch ist bereits belegt",
   "basket.table.picker_title": "Tisch zuweisen",
   "basket.tax": "Steuer",
   "basket.title": "Warenkorb",
