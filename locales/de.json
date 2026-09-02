@@ -1569,6 +1569,8 @@
   "shifts.variance": "Differenz",
   "status.offline": "Offline",
   "status.online": "Online",
+  "status.psu_underpowered": "Netzteil zu schwach",
+  "status.psu_underpowered_hint": "Das Netzteil dieses Geräts liefert nicht genug Strom — USB-Peripheriegeräte wie der Touchscreen können sich fehlerhaft verhalten. Ersetzen Sie es durch das offizielle Netzteil für dieses Board.",
   "status.register_till": "Marketplace: nicht verbunden",
   "status.update_available": "Update verfügbar",
   "status.update_now": "Jetzt aktualisieren",
