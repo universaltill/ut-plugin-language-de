@@ -1829,5 +1829,20 @@
   "users.role.super_admin": "Super-Admin",
   "users.saved": "Gespeichert.",
   "users.set_pin": "PIN festlegen",
-  "users.title": "Benutzer"
+  "users.title": "Benutzer",
+  "recovery.title": "Wiederherstellungsmodus",
+  "recovery.migration_failed": "Die Kasse konnte eine Aktualisierung ihrer Datenbank nicht abschließen. Ihre Daten sind sicher — es ist ein erneuter Versuch oder der Support nötig.",
+  "recovery.db_open_failed": "Die Kasse konnte ihre Datenbank nicht öffnen. Ihre Daten sind sicher — es ist ein erneuter Versuch oder der Support nötig.",
+  "recovery.disk_full": "Der Speicherplatz der Kasse ist voll. Geben Sie auf diesem Gerät Speicherplatz frei und versuchen Sie es erneut.",
+  "recovery.unknown_error": "Die Kasse konnte nicht gestartet werden. Ihre Daten sind sicher — es ist ein erneuter Versuch oder der Support nötig.",
+  "recovery.ref_code": "Referenzcode",
+  "recovery.retry_button": "Erneut versuchen",
+  "recovery.retrying": "Wird erneut versucht…",
+  "recovery.safe_mode_banner": "Sicherer Modus — nur lesend. Änderungen sind erst möglich, wenn dies behoben ist.",
+  "recovery.safe_mode_sales_today": "Heutige Verkäufe",
+  "recovery.safe_mode_export": "Als CSV exportieren",
+  "recovery.safe_mode_col_receipt": "Beleg",
+  "recovery.safe_mode_col_total": "Summe",
+  "recovery.safe_mode_col_time": "Uhrzeit",
+  "recovery.taking_longer": "Läuft noch — nach einer Datenbankaktualisierung kann dies einige Minuten dauern."
 }
