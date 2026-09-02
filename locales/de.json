@@ -1539,6 +1539,8 @@
   "shifts.amount_hint": "negativ entnimmt Bargeld",
   "shifts.cashier": "Kassierer",
   "shifts.close": "Schicht schließen",
+  "shifts.close_success": "Schicht geschlossen. Erwartet: %s, Tatsächlich: %s, Differenz: %s",
+  "shifts.close_success_with_skim": "Schicht geschlossen. Erwartet: %s, Tatsächlich: %s, Differenz: %s, Entnahme: %s, Neue Kasse: %s",
   "shifts.closed_at": "Geschlossen",
   "shifts.count_protocol": "Geldzählprotokoll (optional)",
   "shifts.count_protocol_hint": "Wie viele Münzen und Scheine welcher Stückelung sich in der Kasse befinden. Leer lassen zum Überspringen.",
