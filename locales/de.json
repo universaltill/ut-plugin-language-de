@@ -1847,5 +1847,8 @@
   "recovery.safe_mode_col_receipt": "Beleg",
   "recovery.safe_mode_col_total": "Summe",
   "recovery.safe_mode_col_time": "Uhrzeit",
-  "recovery.taking_longer": "Läuft noch — nach einer Datenbankaktualisierung kann dies einige Minuten dauern."
+  "recovery.taking_longer": "Läuft noch — nach einer Datenbankaktualisierung kann dies einige Minuten dauern.",
+  "error.page.title": "Etwas ist schiefgelaufen",
+  "tables.error.load_failed": "Tische konnten nicht geladen werden. Versuchen Sie es erneut oder nutzen Sie das Menü, um weiterzuarbeiten.",
+  "permissions.error.super_admin_required": "Super-Admin erforderlich"
 }
