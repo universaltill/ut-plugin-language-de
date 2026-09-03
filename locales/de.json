@@ -1566,6 +1566,7 @@
   "shifts.open": "offen",
   "shifts.open_new": "Schicht öffnen",
   "shifts.open_since": "Schicht offen seit",
+  "shifts.open_success": "Schicht geöffnet: %s",
   "shifts.opened_at": "Geöffnet",
   "shifts.opening_carried": "vom letzten Kassenschluss übernommen",
   "shifts.opening_cash": "Anfangsbestand",
