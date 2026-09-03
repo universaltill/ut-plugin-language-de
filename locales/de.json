@@ -1544,6 +1544,7 @@
   "shifts.adjust": "Korrektur (±)",
   "shifts.adjust_type": "Art",
   "shifts.adjustment": "Bargeld-Korrektur / Entnahme",
+  "shifts.adjustment_success": "Korrektur erfasst: %s",
   "shifts.amount": "Betrag",
   "shifts.amount_hint": "negativ entnimmt Bargeld",
   "shifts.cashier": "Kassierer",
