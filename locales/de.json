@@ -217,6 +217,8 @@
   "catalog.variants.add": "Variante hinzufügen",
   "catalog.variants.none": "Noch keine Varianten — fügen Sie unten eine hinzu.",
   "catalog.variants.pick_hint": "Klicken Sie auf einen Artikel in der Liste, um seine Varianten und Barcodes anzusehen und zu bearbeiten.",
+  "catalog.viewfinder.capture": "Aufnehmen",
+  "catalog.viewfinder.not_ready": "Kamera noch nicht bereit — versuchen Sie es gleich noch einmal.",
   "catalog.whole_item": "Ganzer Artikel",
   "common.back": "Zurück",
   "common.cancel": "Abbrechen",
