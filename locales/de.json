@@ -1093,6 +1093,7 @@
   "reports.eod.exists": "Der heutige Bericht existiert bereits (siehe Liste unten)",
   "reports.eod.failed": "Bericht fehlgeschlagen",
   "reports.eod.net": "Netto",
+  "reports.eod.period_range": "%s – %s",
   "reports.eod.range_downloaded": "heruntergeladen",
   "reports.eod.range_from": "Von",
   "reports.eod.range_loading": "wird erstellt …",
@@ -1610,8 +1611,12 @@
   "sync.chip_following": "Mit der Hauptkasse verbunden",
   "sync.chip_offline": "Hauptkasse nicht erreichbar — Verkäufe werden zwischengespeichert und synchronisiert, sobald sie wieder da ist",
   "sync.chip_quarantine_title": "Synchronisierungseinträge in Quarantäne — Liste öffnen",
-  "sync.chip_quarantined": "in Quarantäne",
-  "sync.chip_queued": "in Warteschlange",
+  "sync.chip_quarantined_one": "in Quarantäne",
+  "sync.chip_quarantined_other": "in Quarantäne",
+  "sync.chip_queued_one": "in Warteschlange",
+  "sync.chip_queued_other": "in Warteschlange",
+  "sync.chip_till_one": "Kasse",
+  "sync.chip_till_other": "Kassen",
   "sync.chip_tills_title": "Registrierte Kassen — Kassen-Seite öffnen",
   "sync.error.apply_failed": "Synchronisierung fehlgeschlagen",
   "sync.error.bad_batch": "Ungültiges Synchronisierungspaket",
@@ -1873,7 +1878,5 @@
   "settings.update.android.failed": "Update konnte nicht gestartet werden — Verbindung prüfen und erneut versuchen",
   "settings.update.android.pin_needed": "Manager-PIN eingeben, um dieses Update zu installieren",
   "settings.update.android.no_bridge": "Dieses Update lässt sich nur aus der Kassen-App selbst installieren",
-  "tills.pairing.name_required": "Geben Sie dieser Kasse zuerst einen Namen — die Hauptkasse zeigt ihn in ihrer Kassenliste an.",
-  "sync.chip_tills_one": "%d Kasse",
-  "sync.chip_tills_other": "%d Kassen"
+  "tills.pairing.name_required": "Geben Sie dieser Kasse zuerst einen Namen — die Hauptkasse zeigt ihn in ihrer Kassenliste an."
 }
