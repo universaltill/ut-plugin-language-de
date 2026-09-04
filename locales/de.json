@@ -1878,5 +1878,10 @@
   "settings.update.android.failed": "Update konnte nicht gestartet werden — Verbindung prüfen und erneut versuchen",
   "settings.update.android.pin_needed": "Manager-PIN eingeben, um dieses Update zu installieren",
   "settings.update.android.no_bridge": "Dieses Update lässt sich nur aus der Kassen-App selbst installieren",
-  "tills.pairing.name_required": "Geben Sie dieser Kasse zuerst einen Namen — die Hauptkasse zeigt ihn in ihrer Kassenliste an."
+  "tills.join_tabs.code": "Kopplungscode einfügen",
+  "tills.join_tabs.discover": "In diesem Netzwerk suchen",
+  "tills.pairing.error.missing_request": "Dieser Kopplungsanfrage fehlen erforderliche Angaben — suchen Sie die Hauptkasse erneut.",
+  "tills.pairing.error.name_required": "Der Name dieser Kasse ist erforderlich, bevor Sie eine Kopplung anfragen können.",
+  "tills.pairing.error.name_required_field": "Der Name dieser Kasse ist erforderlich",
+  "tills.pairing.processing": "Wird verarbeitet…"
 }
