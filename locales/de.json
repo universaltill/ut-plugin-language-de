@@ -1612,7 +1612,6 @@
   "sync.chip_quarantine_title": "Synchronisierungseinträge in Quarantäne — Liste öffnen",
   "sync.chip_quarantined": "in Quarantäne",
   "sync.chip_queued": "in Warteschlange",
-  "sync.chip_tills": "Kassen",
   "sync.chip_tills_title": "Registrierte Kassen — Kassen-Seite öffnen",
   "sync.error.apply_failed": "Synchronisierung fehlgeschlagen",
   "sync.error.bad_batch": "Ungültiges Synchronisierungspaket",
@@ -1868,5 +1867,13 @@
   "recovery.taking_longer": "Läuft noch — nach einer Datenbankaktualisierung kann dies einige Minuten dauern.",
   "error.page.title": "Etwas ist schiefgelaufen",
   "tables.error.load_failed": "Tische konnten nicht geladen werden. Versuchen Sie es erneut oder nutzen Sie das Menü, um weiterzuarbeiten.",
-  "permissions.error.super_admin_required": "Super-Admin erforderlich"
+  "permissions.error.super_admin_required": "Super-Admin erforderlich",
+  "settings.update.android.confirm": "Zum Installieren erneut tippen",
+  "settings.update.android.downloading": "Wird heruntergeladen — Android fragt nach, sobald es bereit ist",
+  "settings.update.android.failed": "Update konnte nicht gestartet werden — Verbindung prüfen und erneut versuchen",
+  "settings.update.android.pin_needed": "Manager-PIN eingeben, um dieses Update zu installieren",
+  "settings.update.android.no_bridge": "Dieses Update lässt sich nur aus der Kassen-App selbst installieren",
+  "tills.pairing.name_required": "Geben Sie dieser Kasse zuerst einen Namen — die Hauptkasse zeigt ihn in ihrer Kassenliste an.",
+  "sync.chip_tills_one": "%d Kasse",
+  "sync.chip_tills_other": "%d Kassen"
 }
