@@ -1093,6 +1093,7 @@
   "reports.eod.exists": "Der heutige Bericht existiert bereits (siehe Liste unten)",
   "reports.eod.failed": "Bericht fehlgeschlagen",
   "reports.eod.net": "Netto",
+  "reports.eod.period_range": "%s – %s",
   "reports.eod.range_downloaded": "heruntergeladen",
   "reports.eod.range_from": "Von",
   "reports.eod.range_loading": "wird erstellt …",
