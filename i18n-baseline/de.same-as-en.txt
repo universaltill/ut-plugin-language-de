@@ -32,6 +32,8 @@ barcode.symbology.EAN8
 barcode.symbology.GTIN14
 barcode.symbology.UPCA
 barcode.symbology.UPCE
+bluetoothdevices.col.name
+bluetoothdevices.col.status
 catalog.barcode
 catalog.barcodes
 catalog.col.name
