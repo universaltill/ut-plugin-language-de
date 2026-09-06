@@ -678,6 +678,8 @@
   "journal.replica_no_cross_till": "Kassenübergreifende Verkäufe sind nur auf der Hauptkasse dieses Geschäfts verfügbar.",
   "journal.reprint": "Beleg drucken",
   "journal.reprinted": "Beleg an den Drucker gesendet",
+  "journal.tender.split": "Geteilt",
+  "journal.tender.unknown": "Unbekannt",
   "journal.till_last_synced": "Letzter Kontakt von %s: %s",
   "journal.till_unknown": "Unbekannte Kasse",
   "journal.title": "Journal",
