@@ -1768,6 +1768,8 @@
   "tender.new_customer": "Neuer Kunde",
   "tender.no_pending": "Noch keine offenen Zahlungen.",
   "tender.open_payment": "Zahlung",
+  "tender.overlay_hold_action": "Verkauf parken (Zahlung)",
+  "tender.overlay_new_sale_action": "Neuer Verkauf (Zahlung)",
   "tender.reference": "Referenz",
   "tender.reference_placeholder": "Letzte 4 Ziffern, Auth-Code",
   "tender.scan.add": "Hinzufügen",
