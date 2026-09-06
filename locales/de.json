@@ -1800,6 +1800,7 @@
   "tills.discovery.find_button": "Hauptkasse in diesem Netzwerk finden",
   "tills.discovery.help": "Durchsucht dieses Netzwerk nach einer Hauptkasse, die sich bereits ankündigt — kein Kopplungscode nötig.",
   "tills.discovery.none_found": "Keine Hauptkassen in diesem Netzwerk gefunden.",
+  "tills.discovery.result_address": "Netzwerkadresse",
   "tills.discovery.result_name": "Kassen-ID",
   "tills.discovery.searching": "Suche läuft …",
   "tills.discovery.title": "LAN-Suche",
