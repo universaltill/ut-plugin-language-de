@@ -1960,6 +1960,7 @@
   "tills.pairing.error.name_required": "Der Name dieser Kasse ist erforderlich, bevor Sie eine Kopplung anfragen können.",
   "tills.pairing.error.name_required_field": "Der Name dieser Kasse ist erforderlich",
   "tills.pairing.error.refused": "Die Hauptkasse hat die Kopplungsanfrage abgelehnt.",
+  "tills.pairing.error.request_build_failed": "Die Kopplungsanfrage konnte nicht vorbereitet werden. Bitte versuchen Sie es erneut.",
   "tills.pairing.error.unexpected_response": "Unerwartete Antwort von der Hauptkasse.",
   "tills.pairing.error.unexpected_response_status": "Unerwartete Antwort von der Hauptkasse (%s).",
   "tills.pairing.error.unreachable": "Die Hauptkasse ist nicht erreichbar: %s",
