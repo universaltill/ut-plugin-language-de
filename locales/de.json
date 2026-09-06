@@ -1149,6 +1149,7 @@
   "reports.eod.by_article": "Nach Artikel",
   "reports.eod.by_article_group": "Nach Warengruppe",
   "reports.eod.by_operator": "Nach Kassierer",
+  "reports.eod.by_order_type": "Nach Bestellart",
   "reports.eod.done": "Bericht erstellt und gedruckt",
   "reports.eod.exists": "Der heutige Bericht existiert bereits (siehe Liste unten)",
   "reports.eod.failed": "Bericht fehlgeschlagen",
