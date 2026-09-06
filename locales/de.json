@@ -454,6 +454,7 @@
   "hold.error.not_found": "Geparkter Verkauf nicht gefunden",
   "hold.modal.placeholder": "z. B. Tisch 4, Sarah",
   "hold.modal.title": "Diesen Vorgang benennen (optional)",
+  "hold.modal.confirm_action": "Verkauf parken (Bestätigung)",
   "hold.strip.title": "Geparkt:",
   "hold.toast.held": "Verkauf geparkt — Sie können den nächsten Kunden bedienen",
   "hold.toast.resumed": "Verkauf fortgesetzt",
