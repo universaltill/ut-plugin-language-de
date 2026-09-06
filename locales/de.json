@@ -502,6 +502,7 @@
   "import.status.image_save_failed": "Das Foto des Artikels konnte nicht gespeichert werden — ohne Foto importiert",
   "import.status.image_too_large": "Foto „%s“ war zu groß zum Importieren — ohne Foto importiert",
   "import.status.image_undecodable": "Das Foto des Artikels konnte nicht gelesen werden — ohne Foto importiert",
+  "import.status.image_too_many_pixels": "Das Foto des Artikels war zu groß zum Importieren — ohne Foto importiert",
   "import.status.image_unresolved": "Foto „%s“ konnte in der Sicherung nicht gefunden werden — ohne Foto importiert",
   "import.status.item_failed": "Artikel konnte nicht angelegt werden",
   "import.status.missing_name": "Name fehlt",
