@@ -143,6 +143,7 @@
   "bluetoothdevices.paired_confirm": "Gekoppelt. Das Gerät ist vertrauenswürdig und verbindet sich ab jetzt von selbst wieder.",
   "bluetoothdevices.paired_heading": "Gekoppelte Geräte",
   "bluetoothdevices.pairing": "Kopplung läuft… Halten Sie das Gerät eingeschaltet und in der Nähe.",
+  "bluetoothdevices.platform_unsupported": "Bluetooth-Kopplung ist auf dieser Kasse noch nicht verfügbar — dieser Gerätetyp unterstützt sie nicht. Das ist kein Problem mit der Hardware oder den Einstellungen dieser Kasse.",
   "bluetoothdevices.scan_button": "Nach Geräten suchen",
   "bluetoothdevices.scan_error": "Es konnte nicht nach Bluetooth-Geräten gesucht werden.",
   "bluetoothdevices.scan_help": "Versetzen Sie das Gerät in den Kopplungsmodus und scannen Sie dann. Ein Scan dauert etwa zehn Sekunden und listet nur die gefundenen Geräte auf — gekoppelt wird erst, wenn Sie auf „Koppeln“ tippen.",
