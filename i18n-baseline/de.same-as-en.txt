@@ -84,6 +84,8 @@ setup.country.ir
 setup.country.pk
 status.offline
 status.online
+sync.chip_till_offline_one
+sync.chip_till_offline_other
 tables.col.status
 taxcodes.col.name
 tender.scan.barcode
