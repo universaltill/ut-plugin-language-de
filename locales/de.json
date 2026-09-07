@@ -415,7 +415,7 @@
   "fiscaldevice.device.host": "Geräteadresse",
   "fiscaldevice.device.maker": "Hersteller",
   "fiscaldevice.device.port": "Port",
-  "fiscaldevice.driver.note": "Nur der Bridge-Treiber ist heute vollständig (er spricht mit einem Bridge-Programm oder dem Testsimulator). Ein noch nicht fertiggestellter Hersteller-Treiber verweigert jede Zahlung, statt es nur vorzutäuschen.",
+  "fiscaldevice.driver.note": "Nur der Bridge-Treiber ist heute vollständig (er spricht mit einem Bridge-Programm oder dem Testsimulator). Ein noch nicht fertiggestellter Hersteller-Treiber verweigert jede Zahlung, statt sie vorzutäuschen.",
   "fiscaldevice.error.server": "Die Fiskalgerät-Seite konnte nicht geladen werden. Versuchen Sie es erneut, oder arbeiten Sie über das Menü weiter.",
   "fiscaldevice.intro": "Die zertifizierte Registrierkasse (YN ÖKC) nimmt das Geld entgegen und druckt den gesetzlichen Beleg; die Kasse erfasst bei jedem Verkauf die Belegnummer des Geräts. Diese Seite zeigt das Gerät aus Sicht der Kasse — sie kommuniziert nie mit der Finanzbehörde.",
   "fiscaldevice.last.issued_at": "Ausgestellt am",
