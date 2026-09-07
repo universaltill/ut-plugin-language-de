@@ -40,6 +40,8 @@ catalog.col.name
 countrysettings.col.symbol
 designer.code
 designer.receipt.logo_title
+fiscaldevice.device.port
+fiscaldevice.plugin.title
 fiscalregister.col.status
 help.plugins
 import.export_title
