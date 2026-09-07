@@ -514,6 +514,7 @@
   "import.status.image_unresolved": "Foto „%s“ konnte in der Sicherung nicht gefunden werden — ohne Foto importiert",
   "import.status.item_failed": "Artikel konnte nicht angelegt werden",
   "import.status.missing_name": "Name fehlt",
+  "import.status.missing_name_and_bad_price": "Name fehlt und ungültiger Preis: %s",
   "import.status.not_sellable": "kein verkaufsfähiger Artikel (Bestellart-Schalter)",
   "import.status.ok": "OK",
   "import.status.sku_already_in_catalog": "Artikelnummer bereits im Katalog",
