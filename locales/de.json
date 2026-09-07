@@ -1109,6 +1109,7 @@
   "refund.returns_ref": "Ausgestellte Erstattungen",
   "refund.submit": "Erstatten",
   "refund.title": "Retoure",
+  "refund.total": "Erstattungsbetrag",
   "registers.activate": "Aktivieren",
   "registers.active": "aktiv",
   "registers.col.location": "Standort",
