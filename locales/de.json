@@ -1747,6 +1747,7 @@
   "tables.edit.start": "Sitzplan bearbeiten",
   "tables.error.create": "Tisch konnte nicht angelegt werden",
   "tables.error.held_order_attached": "Markierung gelöscht, aber diesem Tisch ist noch eine offene Bestellung zugeordnet — nehmen Sie sie wieder auf oder schließen Sie sie ab, um den Tisch vollständig freizugeben.",
+  "tables.error.held_order_only": "Dieser Tisch hat eine offene Bestellung — nehmen Sie sie wieder auf oder schließen Sie sie ab, um den Tisch freizugeben.",
   "tables.error.not_found": "Tisch nicht gefunden",
   "tables.error.release": "Tisch konnte nicht freigegeben werden",
   "tables.error.replica_use_primary": "Diese Kasse folgt einer Hauptkasse — verwalten Sie Tische auf der Hauptkasse.",
