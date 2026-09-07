@@ -467,6 +467,7 @@
   "import.commit_success": "%d Artikel importiert ✓",
   "import.created": "Importiert",
   "import.error.already_in_progress": "Dieser Import läuft bereits — warten Sie, bis er abgeschlossen ist, bevor Sie erneut auf „Importieren“ klicken.",
+  "import.error.replica_use_primary": "Diese Kasse folgt einer Hauptkasse — importieren Sie Kataloge auf der Hauptkasse.",
   "import.currency_confirm.button": "Bestätigen & importieren",
   "import.barcode_opt_in.label": "Artikelnummer jedes Artikels als dessen Barcode verwenden (diese Datei enthält keine Barcodes)",
   "import.currency_confirm.help": "Die Währung dieser Kasse wurde noch nie ausdrücklich festgelegt — sie verwendet derzeit die Standardeinstellung. Wählen Sie die Währung, in der diese Preise tatsächlich angegeben sind, und bestätigen Sie unten.",
