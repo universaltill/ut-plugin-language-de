@@ -303,6 +303,7 @@
   "designer.buttons": "Tasten",
   "designer.code": "Code",
   "designer.empty": "Noch keine Produkte.",
+  "designer.error.replica_use_primary": "Diese Kasse folgt einer Hauptkasse — verwalten Sie die Schnellverkaufstasten auf der Hauptkasse.",
   "designer.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "designer.label": "Beschriftung",
   "designer.move_down": "Nach hinten verschieben",
