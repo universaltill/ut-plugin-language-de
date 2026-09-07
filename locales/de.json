@@ -194,6 +194,7 @@
   "catalog.error.barcode_conflict_unknown": "Barcode wird bereits anderweitig verwendet",
   "catalog.error.barcode_no_symbology_match": "Dieser Barcode entspricht keinem der für dieses Geschäft aktuell aktivierten Barcode-Typen.",
   "catalog.error.image_invalid": "Diese Datei ist kein gültiges PNG- oder JPEG-Bild.",
+  "catalog.error.replica_use_primary": "Diese Kasse folgt einer Hauptkasse — verwalten Sie Anpassungsoptionen auf der Hauptkasse.",
   "catalog.error.image_too_large": "Dieses Foto ist zu groß — probieren Sie ein kleineres Bild oder schneiden Sie es vor dem Hochladen zu.",
   "catalog.error.invalid_ean13": "Ungültiger EAN-13-Barcode — prüfen Sie alle 13 Ziffern.",
   "catalog.error.invalid_request": "Ungültige Anfrage — bitte Angaben prüfen und erneut versuchen.",
