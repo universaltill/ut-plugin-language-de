@@ -1806,6 +1806,7 @@
   "tables.error.held_order_only": "Dieser Tisch hat eine offene Bestellung — nehmen Sie sie wieder auf oder schließen Sie sie ab, um den Tisch freizugeben.",
   "tables.error.not_found": "Tisch nicht gefunden",
   "tables.error.release": "Tisch konnte nicht freigegeben werden",
+  "tables.error.released_other_till_recent": "Tisch freigegeben, aber die Markierung gehörte zu einer anderen, kürzlich aktiven Kasse — bestätigen Sie dort, dass keine Bestellung mehr offen ist, bevor Sie den Tisch neu belegen.",
   "tables.error.replica_use_primary": "Diese Kasse folgt einer Hauptkasse — verwalten Sie Tische auf der Hauptkasse.",
   "tables.error.required": "Tischname ist erforderlich",
   "tables.error.save_position": "Position des Tisches konnte nicht gespeichert werden — versuchen Sie es erneut",
