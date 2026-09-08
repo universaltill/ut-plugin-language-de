@@ -981,6 +981,7 @@
   "plugins.permission.granted": "Berechtigung erteilt",
   "plugins.permission.revoked": "Berechtigung entzogen",
   "plugins.retry": "Installation wiederholen",
+  "plugins.settings.ai.hosted_provider_notice": "Wenn Sie den gehosteten Anbieter wählen (provider = claude), werden die Daten, mit denen die KI-Funktionen arbeiten, aus Ihrem Geschäft an die Server dieses Anbieters gesendet (Anthropic, USA): bei „Per Kamera erkennen“ das Produktfoto sowie die Artikelnamen, SKUs und Referenzfotos aus Ihrem Katalog; und sobald ein gehosteter Anbieter „Fragen Sie Ihre Kasse“ unterstützt, Ihre Fragen zusammen mit den zur Beantwortung verwendeten Verkaufs- und Bestandszahlen. Selbst gehostet (Ollama, die Standardeinstellung) behält alles auf Ihrer eigenen Hardware. Der von Ihnen eingegebene Schlüssel ist Ihr eigenes Konto bei diesem Anbieter — Sie zahlen direkt an ihn, und Universal Till führt dort kein eigenes Konto.",
   "plugins.settings.none": "Dieses Plugin hat keine Einstellungen.",
   "plugins.settings.per_till": "nur diese Kasse",
   "plugins.settings.save": "Einstellungen speichern",
