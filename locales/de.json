@@ -1226,6 +1226,7 @@
   "reports.eod.range_title": "Z-Bericht (Zeitraum)",
   "reports.eod.range_to": "Bis",
   "reports.eod.run": "Tagesabschluss ausführen",
+  "reports.eod.tips": "Trinkgelder",
   "reports.eod.title": "Tagesabschluss",
   "reports.eod.unattributed": "Nicht zugeordnet",
   "reports.eod.variance_flag": "Kassendifferenz",
