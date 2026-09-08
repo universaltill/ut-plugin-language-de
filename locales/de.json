@@ -557,6 +557,7 @@
   "import.status.not_sellable": "kein verkaufsfähiger Artikel (Bestellart-Schalter)",
   "import.status.ok": "OK",
   "import.status.sku_already_in_catalog": "Artikelnummer bereits im Katalog",
+  "import.status.name_already_in_catalog": "Name bereits im Katalog",
   "import.status.sku_reused_in_file": "Artikelnummer „%s\" in dieser Datei mehrfach verwendet — unter neuer Nummer importiert",
   "import.status.barcode_duplicate_item_number": "Artikelnummer „%s\" in dieser Datei mehrfach verwendet — für diesen Artikel wurde kein Barcode hinzugefügt",
   "import.status.source_deleted": "in der Quelldatei gelöscht",
