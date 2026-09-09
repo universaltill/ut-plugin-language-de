@@ -38,6 +38,8 @@ catalog.barcode
 catalog.barcodes
 catalog.builtin_icon.sandwich
 catalog.col.name
+categories.col.name
+categories.col.status
 countrysettings.col.symbol
 designer.code
 designer.receipt.logo_title
