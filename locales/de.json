@@ -368,6 +368,8 @@
   "fiscaldevice.device.maker": "Hersteller",
   "fiscaldevice.device.port": "Schnittstelle",
   "fiscaldevice.driver.note": "Nur der Brückentreiber ist heute vollständig (er kommuniziert mit einem Brückenprogramm oder dem Testsimulator). Ein unfertiger Herstellertreiber lehnt jede Zahlung ab, statt sie vorzutäuschen.",
+  "fiscaldevice.error.not_found": "Nicht gefunden",
+  "fiscaldevice.error.owner_required": "Inhaber (Administrator) erforderlich",
   "fiscaldevice.error.server": "Die Seite für das Fiskalgerät konnte nicht geladen werden. Versuchen Sie es erneut, oder arbeiten Sie über das Menü weiter.",
   "fiscaldevice.intro": "Die zertifizierte Registrierkasse (YN ÖKC) nimmt das Geld entgegen und druckt den gesetzlichen Beleg; die Kasse speichert die Belegnummer des Geräts bei jedem Verkauf. Diese Seite zeigt das Gerät aus Sicht der Kasse – sie kommuniziert nie mit der Finanzbehörde.",
   "fiscaldevice.last.issued_at": "Ausgestellt am",
