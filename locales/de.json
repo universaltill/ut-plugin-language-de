@@ -254,6 +254,7 @@
   "catalog.save_variant": "Variante speichern",
   "catalog.search_placeholder": "Artikel suchen …",
   "catalog.sold_by_weight": "Verkauf nach Gewicht",
+  "catalog.stock_untracked": "Kein Lagerbestand erfasst",
   "catalog.take_photo": "Foto aufnehmen",
   "catalog.tax_code": "Steuerschlüssel",
   "catalog.tax_code.inactive": "inaktiv",
