@@ -32,4 +32,13 @@ guarded by two mechanisms, not just JSON validity:
   any other change — neither file may grow silently, only through a
   reviewed edit.
 
+**Any PR that touches a shipped file — `manifest.json`, `locales/*`,
+`README.md`, `LICENSE` — must bump `manifest.json`'s `version` in the same
+PR.** `scripts/package.sh` bundles exactly those files into the release
+artifact, and `auto-tag-release.yml` only cuts a release when the version
+differs from the last tag; without a bump the change lands on `main` and
+then silently never ships (ut-docs#1940). Enforced by
+`scripts/check-version-bump.sh` (CI job `version-bump`, PRs only). A PR
+touching only `docs/`/`.github/` is exempt.
+
 Never publish by hand — tag v<version>.

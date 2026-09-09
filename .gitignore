@@ -1,1 +1,6 @@
 dist/
+# Real registered git worktrees created by Agent(isolation: "worktree") /
+# EnterWorktree with a `name` — not repo content, and nothing removes them
+# automatically when a run ends (see universal-till/CLAUDE.md's "Agent
+# worktree hygiene").
+.claude/worktrees/
