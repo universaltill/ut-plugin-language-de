@@ -394,7 +394,7 @@
   "elevation.summary.backup_now": "Jetzt ein neues lokales Backup erstellen.",
   "elevation.summary.barcode_symbology_off": "Barcode-Typ deaktivieren: %s.",
   "elevation.summary.data_catalog_cleanup": "%d inaktive, nie verkaufte Produkte endgültig entfernen.",
-  "elevation.summary.data_reset_transactions": "Alle Verkäufe, Schichten und Rechnungen archivieren und die Belegnummerierung neu starten. Wiederherstellbar unter Einstellungen → Daten, solange die Kasse noch nicht erneut verkauft hat.",
+  "elevation.summary.data_reset_transactions": "Alle Verkäufe, Schichten und Rechnungen archivieren und die Belegnummerierung neu starten. Katalog, Benutzer, Einstellungen und archivierte Berichte bleiben erhalten. Wiederherstellbar unter Einstellungen → Daten, solange die Kasse noch nicht erneut verkauft hat.",
   "elevation.summary.data_archive_purge": "Dieses archivierte Paket endgültig löschen. Dies kann nicht rückgängig gemacht werden und ist danach nicht mehr wiederherstellbar.",
   "elevation.summary.data_archive_restore": "Die Verkäufe, Schichten und Rechnungen dieses archivierten Pakets zurück in die laufende Kasse verschieben.",
   "elevation.summary.barcode_symbology_on": "Barcode-Typ aktivieren: %s.",
