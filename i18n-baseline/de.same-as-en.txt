@@ -36,6 +36,7 @@ bluetoothdevices.col.name
 bluetoothdevices.col.status
 catalog.barcode
 catalog.barcodes
+catalog.builtin_icon.sandwich
 catalog.col.name
 countrysettings.col.symbol
 designer.code
