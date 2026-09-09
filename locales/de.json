@@ -184,6 +184,7 @@
   "catalog.brand": "Marke",
   "catalog.brand.none": "— keiner —",
   "catalog.builtin_icon.coffee": "Kaffee",
+  "catalog.builtin_icon.custom_active": "Das aktuelle Bild ist ein hochgeladenes Foto — die Auswahl unten ersetzt es.",
   "catalog.builtin_icon.drink": "Getränk",
   "catalog.builtin_icon.generic": "Allgemein",
   "catalog.builtin_icon.hint": "Oder ein integriertes Bild wählen:",
