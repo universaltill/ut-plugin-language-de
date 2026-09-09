@@ -1674,6 +1674,7 @@
   "settings.printer.charset_cp858": "Westeuropa (CP858 — €/£)",
   "settings.printer.charset_win1250": "Mitteleuropa (Windows-1250 — €/č/ž)",
   "settings.printer.charset_win1253": "Griechisch (Windows-1253 — €/α/β)",
+  "settings.printer.charset_win1254": "Türkisch (Windows-1254 — €/ş/ı)",
   "settings.printer.charset_win1257": "Baltikum (Windows-1257 — €/ā/š)",
   "settings.printer.device": "Gerätepfad",
   "settings.printer.discover.error": "Die Suche nach Druckern in diesem Netzwerk ist fehlgeschlagen.",
