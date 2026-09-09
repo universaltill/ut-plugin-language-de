@@ -18,7 +18,13 @@ FAILS=0
 
 work_dir=""
 cleanup() {
+    # `|| true`: under `set -e`, a trap function's own exit status can
+    # become the script's final exit status -- without this, a clean run
+    # that happens to fire EXIT while work_dir is still "" (nothing to
+    # clean up yet) would report failure via `[ -n "" ]`'s exit 1, even
+    # though every case passed.
     [ -n "$work_dir" ] && rm -rf "$work_dir"
+    true
 }
 trap cleanup EXIT
 
@@ -179,27 +185,103 @@ assert_fail_containing "manifest changed without version bump" "manifest.json" "
 
 # --- case 8: SHIPPED_PATTERNS mirrors package.sh's own bundle entries -----
 # package.sh's `entries=(...)` line is the actual source of truth for what
-# ships; this asserts every base name it lists is also covered by
-# SHIPPED_PATTERNS in the real script, so the two can't silently drift.
+# ships; this parses the ACTUAL array contents out of that line (not a
+# hardcoded restatement of what we expect it to say) and asserts every name
+# it lists is also covered by SHIPPED_PATTERNS in the real script, so a real
+# change to package.sh's bundle (e.g. adding a CHANGELOG.md entry) is
+# caught here instead of silently drifting undetected.
 entries_line=$(grep -m1 '^entries=' "$PACKAGE_SH") || entries_line=""
 if [ -z "$entries_line" ]; then
     echo "FAIL [entries mirror]: could not find package.sh's entries=(...) line"
     FAILS=$((FAILS + 1))
 else
+    array_body="${entries_line#entries=(}"
+    array_body="${array_body%)}"
+    read -r -a bundle_entries <<<"$array_body"
     patterns=$(grep -oE "'[^']*'" "$REAL_SCRIPT" | tr -d "'")
     mismatch=0
-    for entry in manifest.json locales README.md; do
+    for entry in "${bundle_entries[@]}"; do
         if ! grep -qxF "$entry" <<<"$patterns" && ! grep -qxF "${entry}/*" <<<"$patterns"; then
             echo "FAIL [entries mirror]: package.sh bundles '$entry' but SHIPPED_PATTERNS in check-version-bump.sh has no matching entry"
             mismatch=1
         fi
     done
+    # LICENSE ships conditionally ([ -f LICENSE ] && entries+=(LICENSE)),
+    # so it never appears on package.sh's own entries=(...) line -- checked
+    # separately here rather than assumed.
+    if ! grep -qxF "LICENSE" <<<"$patterns"; then
+        echo "FAIL [entries mirror]: package.sh conditionally bundles LICENSE (when present) but SHIPPED_PATTERNS has no LICENSE entry"
+        mismatch=1
+    fi
     if [ "$mismatch" -eq 0 ]; then
-        echo "ok   [entries mirror] (package.sh: $entries_line)"
+        echo "ok   [entries mirror] (package.sh: ${bundle_entries[*]} + conditional LICENSE)"
     else
         FAILS=$((FAILS + 1))
     fi
 fi
+
+# --- case 9: base branch ALSO moved forward independently, with its own --
+# shipped change + bump (multi-lane / ut-docs#1940-review B1 regression).
+# A two-dot diff against a moving base.sha would let that OTHER PR's
+# landed bump silently cover for THIS PR's own missing one. This PR's own
+# change (relative to the true merge-base) does NOT bump -- must still
+# FAIL even though base_sha's tip now carries a higher version than this
+# PR's own unbumped head.
+fresh_repo
+mergebase_sha="$base_sha"
+# "main" advances independently with its own shipped change + bump.
+echo '{"a.one": "Eins", "a.three": "Drei"}' >"${case_dir}/locales/de.json"
+python3 -c "
+import json
+m = json.load(open('${case_dir}/manifest.json'))
+m['version'] = '1.0.1'
+json.dump(m, open('${case_dir}/manifest.json', 'w'))
+"
+(cd "$case_dir" && git add -A && git commit -q -m "main advances, bumped")
+main_tip_sha=$(cd "$case_dir" && git rev-parse HEAD)
+# This PR's own head branches from the ORIGINAL base, not main's advanced
+# tip, and changes a shipped file without bumping.
+(cd "$case_dir" && git checkout -q "$mergebase_sha")
+echo '{"a.one": "Eins", "a.two": "Zwei"}' >"${case_dir}/locales/de.json"
+(cd "$case_dir" && git add -A && git commit -q -m "PR change, no bump")
+pr_head_sha=$(cd "$case_dir" && git rev-parse HEAD)
+base_sha="$main_tip_sha"
+head_sha="$pr_head_sha"
+assert_fail_containing "base moved forward independently, PR itself didn't bump" \
+    "locales/de.json" "FAIL"
+
+# --- case 10: pre-release version suffix must not crash past the FAIL ----
+# path (ut-docs#1940-review B2 regression). validate.sh's version regex
+# (^\d+\.\d+\.\d+, unanchored at the end) and auto-tag-release.yml's own
+# pattern both already accept "-prerelease" suffixes, so this is a real
+# reachable state, not a hypothetical.
+fresh_repo
+python3 -c "
+import json
+m = json.load(open('${case_dir}/manifest.json'))
+m['version'] = '1.0.0-beta.1'
+json.dump(m, open('${case_dir}/manifest.json', 'w'))
+"
+(cd "$case_dir" && git add -A && git commit -q -m "adopt pre-release version scheme")
+base_sha=$(cd "$case_dir" && git rev-parse HEAD)
+echo '{"a.one": "Eins", "a.two": "Zwei"}' >"${case_dir}/locales/de.json"
+commit_change
+assert_fail_containing "pre-release version suffix, no bump" "FAIL"
+
+# --- case 11: version differs but is ALREADY TAGGED elsewhere ------------
+# (ut-docs#1940-review N1). auto-tag-release.yml no-ops on an existing tag,
+# so reusing one is the same silent-never-ships failure with a green guard.
+fresh_repo
+(cd "$case_dir" && git tag "v1.0.1")
+echo '{"a.one": "Eins", "a.two": "Zwei"}' >"${case_dir}/locales/de.json"
+python3 -c "
+import json
+m = json.load(open('${case_dir}/manifest.json'))
+m['version'] = '1.0.1'
+json.dump(m, open('${case_dir}/manifest.json', 'w'))
+"
+commit_change
+assert_fail_containing "bumped to an already-tagged version" "FAIL" "v1.0.1" "ALREADY TAGGED"
 
 if [ "$FAILS" -ne 0 ]; then
     echo ""
