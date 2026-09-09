@@ -438,6 +438,158 @@ cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
 TXT
 assert_pass "matching tokens (mixed styles) pass" run_check
 
+# --- case 18: "%" immediately before a flag-shaped letter in plain prose
+# must NOT be mistaken for a printf verb (ut-docs#1865) ---------------------
+# Real false positive found against core's own en.json while writing this
+# check: "a 10%-off code" parsed under the old permissive flag class as
+# flag "-" + verb "o" (octal). Both sides carry the identical "%-off"
+# text and zero real verbs -- must pass.
+fresh_case "percent-prose-not-a-verb"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "promo.hint": "includes a 10%-off code"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins",
+  "promo.hint": "enthaelt einen 10%-off Code"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_pass "percent sign in prose is not a verb" run_check
+
+# --- case 19: Go explicit positional verbs may legitimately reorder -------
+# German puts the count before the noun differently than English might;
+# %[1]d/%[2]s on both sides, just written in a different order, must pass
+# because the explicit index -- not writing order -- says which argument
+# goes where.
+fresh_case "positional-reorder-allowed"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "pos.msg": "%[1]d of %[2]s"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins",
+  "pos.msg": "%[2]s: %[1]d"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_pass "positional verb reorder is allowed" run_check
+
+# --- case 19b: a positional verb whose SHAPE changed at the same index
+# must still fail -- reordering is the only thing the positional
+# exception permits, not a free pass on verb identity. Without real
+# positional comparison, "%[1]d of %[2]s" extracts zero tokens on both
+# sides and would pass vacuously -- this case only passes with real
+# positional-verb comparison (ut-docs#1865 review finding 2).
+fresh_case "positional-shape-changed"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "pos.msg": "%[1]d of %[2]s"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins",
+  "pos.msg": "%[1]s of %[2]s"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "positional verb shape changed at the same index" "placeholder token" "pos.msg"
+
+# --- case 20: a PLAIN (non-positional) reorder must still fail ------------
+# Same shape as case 16, restated to make explicit that writing-order
+# swaps stay rejected even though case 19's EXPLICIT positional reorder is
+# allowed -- the two must not be conflated.
+fresh_case "plain-reorder-still-fails"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "plain.msg": "%d of %s"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins",
+  "plain.msg": "%s von %d"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "plain reorder without positional verbs still fails" "placeholder token" "plain.msg"
+
+# --- case 21: mixing positional and implicit verbs in the same string is
+# rejected rather than guessed at ------------------------------------------
+fresh_case "mixed-positional-and-implicit-rejected"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "mixed.msg": "%[1]d of %s"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins",
+  "mixed.msg": "%[1]d von %s"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "mixed positional/implicit verbs in one string are rejected" "placeholder token" "mixed.msg"
+
+# --- case 22: a positional printf verb alongside a template token is a
+# DIFFERENT dialect pairing, not "mixed positional/implicit printf" --
+# must not be rejected just because the template token has no positional
+# index of its own. Independent review found the original implementation
+# made this combination unsatisfiable by ANY translation, including a
+# byte-for-byte copy of core's value (ut-docs#1865 review finding 1).
+fresh_case "positional-with-template-token"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "postmpl.msg": "%[1]d of {{name}}"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins",
+  "postmpl.msg": "{{name}}: %[1]d"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_pass "positional verb alongside a template token" run_check
+
+# --- case 23: "%" directly followed by digits, a verb letter, THEN more
+# letters with no boundary (the un-hyphenated sibling of case 18) must
+# not be mistaken for a verb with prose glued on (ut-docs#1865 review
+# finding 4).
+fresh_case "percent-prose-no-hyphen"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "promo.hint2": "including a 10%off code"
+}
+JSON
+cat > "${case_dir}/locales/de.json" <<'JSON'
+{
+  "a.one": "Eins",
+  "promo.hint2": "enthaelt einen 10%off Code"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/de.untranslated.txt" <<'TXT'
+TXT
+assert_pass "percent sign directly followed by prose letters is not a verb" run_check
+
 # run_update_baseline [EXTRA_ARG]
 # Like run_check but invokes --update-baseline (optionally + --allow-growth),
 # from inside case_dir, matching how the real script expects to be run.
