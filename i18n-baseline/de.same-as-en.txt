@@ -38,6 +38,7 @@ catalog.barcode
 catalog.barcodes
 catalog.builtin_icon.sandwich
 catalog.col.name
+catalog.color.indigo
 countrysettings.col.symbol
 designer.code
 designer.receipt.logo_title
