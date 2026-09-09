@@ -55,6 +55,7 @@ kitchenstations.col.name
 kitchenstations.col.status
 locations.col.name
 locations.col.status
+modifiers.optional
 nav.github
 nav.plugins
 orders.col.status
