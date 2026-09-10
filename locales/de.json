@@ -911,6 +911,7 @@
   "locations.rename": "Umbenennen",
   "locations.title": "Standorte",
   "menu.back_to_sale": "Zurück zum Verkauf",
+  "menu.group.administration": "Verwaltung",
   "menulayout.title": "Ausgeblendete Menükacheln",
   "menulayout.intro": "Kacheln, die ein Layout-Plugin vom Menübildschirm entfernt hat. Jede davon ist weiterhin unter ihrer eigenen Adresse erreichbar — stellen Sie eine Kachel hier wieder her, um sie erneut im Menü anzuzeigen, ohne das Plugin zu deinstallieren.",
   "menulayout.settings_intro": "Sehen Sie, welche Menükacheln ein Layout-Plugin ausgeblendet hat, und holen Sie beliebige davon zurück.",
