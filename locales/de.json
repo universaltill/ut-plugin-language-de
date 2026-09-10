@@ -1363,6 +1363,7 @@
   "reports.days": "Tage",
   "reports.dead_stock": "Toter Bestand",
   "reports.dead_stock_hint": "Auf Lager, aber kein einziger Verkauf in diesem Zeitraum — Geld, das im Regal liegt.",
+  "reports.discounts": "Rabatte",
   "reports.eod.article_print.help": "Betrifft nur den Abschnitt „Nach Artikel“ des gedruckten Z-Berichts — der Bericht auf dem Bildschirm listet immer alle Artikel.",
   "reports.eod.article_print.label": "Gedruckte Artikelliste",
   "reports.eod.article_print_cap.label": "Top-N",
