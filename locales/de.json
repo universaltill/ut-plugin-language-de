@@ -351,6 +351,7 @@
   "common.edit": "Bearbeiten",
   "common.error.invalid_upload": "Ungültiger Upload",
   "common.error.manager_or_admin_required": "Manager oder Administrator erforderlich",
+  "common.error.network": "Verbindungsproblem. Überprüfen Sie Ihr Netzwerk und versuchen Sie es erneut.",
   "common.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "common.loading": "Wird geladen …",
   "common.no_results": "Keine Treffer — versuchen Sie eine andere Suche.",
