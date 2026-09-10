@@ -50,6 +50,7 @@ fiscalregister.col.status
 help.plugins
 import.export_title
 import.status
+inventory.dialog_context
 issuereport.my_reports.status
 issuereport.screenshot_label
 journal.col.sync
