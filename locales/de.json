@@ -1005,6 +1005,7 @@
   "orders.err.not_found": "Bestellung nicht gefunden",
   "orders.err.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "orders.print.kitchen_failed": "Küchenbon-Druck fehlgeschlagen",
+  "orders.print.kitchen_resend": "Küchenbon erneut senden",
   "orders.print.receipt_failed": "Belegdruck fehlgeschlagen",
   "orders.status.cancelled": "Storniert",
   "orders.status.collected": "Abgeholt",
