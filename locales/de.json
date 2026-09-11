@@ -876,6 +876,7 @@
   "kitchen.print.no_receipt": "Keine Bestellung ausgewählt",
   "kitchen.print.off": "Kein Küchendrucker eingerichtet",
   "kitchen.print.partial": "Einige Küchenbons konnten nicht gedruckt werden",
+  "kitchen.print.station_nothing_to_send": "Nichts für diese Station zu drucken",
   "kitchen.ticket.order_label": "BESTELLUNG",
   "kitchen.ticket.station_default": "KÜCHE",
   "kitchendisplay.empty": "Keine Bestellungen für diese Station",
