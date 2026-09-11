@@ -22,8 +22,4 @@
 # (reuses the same resolved-core-path logic as the check itself: set
 # UT_CORE_EN_JSON=<path> to regenerate against a local core checkout
 # offline, or let it fetch from CORE_EN_URL / UT_CORE_EN_URL.)
-admin.group.fiscal
-admin.group.localization
-admin.group.locations
-admin.group.other
 settings.shop_type.service_layout_note
