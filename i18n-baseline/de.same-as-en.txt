@@ -97,3 +97,5 @@ tender.scan.barcode
 tills.col_name
 users.col.pin
 users.col.status
+vouchers_import.col.code
+vouchers_import.col.reason
