@@ -251,6 +251,7 @@
   "catalog.labels.no_code": "Dieser Artikel hat weder Barcode noch Artikelnummer zum Drucken",
   "catalog.labels.no_item": "Bitte zuerst einen Artikel wählen (Zeile anklicken)",
   "catalog.labels.print": "Etiketten drucken",
+  "catalog.labels.system_unsupported": "Regal-/Preisetiketten benötigen einen Netzwerk- oder USB-Belegdrucker — eine Verbindung als Normaler Drucker (System) kann den Barcode nicht drucken. Wechseln Sie die Verbindung unter Einstellungen → Drucker.",
   "catalog.labels.variant": "Variante",
   "catalog.labels.whole_item": "Ganzer Artikel",
   "catalog.lead_time_days": "Lieferzeit (Tage)",
