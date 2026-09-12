@@ -1066,6 +1066,8 @@
   "plugins.buttons.title": "Plugin-Aktionen",
   "plugins.current_version": "Aktuelle Version:",
   "plugins.error.grant_failed": "Die Berechtigung konnte nicht erteilt werden.",
+  "plugins.error.import_failed": "Import fehlgeschlagen. Prüfen Sie, ob die Datei ein gültiges Plugin-Paket ist, und versuchen Sie es erneut.",
+  "plugins.error.import_unsigned": "Dieses Plugin-Paket ist nicht signiert und kann nicht installiert werden. Installieren Sie es stattdessen aus dem Plugin-Store, oder verwenden Sie „Exportieren“ auf einer anderen Kasse, um ein Paket zu erstellen, das diese Kasse importieren kann.",
   "plugins.error.malformed_form": "Die Anfrage konnte nicht gelesen werden. Bitte versuchen Sie es erneut.",
   "plugins.error.revoke_failed": "Die Berechtigung konnte nicht entzogen werden.",
   "plugins.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
