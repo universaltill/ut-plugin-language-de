@@ -1009,6 +1009,7 @@
   "open_orders.empty": "Derzeit keine offenen Vorgänge. Wenn Sie im Verkaufsbildschirm einen Verkauf parken, erscheint er hier, bis er fortgesetzt und bezahlt ist.",
   "open_orders.error.load_failed": "Offene Vorgänge konnten nicht geladen werden. Versuchen Sie es erneut oder arbeiten Sie über das Menü weiter.",
   "open_orders.hint": "Um einen Vorgang wieder aufzunehmen, tippen Sie ihn im Verkaufsbildschirm in der Leiste „Geparkt“ an.",
+  "open_orders.resume_row": "Vorgang fortsetzen",
   "open_orders.title": "Offene Vorgänge",
   "orders.btn.cancel": "Bestellung stornieren",
   "orders.col.actions": "Aktualisieren",
