@@ -1281,6 +1281,7 @@
   "pos.toast.voucher_scan_not_found": "Kein Gutschein gefunden für %s",
   "pos.toast.voucher_scan_unusable": "Gutschein %s kann nicht eingelöst werden — kein Guthaben mehr vorhanden oder nicht mehr gültig",
   "products.add": "Produkt hinzufügen",
+  "products.all": "Alle",
   "products.edit": "Schnellwahltasten bearbeiten",
   "products.empty": "Noch keine Produkte. Fügen Sie welche unter Schnellwahltasten hinzu.",
   "products.no_matches": "Keine passenden Produkte.",
