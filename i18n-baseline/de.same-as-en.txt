@@ -63,6 +63,8 @@ locations.col.status
 nav.github
 nav.plugins
 orders.col.status
+page.title.plugin_store
+page.title.plugins
 plugins.import.name
 plugins.import.version
 plugins.manage.title
