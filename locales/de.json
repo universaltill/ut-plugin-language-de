@@ -160,6 +160,7 @@
   "bluetoothdevices.scan_help": "Versetzen Sie das Gerät in den Kopplungsmodus und scannen Sie dann. Ein Scan dauert etwa zehn Sekunden und listet nur die gefundenen Geräte auf — gekoppelt wird erst, wenn Sie auf „Koppeln“ tippen.",
   "bluetoothdevices.scanning": "Suche läuft… das dauert etwa zehn Sekunden.",
   "bluetoothdevices.title": "Bluetooth-Geräte",
+  "buttons.edit_mode.title": "Schnellwahltasten bearbeiten — Kachel ziehen, um die Reihenfolge zu ändern",
   "catalog.active": "Aktiv",
   "catalog.add_item_btn": "Artikel hinzufügen",
   "catalog.attach_barcode": "Barcode zuordnen",
