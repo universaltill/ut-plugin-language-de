@@ -637,6 +637,7 @@
   "hold.error.empty": "Nichts zu parken — der Warenkorb ist leer",
   "hold.error.failed": "Verkauf konnte nicht geparkt werden",
   "hold.error.not_found": "Geparkter Verkauf nicht gefunden",
+  "hold.label.auto_parked": "Automatisch geparkt %s",
   "hold.modal.confirm_action": "Verkauf parken (Bestätigung)",
   "hold.modal.placeholder": "z. B. Tisch 4, Sarah",
   "hold.modal.title": "Diesen Vorgang benennen (optional)",
