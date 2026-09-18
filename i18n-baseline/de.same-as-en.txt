@@ -69,6 +69,7 @@ plugins.import.name
 plugins.import.version
 plugins.manage.title
 plugins.manage.update_available
+plugins.settings.permissions.header.status
 plugins.tier.community
 plugins.trust.official
 plugins.type.export
