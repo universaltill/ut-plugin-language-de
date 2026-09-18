@@ -329,7 +329,7 @@
   "catalog.tax_code.none": "— keiner —",
   "catalog.upload_image": "Bild hochladen",
   "catalog.variant_codeless": "Wird nicht verkauft — Code erforderlich",
-  "catalog.variant_codeless_hint": "Diese Variante hat weder Barcode noch Artikelnummer und kann daher an der Kasse nicht gescannt oder ausgewählt werden. Fügen Sie einen Barcode oder eine Artikelnummer hinzu, um dies zu beheben.",
+  "catalog.variant_codeless_hint": "Diese Variante hat weder Barcode noch Artikelnummer und kann daher an der Kasse nicht gescannt oder ausgewählt werden. (Dieser Hinweis wird nur für aktive Varianten angezeigt.) Fügen Sie einen Barcode oder eine Artikelnummer hinzu, um dies zu beheben.",
   "catalog.variant_image": "Variantenbild",
   "catalog.variants": "Varianten",
   "catalog.variants.add": "Variante hinzufügen",
