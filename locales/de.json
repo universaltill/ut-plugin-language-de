@@ -1051,6 +1051,7 @@
   "modifiers.unassigned_count": "%d nicht zugewiesene Gruppe(n)",
   "modifiers.delete_unassigned": "Alle nicht zugewiesenen Gruppen löschen",
   "modifiers.delete_unassigned_confirm": "Alle %d nicht zugewiesenen Extra-Gruppen überall löschen? Vergangene Verkäufe behalten die erfassten Extras.",
+  "modifiers.delete_unassigned_stale": "Die Liste der nicht zugewiesenen Extra-Gruppen hat sich seit dem Laden dieser Seite geändert — es wurde nichts gelöscht. Laden Sie die Seite neu und versuchen Sie es erneut.",
   "modifiers.cancel": "Abbrechen",
   "modifiers.empty": "Noch keine Extras — legen Sie oben Ihre erste Gruppe an.",
   "modifiers.empty_cta": "Katalog öffnen",
