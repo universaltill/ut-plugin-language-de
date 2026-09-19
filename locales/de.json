@@ -273,6 +273,7 @@
   "catalog.modifiers.attach_placeholder": "Gruppe auswählen…",
   "catalog.modifiers.detach": "Von diesem Artikel entfernen",
   "catalog.modifiers.detach_confirm": "Diese Gruppe von diesem Artikel entfernen? Sie bleibt bei allen anderen Artikeln, die sie verwenden, weiterhin verknüpft.",
+  "catalog.modifiers.go_to_modifiers": "Zu Extras wechseln, um eine Gruppe zu erstellen",
   "catalog.modifiers.group_example": "z. B. Extras",
   "catalog.modifiers.group_name": "Gruppenname",
   "catalog.modifiers.inherited_help": "Diese Gruppen stammen aus der Kategorie des Artikels und werden automatisch angeboten. Überspringen Sie eine, um sie nur für diesen Artikel auszulassen — die Kategorie behält sie weiterhin.",
