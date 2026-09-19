@@ -1739,6 +1739,7 @@
   "selforder.table_busy.hint": "Jemand anderes an diesem Tisch bestellt gerade über sein eigenes Handy. Bitte warten Sie ein paar Minuten und versuchen Sie es erneut, oder wenden Sie sich an das Personal.",
   "selforder.table_busy.retry": "Erneut versuchen",
   "selforder.table_busy.title": "Für diesen Tisch läuft bereits eine Bestellung",
+  "selforder.table_joined": "Bestellung für diesen Tisch — %d Artikel bereits hinzugefügt",
   "selforder.tap_to_start": "Zum Starten tippen",
   "selforder.title": "Hier bestellen",
   "selforder.welcome": "Willkommen!",
