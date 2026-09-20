@@ -84,6 +84,9 @@ registers.col.name
 registers.col.status
 reports.eod.period_range
 reports.tips.form_note_hint
+reports.yuzde_usulu.col_basis
+reports.yuzde_usulu.form_basis
+reports.yuzde_usulu.form_note_hint
 settings.backup.title
 settings.display.window_mode_kiosk
 settings.printer.drawer_pin_5
