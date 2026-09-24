@@ -36,7 +36,16 @@ bluetoothdevices.col.name
 bluetoothdevices.col.status
 catalog.barcode
 catalog.barcodes
+catalog.builtin_icon.avocado
+catalog.builtin_icon.baguette
+catalog.builtin_icon.burger
+catalog.builtin_icon.cocktail
+catalog.builtin_icon.croissant
+catalog.builtin_icon.espresso
+catalog.builtin_icon.group.bar
+catalog.builtin_icon.pizza
 catalog.builtin_icon.sandwich
+catalog.builtin_icon.vegan
 catalog.col.name
 catalog.color.indigo
 catalog.image_upload_error_prefix
