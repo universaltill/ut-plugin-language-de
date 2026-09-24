@@ -441,7 +441,7 @@
   "designer.error.replica_use_primary": "Diese Kasse folgt einer Hauptkasse — verwalten Sie die Schnellverkaufstasten auf der Hauptkasse.",
   "designer.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "designer.label": "Beschriftung",
-  "designer.long_press_hint": "Tipp: Halten Sie eine Kachel gedrückt (oder klicken Sie mit rechts), um sie anzuordnen — ziehen Sie sie, oder nutzen Sie die Pfeiltasten — und tippen Sie dann auf Fertig. Das Papierkorb-Symbol entfernt sie aus den Schnellwahltasten.",
+  "designer.long_press_hint": "Tipp: Halten Sie eine Kachel gedrückt (oder klicken Sie mit rechts), um sie anzuordnen — ziehen Sie sie, oder nutzen Sie die Pfeiltasten — und tippen Sie dann auf Fertig. Das Augen-Symbol blendet eine Kachel im Verkaufsbildschirm aus; das Papierkorb-Symbol löscht den Artikel aus dem Katalog.",
   "designer.move_down": "Nach hinten verschieben",
   "designer.move_up": "Nach vorne verschieben",
   "designer.no_matches": "Keine Treffer.",
@@ -2657,5 +2657,14 @@
   "vouchers_import.status.missing_code": "fehlender Code",
   "vouchers_import.status.non_positive_balance": "Guthaben muss größer als null sein",
   "vouchers_import.status.unknown_issue": "konnte nicht importiert werden",
-  "vouchers_import.title": "Gutschein-Guthaben importieren"
+  "vouchers_import.title": "Gutschein-Guthaben importieren",
+  "designer.hidden.empty": "Keine Artikel sind im Verkaufsbildschirm ausgeblendet.",
+  "designer.hidden.title": "Im Verkaufsbildschirm ausgeblendet (%d)",
+  "designer.hidden.unhide": "Einblenden",
+  "tile_sheet.delete_item": "Artikel löschen",
+  "tile_sheet.delete_item_confirm": "„%s“ aus dem Katalog löschen? Der Artikel wird überall entfernt, nicht nur im Verkaufsbildschirm.",
+  "tile_sheet.hide": "Im Verkaufsbildschirm ausblenden",
+  "elevation.summary.buttons_delete_item": "„%s“ aus dem Katalog löschen. Der Artikel wird überall entfernt, nicht nur im Verkaufsbildschirm.",
+  "elevation.summary.buttons_hide": "„%s“ im Verkaufsbildschirm ausblenden.",
+  "elevation.summary.buttons_unhide": "„%s“ wieder im Verkaufsbildschirm anzeigen."
 }
