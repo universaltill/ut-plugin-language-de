@@ -42,7 +42,6 @@ catalog.builtin_icon.burger
 catalog.builtin_icon.cocktail
 catalog.builtin_icon.croissant
 catalog.builtin_icon.espresso
-catalog.builtin_icon.group.bar
 catalog.builtin_icon.pizza
 catalog.builtin_icon.sandwich
 catalog.builtin_icon.vegan
