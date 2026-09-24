@@ -2661,5 +2661,8 @@
   "designer.hidden.unhide": "Einblenden",
   "tile_sheet.delete_item": "Artikel löschen",
   "tile_sheet.delete_item_confirm": "„%s“ aus dem Katalog löschen? Der Artikel wird überall entfernt, nicht nur im Verkaufsbildschirm.",
-  "tile_sheet.hide": "Im Verkaufsbildschirm ausblenden"
+  "tile_sheet.hide": "Im Verkaufsbildschirm ausblenden",
+  "elevation.summary.buttons_delete_item": "„%s“ aus dem Katalog löschen. Der Artikel wird überall entfernt, nicht nur im Verkaufsbildschirm.",
+  "elevation.summary.buttons_hide": "„%s“ im Verkaufsbildschirm ausblenden.",
+  "elevation.summary.buttons_unhide": "„%s“ wieder im Verkaufsbildschirm anzeigen."
 }
