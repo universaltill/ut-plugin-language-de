@@ -1434,6 +1434,7 @@
   "products.categories": "Kategorien",
   "products.categories_modal_title": "Artikel der Kategorie",
   "products.category_button_count": "%d Taste(n)",
+  "products.category_no_buttons": "Für diese Kategorie sind noch keine Schnellwahltasten eingerichtet.",
   "products.edit": "Schnellwahltasten bearbeiten",
   "products.empty": "Noch keine Produkte. Fügen Sie welche unter Schnellwahltasten hinzu.",
   "products.load_more": "Mehr laden",
