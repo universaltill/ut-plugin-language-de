@@ -2747,7 +2747,7 @@
   "designer.hidden.empty": "Keine Artikel sind im Verkaufsbildschirm ausgeblendet.",
   "designer.hidden.title": "Im Verkaufsbildschirm ausgeblendet (%d)",
   "designer.hidden.unhide": "Einblenden",
-  "designer.hidden.unhide_all": "Alle %d im Verkaufsbildschirm anzeigen",
+  "designer.hidden.unhide_all": "Alle %d im Verkaufsbildschirm einblenden",
   "tile_sheet.delete_item": "Artikel löschen",
   "tile_sheet.delete_item_confirm": "„%s“ aus dem Katalog löschen? Der Artikel wird überall entfernt, nicht nur im Verkaufsbildschirm.",
   "tile_sheet.hide": "Im Verkaufsbildschirm ausblenden",
