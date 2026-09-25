@@ -2766,5 +2766,9 @@
   "list_reorder.cancelled": "Verschieben abgebrochen — die Liste ist unverändert.",
   "list_reorder.failed": "Die neue Reihenfolge konnte nicht gespeichert werden, daher wurde die Liste zurückgesetzt. Bitte versuchen Sie es erneut.",
   "list_reorder.position": "Position %d von %d",
-  "list_reorder.position_label": "Position in der Liste"
+  "list_reorder.position_label": "Position in der Liste",
+  "kiosk_counter_orders.confirm_collect_unpaid": "Diese Bestellung wurde an dieser Kasse nicht bezahlt. Trotzdem als abgeholt markieren?",
+  "kiosk_counter_orders.moved_hint": "Neue „An der Theke zahlen“-Bestellungen vom Kiosk werden wie gehaltene Verkäufe geparkt. Öffnen Sie sie unter „Offene Vorgänge“, um zu kassieren.",
+  "kiosk_counter_orders.ring_up_manually": "An der Kasse nicht bezahlt — bitte manuell bonieren",
+  "selforder.confirm.counter_pay_first_hint": "Vielen Dank! Bitte zahlen Sie an der Theke — Ihre Bestellung geht in die Küche, sobald Sie bezahlt haben."
 }
