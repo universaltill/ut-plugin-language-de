@@ -2098,7 +2098,7 @@
   "settings.sell_screen.browsing_mode_category_tabs_hint": "Zeigt eine Kachel pro Kategorie; tippen Sie darauf, um ein Popup mit allen Artikeln dieser Kategorie und einem Suchfeld zu öffnen.",
   "settings.sell_screen.browsing_mode_label": "Wie Artikel durchsucht werden",
   "settings.sell_screen.browsing_mode_strip_overflow": "Kategorieleiste mit Schnellwahltasten",
-  "settings.sell_screen.browsing_mode_strip_overflow_hint": "Zeigt Ihre Schnellwahltasten unter einer Reihe von Kategorie-Registerkarten — zuerst eine Registerkarte „Alle“, und am Ende eine „…“-Schaltfläche, wenn mehr Kategorien vorhanden sind, als Platz haben.",
+  "settings.sell_screen.browsing_mode_strip_overflow_hint": "Zeigt Ihre Schnellwahltasten unter einer Reihe von Kategorie-Registerkarten, mit einer „…“-Schaltfläche am Ende, wenn mehr Kategorien vorhanden sind, als Platz haben.",
   "settings.sell_screen.title": "Verkaufsbildschirm",
   "settings.service_charge.invalid_rate": "Geben Sie die Servicegebühr als Prozentsatz von 0 oder mehr an, zum Beispiel 12,5.",
   "settings.service_charge.tr_forbidden": "Das türkische Recht verbietet eine Servicegebühr, Tischgebühr oder ein Gedeck auf der Rechnung (Fiyat Etiketi Yönetmeliği, in Kraft seit dem 30. Januar 2026). Kalkulieren Sie dies stattdessen in Ihre Menüpreise ein.",
