@@ -521,7 +521,7 @@
   "designer.error.replica_use_primary": "Diese Kasse folgt einer Hauptkasse — verwalten Sie die Schnellverkaufstasten auf der Hauptkasse.",
   "designer.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "designer.label": "Beschriftung",
-  "designer.long_press_hint": "Tipp: Halten Sie eine Kachel gedrückt (oder klicken Sie mit rechts), um sie anzuordnen — ziehen Sie sie, oder nutzen Sie die Pfeiltasten — und tippen Sie dann auf Fertig. Das Augen-Symbol blendet eine Kachel im Verkaufsbildschirm aus; das Papierkorb-Symbol löscht den Artikel aus dem Katalog.",
+  "designer.long_press_hint": "Tipp: Halten Sie eine Kachel gedrückt (oder klicken Sie mit rechts), um sie anzuordnen — ziehen Sie sie, oder nutzen Sie die Pfeiltasten — und tippen Sie dann auf Fertig. Das Augen-Symbol blendet eine Kachel im Verkaufsbildschirm aus (hier bleibt sie ausgegraut sichtbar, mit einem Symbol zum Wiedereinblenden); das Papierkorb-Symbol entfernt sie von den Schnellwahltasten — der Artikel bleibt im Katalog, und über die Suche fügen Sie ihn wieder hinzu.",
   "designer.move_down": "Nach hinten verschieben",
   "designer.move_up": "Nach vorne verschieben",
   "designer.no_matches": "Keine Treffer.",
@@ -2755,5 +2755,10 @@
   "elevation.summary.buttons_delete_item": "„%s“ aus dem Katalog löschen. Der Artikel wird überall entfernt, nicht nur im Verkaufsbildschirm.",
   "elevation.summary.buttons_hide": "„%s“ im Verkaufsbildschirm ausblenden.",
   "elevation.summary.buttons_unhide": "„%s“ wieder im Verkaufsbildschirm anzeigen.",
-  "elevation.summary.buttons_unhide_all": "Alle ausgeblendeten Artikel wieder im Verkaufsbildschirm anzeigen."
+  "elevation.summary.buttons_unhide_all": "Alle ausgeblendeten Artikel wieder im Verkaufsbildschirm anzeigen.",
+  "products.add_to_quick_buttons": "Zu den Schnellwahltasten hinzufügen",
+  "products.add_to_quick_buttons_named": "Zu den Schnellwahltasten hinzufügen: %s",
+  "tile_sheet.hidden_state": "Im Verkaufsbildschirm ausgeblendet",
+  "tile_sheet.unhide_named": "Im Verkaufsbildschirm einblenden: %s",
+  "tile_sheet.remove_from_grid_confirm": "„%s“ von den Schnellwahltasten entfernen? Der Artikel bleibt im Katalog und lässt sich weiterhin per Scan oder Suche verkaufen — über die Suche können Sie ihn jederzeit wieder hinzufügen."
 }
