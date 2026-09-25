@@ -513,7 +513,7 @@
   "designer.add": "Hinzufügen",
   "designer.add_button": "Taste hinzufügen",
   "designer.buttons": "Tasten",
-  "designer.categories.help": "Kategorien anlegen, umbenennen, farblich anpassen, neu anordnen oder deaktivieren, aus denen sich die Leiste oben zusammensetzt. Eine Kategorie erscheint erst auf dem Verkaufsbildschirm, sobald einer ihrer Artikel eine Schnellwahltaste hat.",
+  "designer.categories.help": "Kategorien anlegen, umbenennen, farblich anpassen oder deaktivieren, aus denen sich die Leiste oben zusammensetzt — tippen Sie auf eine Kategorie, um sie zu bearbeiten. Um die Reihenfolge zu ändern, halten Sie eine Kategorie gedrückt und ziehen Sie sie, oder markieren Sie sie und drücken Sie Alt+↑ / Alt+↓. Eine Kategorie erscheint erst auf dem Verkaufsbildschirm, sobald einer ihrer Artikel eine Schnellwahltaste hat.",
   "designer.category.deactivate_blocked_hint": "%d aktive(r) Artikel verwenden diese Kategorie noch — verschieben oder deaktivieren Sie sie im Katalog, bevor Sie die Kategorie deaktivieren.",
   "designer.category.deactivate_confirm": "„%s“ deaktivieren? Sie verschwindet bis zur erneuten Aktivierung vom Verkaufsbildschirm; ihre Artikel bleiben im Katalog erhalten.",
   "designer.code": "Code",
@@ -2760,5 +2760,11 @@
   "products.add_to_quick_buttons_named": "Zu den Schnellwahltasten hinzufügen: %s",
   "tile_sheet.hidden_state": "Im Verkaufsbildschirm ausgeblendet",
   "tile_sheet.unhide_named": "Im Verkaufsbildschirm einblenden: %s",
-  "tile_sheet.remove_from_grid_confirm": "„%s“ von den Schnellwahltasten entfernen? Der Artikel bleibt im Katalog und lässt sich weiterhin per Scan oder Suche verkaufen — über die Suche können Sie ihn jederzeit wieder hinzufügen."
+  "tile_sheet.remove_from_grid_confirm": "„%s“ von den Schnellwahltasten entfernen? Der Artikel bleibt im Katalog und lässt sich weiterhin per Scan oder Suche verkaufen — über die Suche können Sie ihn jederzeit wieder hinzufügen.",
+  "categories.reorder_hint": "Tippen Sie auf eine Kategorie, um sie zu bearbeiten. Um die Reihenfolge zu ändern, halten Sie eine Kategorie gedrückt und ziehen Sie sie nach oben oder unten — oder markieren Sie sie und drücken Sie Alt+↑ / Alt+↓.",
+  "list_reorder.moved": "%s auf Position %d von %d verschoben.",
+  "list_reorder.cancelled": "Verschieben abgebrochen — die Liste ist unverändert.",
+  "list_reorder.failed": "Die neue Reihenfolge konnte nicht gespeichert werden, daher wurde die Liste zurückgesetzt. Bitte versuchen Sie es erneut.",
+  "list_reorder.position": "Position %d von %d",
+  "list_reorder.position_label": "Position in der Liste"
 }
