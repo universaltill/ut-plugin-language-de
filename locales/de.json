@@ -1714,8 +1714,14 @@
   "reports.period.custom": "Benutzerdefiniert",
   "reports.period.day": "Tag",
   "reports.period.month": "Monat",
+  "reports.period.rolling": "Letzte Tage",
   "reports.period.week": "Woche",
   "reports.period.year": "Jahr",
+  "reports.preset.label": "Berichtszeitraum",
+  "reports.preset.this_month": "Dieser Monat",
+  "reports.preset.this_week": "Diese Woche",
+  "reports.preset.today": "Heute",
+  "reports.preset.yesterday": "Gestern",
   "reports.refunds": "Erstattungen",
   "reports.revenue": "Umsatz",
   "reports.sales": "Verkäufe",
@@ -2741,10 +2747,12 @@
   "designer.hidden.empty": "Keine Artikel sind im Verkaufsbildschirm ausgeblendet.",
   "designer.hidden.title": "Im Verkaufsbildschirm ausgeblendet (%d)",
   "designer.hidden.unhide": "Einblenden",
+  "designer.hidden.unhide_all": "Alle %d im Verkaufsbildschirm einblenden",
   "tile_sheet.delete_item": "Artikel löschen",
   "tile_sheet.delete_item_confirm": "„%s“ aus dem Katalog löschen? Der Artikel wird überall entfernt, nicht nur im Verkaufsbildschirm.",
   "tile_sheet.hide": "Im Verkaufsbildschirm ausblenden",
   "elevation.summary.buttons_delete_item": "„%s“ aus dem Katalog löschen. Der Artikel wird überall entfernt, nicht nur im Verkaufsbildschirm.",
   "elevation.summary.buttons_hide": "„%s“ im Verkaufsbildschirm ausblenden.",
-  "elevation.summary.buttons_unhide": "„%s“ wieder im Verkaufsbildschirm anzeigen."
+  "elevation.summary.buttons_unhide": "„%s“ wieder im Verkaufsbildschirm anzeigen.",
+  "elevation.summary.buttons_unhide_all": "Alle ausgeblendeten Artikel wieder im Verkaufsbildschirm anzeigen."
 }
