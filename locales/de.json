@@ -2439,6 +2439,7 @@
   "status.update_failed": "Update fehlgeschlagen — siehe Protokoll",
   "status.update_installed_reload": "Update installiert — zum Neuladen klicken",
   "status.update_now": "Jetzt aktualisieren",
+  "status.update_restart_pending": "Update installiert — Neustart ausstehend. Starten Sie die Kasse neu, um das Update abzuschließen",
   "status.update_restarting": "Wird neu gestartet…",
   "status.update_uptodate": "Bereits aktuell",
   "suggest.add": "In den Warenkorb",
