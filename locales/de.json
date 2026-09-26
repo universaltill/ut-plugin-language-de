@@ -475,6 +475,8 @@
   "common.error.network": "Verbindungsproblem. Überprüfen Sie Ihr Netzwerk und versuchen Sie es erneut.",
   "common.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "common.loading": "Wird geladen …",
+  "common.money.invalid": "Betrag in Ziffern eingeben, mit Punkt oder Komma vor den Nachkommastellen (z. B. 3,50 oder 3.50).",
+  "common.money.invalid_whole": "Betrag als ganze Zahl eingeben, nur Ziffern.",
   "common.no_results": "Keine Treffer — versuchen Sie eine andere Suche.",
   "common.save": "Speichern",
   "common.submit": "Absenden",
