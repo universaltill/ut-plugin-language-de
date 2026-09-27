@@ -102,6 +102,7 @@ settings.printer.drawer_pin_5
 settings.retention.export_format_label
 setup.country.ir
 setup.country.pk
+setup.country.pt
 status.offline
 status.online
 sync.chip_till_offline_one
