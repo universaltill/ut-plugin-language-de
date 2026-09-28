@@ -2328,6 +2328,7 @@
   "setup.done.hint": "Produkte, Kassen und Drucker können Sie jederzeit über das Menü hinzufügen. Tippen Sie unten, um die Kasse zu öffnen.",
   "setup.done.title": "Alles bereit!",
   "setup.error.save_failed": "Ihre Einstellungen konnten nicht gespeichert werden — bitte erneut versuchen.",
+  "setup.error.store_name_required": "Geben Sie den Namen Ihres Geschäfts ein. Er wird auf jeden Beleg gedruckt.",
   "setup.error.tse_identity_incomplete": "Bitte füllen Sie alle vier Unternehmensfelder aus (oder lassen Sie sie alle leer, um die TSE-Einrichtung vorerst zu überspringen).",
   "setup.error.tse_identity_too_long": "Unternehmensangaben dürfen pro Feld höchstens 200 Zeichen lang sein.",
   "setup.error.tse_tax_number": "Das sieht nicht wie eine deutsche Steuernummer aus — versuchen Sie das Format 12/345/67890 (Steuernummer) oder DE123456789 (USt-IdNr.).",
