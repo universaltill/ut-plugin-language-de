@@ -855,6 +855,7 @@
   "inventory.low_stock": "Niedriger Bestand",
   "inventory.manager_pin": "Manager-PIN",
   "inventory.manager_pin_placeholder": "falls als Kassierer angemeldet",
+  "inventory.not_stocked_here": "Hier nicht vorrätig",
   "inventory.order_hint": "bestellen ~",
   "inventory.order_hint_title": "Vorgeschlagene Bestellmenge, um beim aktuellen Absatz zwei Wochen Bestand zu halten",
   "inventory.original_receipt": "Ursprüngliche Belegnummer",
