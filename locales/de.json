@@ -163,6 +163,7 @@
   "bluetoothdevices.scanning": "Suche läuft… das dauert etwa zehn Sekunden.",
   "bluetoothdevices.title": "Bluetooth-Geräte",
   "buttons.edit_mode.title": "Schnellwahltasten bearbeiten — Kachel ziehen, um die Reihenfolge zu ändern",
+  "buttons.edit_mode.title_all_grid": "Artikel bearbeiten — Kategorie wählen, um ihre Artikel per Ziehen zu sortieren; der Stift bearbeitet einen Artikel",
   "catalog.active": "Aktiv",
   "catalog.add_item_btn": "Artikel hinzufügen",
   "catalog.attach_barcode": "Barcode zuordnen",
