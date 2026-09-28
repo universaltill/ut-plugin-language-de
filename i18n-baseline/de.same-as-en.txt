@@ -74,6 +74,9 @@ nav.plugins
 orders.col.status
 page.title.plugin_store
 page.title.plugins
+permissions.group.plugins
+permissions.group.system
+permissions.unlocks_separator
 plugins.import.name
 plugins.import.version
 plugins.manage.title
