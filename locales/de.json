@@ -2871,5 +2871,6 @@
   "open_orders.tab.counter": "An der Theke zahlen",
   "open_orders.counter.empty": "Keine Bestellungen warten auf Zahlung an der Theke. Wenn ein Kunde am Selbstbedienungs-Kiosk bestellt und „An der Theke zahlen“ wählt, erscheint die Bestellung hier — tippen Sie sie an, um zu kassieren.",
   "open_orders.counter.priced_on_open": "Preis beim Öffnen",
-  "open_orders.counter.add_by_hand": "Nicht in Ihren Artikeln gefunden, daher nicht hinzugefügt — bitte von Hand erfassen: %s"
+  "open_orders.counter.add_by_hand": "Nicht in Ihren Artikeln gefunden, daher nicht hinzugefügt — bitte von Hand erfassen: %s",
+  "setup.error.store_name_required": "Geben Sie den Namen Ihres Geschäfts ein. Er wird auf jeden Beleg gedruckt."
 }
