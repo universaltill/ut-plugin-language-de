@@ -2878,5 +2878,13 @@
   "open_orders.counter.empty": "Keine Bestellungen warten auf Zahlung an der Theke. Wenn ein Kunde am Selbstbedienungs-Kiosk bestellt und „An der Theke zahlen“ wählt, erscheint die Bestellung hier — tippen Sie sie an, um zu kassieren.",
   "open_orders.counter.priced_on_open": "Preis beim Öffnen",
   "open_orders.counter.add_by_hand": "Nicht in Ihren Artikeln gefunden, daher nicht hinzugefügt — bitte von Hand erfassen: %s",
-  "setup.error.store_name_required": "Geben Sie den Namen Ihres Geschäfts ein. Er wird auf jeden Beleg gedruckt."
+  "settings.about.english_only": "Noch nicht übersetzt – auf Englisch angezeigt.",
+  "settings.about.first_run": "Erstmals auf dieser Kasse gestartet:",
+  "settings.about.installed_version": "Installierte Version:",
+  "settings.about.no_notes": "Für diese Version sind keine Versionshinweise verfügbar.",
+  "settings.about.title": "Über",
+  "settings.about.whats_new": "Was ist neu",
+  "setup.error.store_name_required": "Geben Sie den Namen Ihres Geschäfts ein. Er wird auf jeden Beleg gedruckt.",
+  "status.release_notes_dismiss": "Schließen",
+  "status.release_notes_updated": "Aktualisiert auf %s – Neuerungen ansehen"
 }
