@@ -2875,5 +2875,11 @@
   "settings.staff_languages.error_unknown": "Diese Sprache ist auf dieser Kasse nicht installiert.",
   "settings.staff_languages.error_empty": "Wählen Sie mindestens eine Sprache.",
   "settings.staff_languages.error_default": "Die Standardsprache des Geschäfts kann nicht aus der Liste entfernt werden.",
-  "elevation.summary.staff_languages": "Sprachen für das Personal festlegen auf: %s"
+  "elevation.summary.staff_languages": "Sprachen für das Personal festlegen auf: %s",
+  "designer.error.recategorize_category": "Diese Kategorie ist nicht mehr verfügbar. Wählen Sie eine andere.",
+  "designer.error.recategorize_item": "Dieser Artikel ist nicht mehr im Katalog.",
+  "elevation.summary.buttons_recategorize": "„%s“ in die Kategorie %s verschieben.",
+  "tile_sheet.move_category": "In Kategorie verschieben",
+  "tile_sheet.move_category_named": "In eine andere Kategorie verschieben: %s",
+  "tile_sheet.move_dialog_hint": "Wählen Sie eine neue Kategorie für „%s“. Dadurch ändert sich auch die Kategorie des Artikels im Katalog."
 }
