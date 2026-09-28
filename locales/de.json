@@ -2867,5 +2867,12 @@
   "vouchers_import.status.missing_code": "fehlender Code",
   "vouchers_import.status.non_positive_balance": "Guthaben muss größer als null sein",
   "vouchers_import.status.unknown_issue": "konnte nicht importiert werden",
-  "vouchers_import.title": "Gutschein-Guthaben importieren"
+  "vouchers_import.title": "Gutschein-Guthaben importieren",
+  "settings.staff_languages.title": "Sprachen für das Personal",
+  "settings.staff_languages.help": "Die Sprachen, zu denen das Personal im ☰ Menü wechseln kann. Die Standardsprache des Geschäfts ist immer dabei. Ist nur eine Sprache gewählt, zeigt das Menü keine Sprachschaltflächen.",
+  "settings.staff_languages.default": "Standardsprache",
+  "settings.staff_languages.error_unknown": "Diese Sprache ist auf dieser Kasse nicht installiert.",
+  "settings.staff_languages.error_empty": "Wählen Sie mindestens eine Sprache.",
+  "settings.staff_languages.error_default": "Die Standardsprache des Geschäfts kann nicht aus der Liste entfernt werden.",
+  "elevation.summary.staff_languages": "Sprachen für das Personal festlegen auf: %s"
 }
