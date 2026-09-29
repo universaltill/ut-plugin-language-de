@@ -2035,6 +2035,7 @@
   "settings.data.export.title": "Export / Bericht",
   "settings.data.export.to_label": "Bis",
   "settings.data.gdpr_help": "Löscht auf Wunsch die persönlichen Daten eines Kunden. Seine Verkäufe bleiben für Ihre Unterlagen erhalten, zeigen aber nicht mehr, wem sie gehörten.",
+  "settings.data.gdpr_invoices_kept": "Bereits ausgestellte Rechnungen behalten Name, Anschrift und USt-IdNr. des Käufers genau so, wie sie ausgestellt wurden, da das Steuerrecht ihre Aufbewahrung verlangt.",
   "settings.data.gdpr_title": "Kunden löschen (DSGVO)",
   "settings.data.help": "Löscht die beim Testen entstandenen Übungsverkäufe, damit Sie den echten Verkauf mit sauberem Journal beginnen. Produkte, Benutzer und Einstellungen bleiben erhalten.",
   "settings.data.reset_btn": "Verkaufshistorie löschen",
