@@ -2944,5 +2944,11 @@
   "settings.about.whats_new": "Was ist neu",
   "setup.error.store_name_required": "Geben Sie den Namen Ihres Geschäfts ein. Er wird auf jeden Beleg gedruckt.",
   "status.release_notes_dismiss": "Schließen",
-  "status.release_notes_updated": "Aktualisiert auf %s – Neuerungen ansehen"
+  "status.release_notes_updated": "Aktualisiert auf %s – Neuerungen ansehen",
+  "settings.store_name.title": "Name des Geschäfts",
+  "settings.store_name.help": "Steht auf jedem Beleg und erscheint in Berichten.",
+  "settings.store_name.error_required": "Geben Sie den Namen Ihres Geschäfts ein. Er wird auf jeden Beleg gedruckt.",
+  "settings.store_name.error_too_long": "Der Name des Geschäfts darf höchstens 80 Zeichen lang sein.",
+  "settings.store_name.error_invalid_chars": "Der Name des Geschäfts darf keine Zeilenumbrüche, Tabulatoren oder unsichtbaren Zeichen enthalten.",
+  "elevation.summary.store_name": "Das Geschäft in „%s“ umbenennen."
 }
