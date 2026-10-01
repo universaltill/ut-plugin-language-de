@@ -1294,6 +1294,7 @@
   "permissions.action.void_comp_waste": "Storno/Kulanz/Schwund (Position entfernen)",
   "permissions.action.worker_allocation": "Trinkgeld-/Bedienungsgeld-Auszahlungen an Mitarbeiter",
   "permissions.col.action": "Aktion",
+  "permissions.error.cloud_role": "Diese Rolle wird in my.universaltill.com verwaltet. Ändern Sie sie dort.",
   "permissions.error.super_admin_required": "Super-Admin erforderlich",
   "permissions.intro": "Nur ein Super-Admin kann festlegen, was jede Rolle darf. Jede Änderung wird im Prüfprotokoll erfasst.",
   "permissions.lockout_error": "Das kann nicht entzogen werden — dies würde jeden Super-Admin von dieser Seite aussperren.",
