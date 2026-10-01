@@ -2159,6 +2159,7 @@
   "settings.enrol.forbidden": "Nur ein Manager oder Admin kann diese Kasse registrieren.",
   "settings.enrol.not_registered": "Diese Kasse ist noch nicht registriert.",
   "settings.enrol.registered": "Diese Kasse ist beim Universal-Till-Marketplace registriert.",
+  "settings.enrol.registered_via_main": "Diese Kasse ist über die Hauptkasse registriert.",
   "settings.enrol.retry": "Jetzt registrieren",
   "settings.enrol.store": "Geschäfts-ID",
   "settings.enrol.title": "Kassenregistrierung",
