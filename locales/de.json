@@ -490,6 +490,8 @@
   "common.money.invalid_whole": "Betrag als ganze Zahl eingeben, nur Ziffern.",
   "common.no_results": "Keine Treffer — versuchen Sie eine andere Suche.",
   "common.save": "Speichern",
+  "common.show_more": "Mehr",
+  "common.show_less": "Weniger",
   "common.submit": "Absenden",
   "common.view": "Anzeigen",
   "countrysettings.col.country": "Land",
