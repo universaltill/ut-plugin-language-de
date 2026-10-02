@@ -1565,6 +1565,7 @@
   "pos.divider.label": "Zum Anpassen der Größe von Warenkorb und Produktbereich ziehen. Doppeltippen zum Zurücksetzen.",
   "pos.error.network": "Verbindungsproblem — die Kasse arbeitet offline weiter.",
   "pos.error.sale_not_found": "Verkauf nicht gefunden",
+  "pos.error.sale_status_transition": "Dieser Verkauf kann nicht in diesen Status geändert werden — ein abgeschlossener Verkauf kann nur storniert werden.",
   "pos.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "pos.error.void_voucher_redeemed": "Bei diesem Verkauf wurde ein Gutschein ausgegeben, der bereits eingelöst wurde — er kann nicht storniert werden",
   "pos.toast.customer_linked": "Kunde %s verknüpft",
