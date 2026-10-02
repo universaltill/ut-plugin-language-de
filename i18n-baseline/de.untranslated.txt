@@ -22,23 +22,4 @@
 # (reuses the same resolved-core-path logic as the check itself: set
 # UT_CORE_EN_JSON=<path> to regenerate against a local core checkout
 # offline, or let it fetch from CORE_EN_URL / UT_CORE_EN_URL.)
-age_check.badge
-age_check.badge_accepted
-age_check.badge_refused
-age_check.kiosk_blocked
-age_check.open
-age_check.outcome.accepted
-age_check.outcome.refused
-age_check.prompt
-age_check.refused_hint
-age_check.tender_blocked
-bluetoothdevices.ios_no_printers
-bluetoothdevices.ios_system_pairing
-catalog.age_restricted
-import.error.xlsx_shopify_unsupported
-invoice.after_discount
-invoice.time_of_supply
-invoice.unit_price
-pos.toast.fiscal_cannot_sign
-selforder.checkout.fiscal_cannot_sign
-taxcodes.err.rate_not_de_fiscal
+pos.error.sale_status_transition

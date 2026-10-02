@@ -3017,20 +3017,5 @@
   "age_check.tender_blocked": "Erfassen Sie eine Ausweiskontrolle für \"%s\", bevor Sie die Zahlung entgegennehmen.",
   "age_check.kiosk_blocked": "Diese Bestellung enthält einen altersbeschränkten Artikel. Bitte an der Kasse bezahlen — das Personal muss den Ausweis für diese Bestellung prüfen.",
   "bluetoothdevices.ios_system_pairing": "Auf iPhone und iPad koppeln Sie einen Barcodescanner oder eine Tastatur in der Einstellungen-App → Bluetooth. Danach tippt das Gerät wie eine Tastatur in die Kasse — hier ist nichts weiter einzurichten.",
-  "bluetoothdevices.ios_no_printers": "Bluetooth-Bondrucker und -Waagen lassen sich von einem iPhone oder iPad nicht verwenden. Nutzen Sie stattdessen einen Netzwerk-Bondrucker (WLAN oder Ethernet).",
-  "catalog.labels.price_per_unit": "%s pro %s",
-  "catalog.labels.unit.item": "Stück",
-  "catalog.labels.unit.kg": "kg",
-  "catalog.labels.unit.litre": "Liter",
-  "catalog.net_quantity": "Nettofüllmenge (vorverpackt)",
-  "catalog.net_quantity.disabled_hint": "Wird bei nach Gewicht verkauften Artikeln nicht verwendet",
-  "catalog.net_quantity.unit": "Einheit der Nettofüllmenge",
-  "catalog.net_quantity.unit.each": "Stück",
-  "catalog.net_quantity.unit.g": "g",
-  "catalog.net_quantity.unit.ml": "ml",
-  "elevation.summary.catalog_pre_pack_unit_price_off": "Grundpreise auf Etiketten vorverpackter Artikel nicht mehr anzeigen.",
-  "elevation.summary.catalog_pre_pack_unit_price_on": "Grundpreise auf Etiketten vorverpackter Artikel anzeigen.",
-  "settings.catalog_pre_pack_unit_price.hint": "Standardmäßig deaktiviert. Verwendet die bei jedem Artikel hinterlegte Nettofüllmenge. Nach Gewicht verkaufte Artikel zeigen ihren Preis immer pro kg, unabhängig von dieser Einstellung. Kleinere Geschäfte sind von der Grundpreisangabe bei vorverpackten Waren möglicherweise befreit — das ist Ihre Entscheidung, siehe Hilfe.",
-  "settings.catalog_pre_pack_unit_price.label": "Grundpreis (pro kg / Liter / Stück) auf Etiketten vorverpackter Artikel anzeigen",
-  "settings.catalog_pre_pack_unit_price.title": "Grundpreis auf vorverpackten Etiketten"
+  "bluetoothdevices.ios_no_printers": "Bluetooth-Bondrucker und -Waagen lassen sich von einem iPhone oder iPad nicht verwenden. Nutzen Sie stattdessen einen Netzwerk-Bondrucker (WLAN oder Ethernet)."
 }
