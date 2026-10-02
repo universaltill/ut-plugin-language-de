@@ -2990,5 +2990,7 @@
   "age_check.outcome.refused": "Ablehnen",
   "age_check.refused_hint": "Verkauf dieses Artikels abgelehnt. Entfernen Sie ihn aus dem Warenkorb, um mit dem restlichen Verkauf fortzufahren.",
   "age_check.tender_blocked": "Erfassen Sie eine Ausweiskontrolle für \"%s\", bevor Sie die Zahlung entgegennehmen.",
-  "age_check.kiosk_blocked": "Diese Bestellung enthält einen altersbeschränkten Artikel. Bitte an der Kasse bezahlen — das Personal muss den Ausweis für diese Bestellung prüfen."
+  "age_check.kiosk_blocked": "Diese Bestellung enthält einen altersbeschränkten Artikel. Bitte an der Kasse bezahlen — das Personal muss den Ausweis für diese Bestellung prüfen.",
+  "bluetoothdevices.ios_system_pairing": "Auf iPhone und iPad koppeln Sie einen Barcodescanner oder eine Tastatur in der Einstellungen-App → Bluetooth. Danach tippt das Gerät wie eine Tastatur in die Kasse — hier ist nichts weiter einzurichten.",
+  "bluetoothdevices.ios_no_printers": "Bluetooth-Bondrucker und -Waagen lassen sich von einem iPhone oder iPad nicht verwenden. Nutzen Sie stattdessen einen Netzwerk-Bondrucker (WLAN oder Ethernet)."
 }
