@@ -2741,6 +2741,7 @@
   "tills.col_name": "Name",
   "tills.col_seen": "Zuletzt gesehen",
   "tills.col_version": "Version",
+  "tills.discovery.denied": "Universal Till kann auf diesem Gerät das lokale Netzwerk nicht verwenden. Wenn Sie gerade gefragt wurden, erlauben Sie es und suchen Sie erneut; andernfalls schalten Sie in den Einstellungen des Geräts „Lokales Netzwerk“ für Universal Till ein, oder geben Sie stattdessen einen Kopplungscode ein.",
   "tills.discovery.error": "Dieses Netzwerk konnte nicht nach Hauptkassen durchsucht werden.",
   "tills.discovery.find_button": "Hauptkasse in diesem Netzwerk finden",
   "tills.discovery.help": "Durchsucht dieses Netzwerk nach einer Hauptkasse, die sich bereits ankündigt — kein Kopplungscode nötig.",
