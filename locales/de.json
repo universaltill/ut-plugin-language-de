@@ -2971,5 +2971,16 @@
   "settings.store_name.error_required": "Geben Sie den Namen Ihres Geschäfts ein. Er wird auf jeden Beleg gedruckt.",
   "settings.store_name.error_too_long": "Der Name des Geschäfts darf höchstens 80 Zeichen lang sein.",
   "settings.store_name.error_invalid_chars": "Der Name des Geschäfts darf keine Zeilenumbrüche, Tabulatoren oder unsichtbaren Zeichen enthalten.",
-  "elevation.summary.store_name": "Das Geschäft in „%s“ umbenennen."
+  "elevation.summary.store_name": "Das Geschäft in „%s“ umbenennen.",
+  "catalog.age_restricted": "Altersbeschränkt (Ausweiskontrolle an der Kasse)",
+  "age_check.badge": "Ausweiskontrolle nötig",
+  "age_check.badge_accepted": "Ausweis geprüft",
+  "age_check.badge_refused": "Ausweis abgelehnt — Artikel entfernen",
+  "age_check.open": "Ausweiskontrolle für diesen Artikel erfassen",
+  "age_check.prompt": "Altersbeschränkter Artikel. Prüfen Sie den Ausweis des Kunden und erfassen Sie Ihre Entscheidung.",
+  "age_check.outcome.accepted": "Akzeptieren",
+  "age_check.outcome.refused": "Ablehnen",
+  "age_check.refused_hint": "Verkauf dieses Artikels abgelehnt. Entfernen Sie ihn aus dem Warenkorb, um mit dem restlichen Verkauf fortzufahren.",
+  "age_check.tender_blocked": "Erfassen Sie eine Ausweiskontrolle für \"%s\", bevor Sie die Zahlung entgegennehmen.",
+  "age_check.kiosk_blocked": "Diese Bestellung enthält einen altersbeschränkten Artikel. Bitte an der Kasse bezahlen — das Personal muss den Ausweis für diese Bestellung prüfen."
 }
