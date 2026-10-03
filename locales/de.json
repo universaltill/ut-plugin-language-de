@@ -3092,5 +3092,6 @@
   "open_orders.cancel.confirm_named": "Bestellung %s stornieren? Sie wird aus den offenen Bestellungen entfernt; das kann nicht rückgängig gemacht werden.",
   "open_orders.cancel.done": "Bestellung storniert",
   "open_orders.cancel.error.live": "Diese Bestellung ist gerade auf dem Verkaufsbildschirm geöffnet. Schließen Sie sie dort ab oder tippen Sie auf „Neuer Verkauf“, um sie zuerst wieder zu halten.",
-  "open_orders.col.actions": "Aktionen"
+  "open_orders.col.actions": "Aktionen",
+  "open_orders.cancel.error.main_till_unreachable": "Hauptkasse nicht erreichbar — diese Bestellung ist dort noch offen. Stornieren Sie sie, sobald die Hauptkasse wieder erreichbar ist, oder direkt an der Hauptkasse."
 }
