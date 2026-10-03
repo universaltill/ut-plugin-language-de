@@ -3077,5 +3077,6 @@
   "settings.retention.pending_uploads": "Berichte, die auf das Hochladen in die Cloud warten: %d",
   "settings.retention.upload_refused": "Hochladen in die Cloud abgelehnt — das Abonnement ist nicht aktiv. Die Berichte bleiben auf dieser Kasse und werden hochgeladen, sobald es wieder aktiv ist.",
   "status.report_archive.hint": "Die Cloud hat das Hochladen der Berichte abgelehnt, weil das Abonnement nicht aktiv ist. Die Berichte bleiben auf dieser Kasse und werden hochgeladen, sobald es wieder aktiv ist.",
-  "status.report_archive.refused": "Berichts-Upload abgelehnt"
+  "status.report_archive.refused": "Berichts-Upload abgelehnt",
+  "settings.retention.err_use_retention_card": "Ändern Sie den Aufbewahrungsort der Berichte in der Karte „Berichtsaufbewahrung“."
 }
