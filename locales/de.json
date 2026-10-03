@@ -3084,5 +3084,13 @@
   "settings.retention.upload_refused": "Hochladen in die Cloud abgelehnt — das Abonnement ist nicht aktiv. Die Berichte bleiben auf dieser Kasse und werden hochgeladen, sobald es wieder aktiv ist.",
   "status.report_archive.hint": "Die Cloud hat das Hochladen der Berichte abgelehnt, weil das Abonnement nicht aktiv ist. Die Berichte bleiben auf dieser Kasse und werden hochgeladen, sobald es wieder aktiv ist.",
   "status.report_archive.refused": "Berichts-Upload abgelehnt",
-  "settings.retention.err_use_retention_card": "Ändern Sie den Aufbewahrungsort der Berichte in der Karte „Berichtsaufbewahrung“."
+  "settings.retention.err_use_retention_card": "Ändern Sie den Aufbewahrungsort der Berichte in der Karte „Berichtsaufbewahrung“.",
+  "elevation.summary.cancel_order": "Bestellung %s stornieren. Sie wird aus den offenen Bestellungen entfernt; das kann nicht rückgängig gemacht werden.",
+  "hold.toast.reparked": "Bestellung %s wieder gehalten — Sie können den nächsten Kunden bedienen",
+  "open_orders.cancel.action": "Bestellung stornieren",
+  "open_orders.cancel.action_named": "Bestellung stornieren — %s",
+  "open_orders.cancel.confirm_named": "Bestellung %s stornieren? Sie wird aus den offenen Bestellungen entfernt; das kann nicht rückgängig gemacht werden.",
+  "open_orders.cancel.done": "Bestellung storniert",
+  "open_orders.cancel.error.live": "Diese Bestellung ist gerade auf dem Verkaufsbildschirm geöffnet. Schließen Sie sie dort ab oder tippen Sie auf „Neuer Verkauf“, um sie zuerst wieder zu halten.",
+  "open_orders.col.actions": "Aktionen"
 }
