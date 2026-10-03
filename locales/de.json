@@ -2360,7 +2360,6 @@
   "settings.retention.help": "Legen Sie fest, wo Ihr Tagesabschluss-Archiv aufbewahrt wird und wie lange. Berichte werden immer mindestens 10 Jahre lang aufbewahrt.",
   "settings.retention.mode_both": "Kasse + Cloud",
   "settings.retention.mode_cloud": "Nur Cloud",
-  "settings.retention.mode_coming_soon": "demnächst verfügbar",
   "settings.retention.mode_label": "Berichte aufbewahren auf",
   "settings.retention.mode_till": "Nur diese Kasse",
   "settings.retention.title": "Berichtsaufbewahrung",
@@ -3071,5 +3070,13 @@
   "age_check.tender_blocked": "Erfassen Sie eine Ausweiskontrolle für \"%s\", bevor Sie die Zahlung entgegennehmen.",
   "age_check.kiosk_blocked": "Diese Bestellung enthält einen altersbeschränkten Artikel. Bitte an der Kasse bezahlen — das Personal muss den Ausweis für diese Bestellung prüfen.",
   "bluetoothdevices.ios_system_pairing": "Auf iPhone und iPad koppeln Sie einen Barcodescanner oder eine Tastatur in der Einstellungen-App → Bluetooth. Danach tippt das Gerät wie eine Tastatur in die Kasse — hier ist nichts weiter einzurichten.",
-  "bluetoothdevices.ios_no_printers": "Bluetooth-Bondrucker und -Waagen lassen sich von einem iPhone oder iPad nicht verwenden. Nutzen Sie stattdessen einen Netzwerk-Bondrucker (WLAN oder Ethernet)."
+  "bluetoothdevices.ios_no_printers": "Bluetooth-Bondrucker und -Waagen lassen sich von einem iPhone oder iPad nicht verwenden. Nutzen Sie stattdessen einen Netzwerk-Bondrucker (WLAN oder Ethernet).",
+  "settings.retention.err_invalid_mode": "Wählen Sie, wo Berichte aufbewahrt werden: nur auf dieser Kasse, nur in der Cloud oder Kasse + Cloud.",
+  "settings.retention.err_needs_subscription": "Berichte in der Cloud aufzubewahren erfordert ein aktives Abonnement mit Cloud-Sicherung. Die Berichte bleiben auf dieser Kasse.",
+  "settings.retention.mode_needs_subscription": "benötigt ein aktives Abonnement",
+  "settings.retention.pending_uploads": "Berichte, die auf das Hochladen in die Cloud warten: %d",
+  "settings.retention.upload_refused": "Hochladen in die Cloud abgelehnt — das Abonnement ist nicht aktiv. Die Berichte bleiben auf dieser Kasse und werden hochgeladen, sobald es wieder aktiv ist.",
+  "status.report_archive.hint": "Die Cloud hat das Hochladen der Berichte abgelehnt, weil das Abonnement nicht aktiv ist. Die Berichte bleiben auf dieser Kasse und werden hochgeladen, sobald es wieder aktiv ist.",
+  "status.report_archive.refused": "Berichts-Upload abgelehnt",
+  "settings.retention.err_use_retention_card": "Ändern Sie den Aufbewahrungsort der Berichte in der Karte „Berichtsaufbewahrung“."
 }
