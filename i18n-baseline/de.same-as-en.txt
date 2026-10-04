@@ -111,6 +111,9 @@ setup.country.pk
 setup.country.pt
 status.offline
 status.online
+subscription.plan.chain
+subscription.plan.pro
+subscription.plan.shop
 sync.chip_till_offline_one
 sync.chip_till_offline_other
 tables.col.status
