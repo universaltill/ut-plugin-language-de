@@ -3093,5 +3093,9 @@
   "open_orders.cancel.done": "Bestellung storniert",
   "open_orders.cancel.error.live": "Diese Bestellung ist gerade auf dem Verkaufsbildschirm geöffnet. Schließen Sie sie dort ab oder tippen Sie auf „Neuer Verkauf“, um sie zuerst wieder zu halten.",
   "open_orders.col.actions": "Aktionen",
-  "open_orders.cancel.error.main_till_unreachable": "Hauptkasse nicht erreichbar — diese Bestellung ist dort noch offen. Stornieren Sie sie, sobald die Hauptkasse wieder erreichbar ist, oder direkt an der Hauptkasse."
+  "open_orders.cancel.error.main_till_unreachable": "Hauptkasse nicht erreichbar — diese Bestellung ist dort noch offen. Stornieren Sie sie, sobald die Hauptkasse wieder erreichbar ist, oder direkt an der Hauptkasse.",
+  "settings.enrol.check_plan_btn": "Nach einem kostenpflichtigen Tarif suchen",
+  "settings.enrol.check_plan_sent": "Die Cloud wird abgefragt. Wenn dieses Geschäft einen kostenpflichtigen Tarif hat, startet die Cloud-Synchronisierung innerhalb einer Minute.",
+  "settings.enrol.cloud_sync_off": "Die Cloud-Synchronisierung ist aus. Sie gehört zu den kostenpflichtigen Tarifen — sobald dieses Geschäft einen davon hat, synchronisiert sich die Kasse automatisch mit Ihrem Online-Konto.",
+  "elevation.summary.enrol_check_plan": "Jetzt in der Cloud prüfen, ob dieses Geschäft einen kostenpflichtigen Tarif hat."
 }
