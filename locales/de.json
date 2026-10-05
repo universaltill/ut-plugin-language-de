@@ -3110,7 +3110,7 @@
   "subscription.status.active": "Aktiv",
   "subscription.status.lapsed": "Beendet",
   "subscription.status.none": "Kein Abonnement",
-  "subscription.renews": "Verlängert sich am %s",
+  "subscription.renews": "Bezahlt bis zum %s",
   "subscription.last_confirmed": "Zuletzt bestätigt am %s",
   "subscription.free_note": "Sie nutzen den kostenlosen Tarif Lokal. Verkaufen, Belege und Berichte auf dieser Kasse sind in jedem Tarif kostenlos.",
   "subscription.chip.stale": "Abonnement nicht bestätigt",
