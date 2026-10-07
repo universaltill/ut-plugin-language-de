@@ -2551,6 +2551,8 @@
   "shifts.skim_manager_pin_hint": "Die Abschöpfung in den Tresor erfordert eine Freigabe durch den Manager, genau wie jede andere Entnahme.",
   "shifts.title": "Schichten",
   "shifts.variance": "Differenz",
+  "shop_name_notice.cta": "Zu den Einstellungen wechseln",
+  "shop_name_notice.title": "Benennen Sie Ihr Geschäft: Auf den Belegen steht noch ein Platzhaltername.",
   "shrinkage.error.invalid_reason": "Wählen Sie einen Grund: Storno, Kulanz oder Schwund.",
   "shrinkage.prompt": "Warum wird diese Position entfernt?",
   "shrinkage.reason.comp": "Kulanz",
