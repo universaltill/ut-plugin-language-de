@@ -2422,6 +2422,8 @@
   "settings.update.apply_confirm": "Update jetzt herunterladen und installieren? Die Kasse startet danach neu.",
   "settings.update.auto_blocked": "Automatische Updates sind eingeschaltet, aber diese Kasse kann sie nicht selbst installieren: Ihr Installationsordner ist für die Kasse nicht beschreibbar. Wurde sie aus dem .deb-Paket installiert, installieren Sie das neueste erneut — das repariert den Ordner; andernfalls geben Sie dem Benutzer der Kasse Schreibrechte für diesen Ordner. Prüfen Sie dann noch einmal.",
   "settings.update.auto_enable": "Automatisch aktualisieren",
+  "settings.update.follows_main": "Diese Kasse folgt der Version der Hauptkasse (%s). Automatische Updates ändern Sie an der Hauptkasse.",
+  "settings.update.follows_main_unknown": "Diese Kasse folgt der Version der Hauptkasse. Automatische Updates ändern Sie an der Hauptkasse.",
   "settings.update.check_btn": "Nach Updates suchen",
   "settings.update.check_failed": "Update-Server nicht erreichbar — versuchen Sie es später erneut",
   "settings.update.download": "Herunterladen",
