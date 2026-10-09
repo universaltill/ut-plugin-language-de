@@ -2187,6 +2187,7 @@
   "settings.display.large": "große Displays",
   "settings.display.launch_on_startup_label": "Beim Start ausführen",
   "settings.display.launch_on_startup_pending_note": "Wird wirksam, sobald die Autostart-Unterstützung für diese Plattform verfügbar ist.",
+  "settings.display.err_invalid_mode": "Wählen Sie ein Geräteprofil: Kasse, Backoffice oder Selbstbestell-Kiosk.",
   "settings.display.mode": "Geräteprofil",
   "settings.display.mode_backoffice": "Backoffice (Manager-Arbeitsplatz)",
   "settings.display.mode_register": "Kasse (Verkaufsbildschirm)",
