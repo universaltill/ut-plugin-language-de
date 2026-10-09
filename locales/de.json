@@ -1385,6 +1385,7 @@
   "plugin.job.gone": "Diese Aufgabe ist nicht mehr verfügbar — vielleicht wurde sie fertig, während Sie weg waren. Starten Sie sie erneut, wenn Sie sie noch brauchen.",
   "plugin.job.refresh": "Fortschritt prüfen",
   "plugin.job.running": "Wird bearbeitet …",
+  "plugin.view.action_failed": "Das hat nicht geklappt. Ihre Eingaben sind noch da — versuchen Sie es gleich noch einmal.",
   "plugin.view.unavailable": "Diese Plugin-Seite kann gerade nicht angezeigt werden. Versuchen Sie es gleich noch einmal — der Rest der Kasse funktioniert weiter.",
   "plugins.buttons.title": "Plugin-Aktionen",
   "plugins.current_version": "Aktuelle Version:",
