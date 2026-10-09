@@ -1508,6 +1508,7 @@
   "plugins.permissions.setting_bound_now": "Aktuell:",
   "plugins.retry": "Installation wiederholen",
   "plugins.settings.ai.hosted_provider_notice": "Wenn Sie den gehosteten Anbieter wählen (provider = claude), werden die Daten, mit denen die KI-Funktionen arbeiten, aus Ihrem Geschäft an die Server dieses Anbieters gesendet (Anthropic, USA): bei „Per Kamera erkennen“ das Produktfoto sowie die Artikelnamen, SKUs und Referenzfotos aus Ihrem Katalog; und sobald ein gehosteter Anbieter „Fragen Sie Ihre Kasse“ unterstützt, Ihre Fragen zusammen mit den zur Beantwortung verwendeten Verkaufs- und Bestandszahlen. Selbst gehostet (Ollama, die Standardeinstellung) behält alles auf Ihrer eigenen Hardware. Der von Ihnen eingegebene Schlüssel ist Ihr eigenes Konto bei diesem Anbieter — Sie zahlen direkt an ihn, und Universal Till führt dort kein eigenes Konto.",
+  "plugins.settings.ai.image_model_unsupported": "Dieses Modell wird für die Hintergrundentfernung nicht unterstützt, daher bleibt die Hintergrundentfernung ausgeschaltet. Verwenden Sie birefnet-general-lite oder u2netp.",
   "plugins.settings.invalid_endpoint": "%s muss eine Webadresse sein, die mit http:// oder https:// beginnt (zum Beispiel https://192.168.1.20:8080/api).",
   "plugins.settings.none": "Dieses Plugin hat keine Einstellungen.",
   "plugins.settings.per_till": "nur diese Kasse",
