@@ -3087,6 +3087,8 @@
   "settings.retention.mode_needs_subscription": "benötigt ein aktives Abonnement",
   "settings.retention.pending_uploads": "Berichte, die auf das Hochladen in die Cloud warten: %d",
   "settings.retention.upload_refused": "Hochladen in die Cloud abgelehnt — das Abonnement ist nicht aktiv. Die Berichte bleiben auf dieser Kasse und werden hochgeladen, sobald es wieder aktiv ist.",
+  "status.disk_low.hint": "Der Speicher dieser Kasse ist fast voll. Alte Datensicherungen und liegen gebliebene Dateien wurden bereits gelöscht. Schaffen Sie Platz auf dem Gerät oder fragen Sie die Person, die es eingerichtet hat. Der Verkauf läuft weiter.",
+  "status.disk_low.label": "Speicher fast voll",
   "status.report_archive.hint": "Die Cloud hat das Hochladen der Berichte abgelehnt, weil das Abonnement nicht aktiv ist. Die Berichte bleiben auf dieser Kasse und werden hochgeladen, sobald es wieder aktiv ist.",
   "status.report_archive.refused": "Berichts-Upload abgelehnt",
   "settings.retention.err_use_retention_card": "Ändern Sie den Aufbewahrungsort der Berichte in der Karte „Berichtsaufbewahrung“.",
