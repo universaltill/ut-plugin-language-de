@@ -1502,6 +1502,7 @@
   "plugins.permissions.desc.ui_page": "Eine eigene Seite oder einen eigenen Bildschirm zur Kasse hinzufügen.",
   "plugins.permissions.desc.ui_slot": "Inhalte an einer bestimmten Stelle in den Bildschirmen der Kasse hinzufügen.",
   "plugins.permissions.desc.view": "Bestimmte, von Ihnen freigegebene Kassenberichte lesen (z. B. Umsatz nach Tag).",
+  "plugins.permissions.desc.view_users": "Ihre Mitarbeiterliste lesen — Namen und ob jede Person aktiv ist. Niemals PINs, Benutzernamen oder Rollen.",
   "plugins.permissions.setting_bound": "Verbindet sich nur mit der Adresse, die hier gespeichert ist:",
   "plugins.permissions.setting_bound_hint": "Erreicht nur die Adresse, die gerade in diesen Einstellungen gespeichert ist – auch eine im Netzwerk des Geschäfts. Ändern Sie die Einstellung, folgt die Berechtigung ihr.",
   "plugins.permissions.setting_bound_not_set": "nicht festgelegt – die Berechtigung erreicht nichts",
