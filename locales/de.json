@@ -1497,6 +1497,7 @@
   "plugins.permissions.desc.device_info": "Die Geräte-ID, die lokalen Netzwerkadressen und die Zeitzone dieser Kasse lesen (z. B. für Betrugsschutz-Header einer Steuerbehörde).",
   "plugins.permissions.desc.http_lan": "Mit Geräten im lokalen Netzwerk Ihres Geschäfts verbinden (z. B. ein Bondrucker oder ein Kartenlesegerät).",
   "plugins.permissions.desc.http_stream": "Größere Datenmengen als fortlaufenden Strom über das Internet senden und empfangen.",
+  "plugins.permissions.desc.net_validation": "Daten wie Zertifikats-Sperrlisten und Zeitstempel von genau dieser einen Internetadresse über unverschlüsseltes HTTP herunterladen. Jeder auf dem Netzwerkweg kann diese Verbindung mitlesen oder verändern; vom Plugin wird erwartet, dass es die Signaturen der Daten selbst prüft.",
   "plugins.permissions.desc.schedule": "Im Hintergrund nach einem wiederkehrenden Zeitplan laufen.",
   "plugins.permissions.desc.secret_write": "Bereits vorhandene Zugangsdaten sicher speichern (z. B. ein Geräte-Passwort).",
   "plugins.permissions.desc.ui_page": "Eine eigene Seite oder einen eigenen Bildschirm zur Kasse hinzufügen.",
