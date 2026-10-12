@@ -471,6 +471,7 @@
   "catalog.variants.generate": "Varianten erzeugen",
   "catalog.variants.generate_hint": "Erstellt eine Variante pro Kombination zum Preis des Artikels. Ein erneuter Lauf dupliziert oder entfernt niemals bestehende Varianten — es werden nur die fehlenden hinzugefügt.",
   "catalog.variants.generate_none_applied": "Wenden Sie zuerst mindestens ein Optionsset an, dann erzeugen.",
+  "catalog.variants.generate_too_many": "Das Erzeugen würde für diesen Artikel %d Varianten ergeben — ein Artikel kann höchstens %d haben. Es wurde nichts erstellt; entfernen Sie einen Wert oder verwenden Sie nur ein Optionsset.",
   "catalog.variants.generated_count": "%d Variante(n) erstellt.",
   "catalog.variants.no_option_sets": "Noch keine Optionssets — erstellen Sie zuerst eines unter",
   "catalog.variants.none": "Noch keine Varianten — fügen Sie unten eine hinzu.",
