@@ -3252,5 +3252,7 @@
   "pos.gift_voucher.use_any": "Jeden Einkauf",
   "pos.gift_voucher.use_specific": "Bestimmter Artikel (jetzt versteuert)",
   "pos.gift_voucher.value": "Wert",
-  "tracking.awaiting_payment": "Wartet auf Zahlung an der Theke"
+  "tracking.awaiting_payment": "Wartet auf Zahlung an der Theke",
+  "receipt.tracking.caption": "Scannen, um Ihre Bestellung zu verfolgen",
+  "designer.receipt.show_tracking_qr": "Bestellverfolgungs-QR-Code (kostenpflichtige Tarife)"
 }
