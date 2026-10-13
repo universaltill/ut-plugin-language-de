@@ -1765,6 +1765,7 @@
   "receipt.tip": "Trinkgeld",
   "receipt.title": "Kassenbeleg",
   "receipt.vouchers.issued": "Ausgestellte Gutscheine",
+  "receipt.vouchers.void": "UNGÜLTIG - nicht einlösbar",
   "recovery.db_open_failed": "Die Kasse konnte ihre Datenbank nicht öffnen. Ihre Daten sind sicher — es ist ein erneuter Versuch oder der Support nötig.",
   "recovery.disk_full": "Der Speicherplatz der Kasse ist voll. Geben Sie auf diesem Gerät Speicherplatz frei und versuchen Sie es erneut.",
   "recovery.migration_failed": "Die Kasse konnte eine Aktualisierung ihrer Datenbank nicht abschließen. Ihre Daten sind sicher — es ist ein erneuter Versuch oder der Support nötig.",
