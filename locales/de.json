@@ -3102,6 +3102,7 @@
   "vouchers_import.status.duplicate_code_in_file": "dieser Code kommt in der Datei mehrfach vor — keine der Zeilen wurde importiert",
   "vouchers_import.status.missing_code": "fehlender Code",
   "vouchers_import.status.non_positive_balance": "Guthaben muss größer als null sein",
+  "vouchers_import.status.not_active": "bereits aufgebraucht oder storniert — nichts mehr zu importieren",
   "vouchers_import.status.single_purpose": "ein Gutschein für einen bestimmten Artikel (Einzweck-Gutschein, bereits beim Verkauf versteuert) — er kann nicht als Guthaben importiert werden",
   "vouchers_import.status.unknown_issue": "konnte nicht importiert werden",
   "vouchers_import.title": "Gutschein-Guthaben importieren",
