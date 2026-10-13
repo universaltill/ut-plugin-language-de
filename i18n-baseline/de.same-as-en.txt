@@ -120,7 +120,6 @@ sync.chip_till_offline_one
 sync.chip_till_offline_other
 tables.col.status
 taxcodes.col.name
-tender.issue_voucher.code
 tender.scan.barcode
 tills.cloud_link.state_live
 tills.col_name
