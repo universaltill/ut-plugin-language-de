@@ -2202,6 +2202,7 @@
   "settings.diagnostics.stopped": "Der Diagnosemodus ist ausgeschaltet. %d nicht gesendete Stapel (%d Ereignisse) wurden verworfen.",
   "settings.diagnostics.summary_show": "Diagnose-Zusammenfassung anzeigen",
   "settings.diagnostics.title": "Diagnosemodus",
+  "settings.display.additional_kiosk_use_profile": "Diese Kasse ist eine zusätzliche Kasse. Um sie zum Selbstbestell-Kiosk zu machen, nutzen Sie Einstellungen → Geräteprofil – dort wird zuerst nachgefragt und die Hauptkasse informiert.",
   "settings.display.apply": "Anwenden",
   "settings.display.basket_panel_help": "Halten Sie auf dem Verkaufsbildschirm die Trennlinie zwischen Warenkorb und Produktschaltflächen gedrückt (oder ziehen Sie sie einfach mit der Maus), um eine Seite zu vergrößern. Zurücksetzen stellt die Standardaufteilung wieder her.",
   "settings.display.basket_panel_reset_btn": "Trennlinie zurücksetzen",
