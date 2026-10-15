@@ -553,6 +553,7 @@
   "common.loading": "Wird geladen …",
   "common.money.invalid": "Betrag in Ziffern eingeben, mit Punkt oder Komma vor den Nachkommastellen (z. B. 3,50 oder 3.50).",
   "common.money.invalid_whole": "Betrag als ganze Zahl eingeben, nur Ziffern.",
+  "common.percent.invalid": "Prozentsatz in Ziffern eingeben, mit Punkt oder Komma vor höchstens zwei Nachkommastellen (z. B. 7,5 oder 7.25).",
   "common.no_results": "Keine Treffer — versuchen Sie eine andere Suche.",
   "common.save": "Speichern",
   "common.show_less": "Weniger",
