@@ -3359,5 +3359,6 @@
   "vouchers.adjust.error.reload": "Dieses Formular ist veraltet. Laden Sie die Seite neu und versuchen Sie es erneut.",
   "vouchers.adjust.error.primary_unreachable": "Die Hauptkasse ist nicht erreichbar – Korrekturen werden im Gutscheinbuch der Hauptkasse vorgenommen. Versuchen Sie es erneut, wenn sie erreichbar ist.",
   "vouchers.history.type.adjustment": "Korrektur",
-  "vouchers.history.by": "von %s"
+  "vouchers.history.by": "von %s",
+  "vouchers.adjust.error.primary_unknown": "Die Hauptkasse hat die Korrektur nicht bestätigt – sie wurde möglicherweise gespeichert, möglicherweise nicht. Laden Sie die Seite neu und prüfen Sie den Verlauf, bevor Sie es erneut versuchen."
 }
