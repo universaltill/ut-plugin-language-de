@@ -196,6 +196,8 @@
   "catalog.barcode.force_plain": "Einfacher Code (Gewicht/Preis ignorieren)",
   "catalog.barcode.force_plain_hint": "Diesen Code als einfachen Produktbarcode behandeln, auch wenn für dieses Geschäft gewichts-/preiseingebettete Barcodes aktiviert sind.",
   "catalog.barcode.remove_confirm": "Diesen Barcode entfernen?",
+  "catalog.barcode.variant_inactive": "Diese Variante ist ausgeschaltet. Setzen Sie das Häkchen bei Aktiv und speichern Sie, dann fügen Sie den Barcode hinzu.",
+  "catalog.barcode.variant_inactive_hint": "Ausgeschaltet: Aktiv ankreuzen, um einen Barcode hinzuzufügen.",
   "catalog.barcode_backfill.btn": "Barcodes aus Artikelnummer nachtragen",
   "catalog.barcode_backfill.confirm_btn": "Diese Barcodes zuweisen",
   "catalog.barcode_backfill.eligible_count": "%d Artikel können einen aus ihrer Artikelnummer abgeleiteten Barcode erhalten.",
