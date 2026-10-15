@@ -3317,6 +3317,7 @@
   "settings.enrol.claim_failed": "Der Übernahmecode konnte nicht abgerufen werden — prüfen Sie die Internetverbindung und versuchen Sie es erneut.",
   "settings.enrol.not_configured": "Auf dieser Kasse ist keine Cloud-Adresse eingerichtet, daher kann sie sich nicht registrieren. Die Kasse funktioniert offline weiter; bitten Sie die Person, die sie installiert hat, eine Cloud-Adresse einzurichten.",
   "settings.enrol.busy": "Ein anderer Registrierungsversuch läuft noch — warten Sie kurz und versuchen Sie es erneut.",
+  "settings.enrol.name_required": "Geben Sie Ihrem Geschäft zuerst einen Namen: Die Kasse registriert sich erst bei der Cloud, wenn das Geschäft einen echten Namen hat.",
   "basket.gift_voucher.for": "Für %s",
   "catalog.item_type": "Art",
   "catalog.item_type.gift_voucher": "Gutschein",
