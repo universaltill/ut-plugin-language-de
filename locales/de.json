@@ -3372,5 +3372,22 @@
   "vouchers.adjust.error.primary_unreachable": "Die Hauptkasse ist nicht erreichbar – Korrekturen werden im Gutscheinbuch der Hauptkasse vorgenommen. Versuchen Sie es erneut, wenn sie erreichbar ist.",
   "vouchers.history.type.adjustment": "Korrektur",
   "vouchers.history.by": "von %s",
-  "vouchers.adjust.error.primary_unknown": "Die Hauptkasse hat die Korrektur nicht bestätigt – sie wurde möglicherweise gespeichert, möglicherweise nicht. Laden Sie die Seite neu und prüfen Sie den Verlauf, bevor Sie es erneut versuchen."
+  "vouchers.adjust.error.primary_unknown": "Die Hauptkasse hat die Korrektur nicht bestätigt – sie wurde möglicherweise gespeichert, möglicherweise nicht. Laden Sie die Seite neu und prüfen Sie den Verlauf, bevor Sie es erneut versuchen.",
+  "basket.gift_voucher.top_up": "Aufladung",
+  "receipt.vouchers.top_up": "Geschenkgutschein-Aufladung",
+  "receipt.vouchers.new_balance": "Neues Guthaben %s",
+  "receipt.vouchers.top_up_void": "STORNIERT - Aufladung zurückgenommen",
+  "vouchers.history.type.top_up": "Aufladung",
+  "vouchers.history.type.top_up_void": "Aufladung storniert",
+  "vouchers.top_up.title": "Aufladen",
+  "vouchers.top_up.intro": "Guthaben als Verkauf aufladen: Der Betrag kommt in den aktuellen Verkauf auf dem Verkaufsbildschirm, und der Gutschein wird gutgeschrieben, sobald der Kunde bezahlt.",
+  "vouchers.top_up.amount": "Aufzuladender Betrag",
+  "vouchers.top_up.add": "Zum Verkauf hinzufügen",
+  "vouchers.top_up.not_void": "Ein stornierter Gutschein kann nicht aufgeladen werden.",
+  "vouchers.top_up.not_single": "Ein Gutschein für einen bestimmten Artikel kann nicht aufgeladen werden: Sein Wert wurde beim Verkauf bereits versteuert.",
+  "vouchers.top_up.replica_note": "Aufladungen erfolgen an der Hauptkasse. Öffnen Sie diesen Gutschein dort, um Guthaben hinzuzufügen.",
+  "vouchers.top_up.error.amount": "Geben Sie einen Betrag über null ein. Das Guthaben eines Gutscheins darf %s nicht übersteigen.",
+  "vouchers.top_up.error.in_sale": "Dieser Gutschein ist bereits im aktuellen Verkauf.",
+  "vouchers.top_up.error.no_item": "Es gibt keinen aktiven Gutschein-Artikel. Legen Sie einen im Katalog an (Artikeltyp: Gutschein) und versuchen Sie es erneut.",
+  "pos.toast.voucher_top_up_failed": "Dieser Verkauf lädt einen Geschenkgutschein auf, der keine Aufladung mehr annimmt (storniert, für einen bestimmten Artikel oder über seiner Grenze). Entfernen Sie die Aufladungszeile und prüfen Sie den Gutschein."
 }
