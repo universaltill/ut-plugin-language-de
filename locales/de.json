@@ -934,7 +934,7 @@
   "import.status.ok": "OK",
   "import.status.seeded_gift_voucher_removed": "Der bei der Einrichtung angelegte Gutschein-Artikel „%s“ wurde entfernt, weil dieser Import einen eigenen mitbringt.",
   "import.status.sku_already_in_catalog": "Artikelnummer bereits im Katalog",
-  "import.status.sku_reused_in_file": "Artikelnummer „%s\" in dieser Datei mehrfach verwendet — unter neuer Nummer importiert",
+  "import.status.sku_reused_renumbered": "Artikelnummer „%s“ in dieser Datei mehrfach verwendet — neue Nummer „%s“",
   "import.status.source_deleted": "in der Quelldatei gelöscht",
   "import.status.stock_location_failed": "Bestand nicht übernommen: Standard-Standort nicht verfügbar",
   "import.status.stock_movement_failed": "Bestand nicht übernommen: Lagerbewegung konnte nicht erfasst werden",
