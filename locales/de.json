@@ -2925,6 +2925,8 @@
   "tills.col_version": "Version",
   "tills.col_role": "Rolle",
   "tills.discovery.ambient.banner": "Eine Hauptkasse wurde in diesem Netzwerk gefunden: %s. Diese Kasse damit verbinden?",
+  "tills.discovery.ambient.has_sales_confirm": "Verkäufe und Daten dieser Kasse ersetzen",
+  "tills.discovery.ambient.has_sales_warning": "Diese Kasse hat bereits Verkäufe. Das Verbinden ersetzt alles auf ihr — Verkäufe, Artikel und Einstellungen — durch die Kopie der Hauptkasse. Die eigenen Verkäufe dieser Kasse werden nicht an die Hauptkasse gesendet; sie bleiben nur in einer Kopie im Backup-Ordner dieser Kasse.",
   "tills.discovery.ambient.dismiss": "Auf dieser Kasse nicht mehr fragen",
   "tills.discovery.ambient.link": "Diese Kasse verbinden",
   "tills.discovery.denied": "Universal Till kann auf diesem Gerät das lokale Netzwerk nicht verwenden. Wenn Sie gerade gefragt wurden, erlauben Sie es und suchen Sie erneut; andernfalls schalten Sie in den Einstellungen des Geräts „Lokales Netzwerk“ für Universal Till ein, oder geben Sie stattdessen einen Kopplungscode ein.",
