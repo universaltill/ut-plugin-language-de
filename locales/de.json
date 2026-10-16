@@ -3396,5 +3396,11 @@
   "vouchers.top_up.error.amount": "Geben Sie einen Betrag über null ein. Das Guthaben eines Gutscheins darf %s nicht übersteigen.",
   "vouchers.top_up.error.in_sale": "Dieser Gutschein ist bereits im aktuellen Verkauf.",
   "vouchers.top_up.error.no_item": "Es gibt keinen aktiven Gutschein-Artikel. Legen Sie einen im Katalog an (Artikeltyp: Gutschein) und versuchen Sie es erneut.",
-  "pos.toast.voucher_top_up_failed": "Dieser Verkauf lädt einen Geschenkgutschein auf, der keine Aufladung mehr annimmt (storniert, für einen bestimmten Artikel oder über seiner Grenze). Entfernen Sie die Aufladungszeile und prüfen Sie den Gutschein."
+  "pos.toast.voucher_top_up_failed": "Dieser Verkauf lädt einen Geschenkgutschein auf, der keine Aufladung mehr annimmt (storniert, für einen bestimmten Artikel oder über seiner Grenze). Entfernen Sie die Aufladungszeile und prüfen Sie den Gutschein.",
+  "pos.scan_choice.title": "Dieser Code passt zu mehr als einem Eintrag. Welcher ist gemeint?",
+  "pos.scan_choice.item": "Artikel",
+  "pos.scan_choice.voucher": "Gutschein",
+  "pos.scan_choice.customer": "Kunde",
+  "pos.scan_choice.promo": "Aktion",
+  "pos.scan_choice.receipt": "Beleg"
 }
