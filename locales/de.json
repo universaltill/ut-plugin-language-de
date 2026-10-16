@@ -724,7 +724,7 @@
   "elevation.summary.setting_upsert": "Die Einstellung \"%s\" auf \"%s\" setzen.",
   "elevation.summary.shop_type": "Die Geschäftsart auf %s ändern.",
   "elevation.summary.store_save": "Änderungen an Währung, Land, Region oder Steuersatz des Geschäfts speichern.",
-  "elevation.summary.sync_promote": "Diese Kasse zu einer eigenständigen Primärkasse hochstufen und die Synchronisierung mit der aktuellen Primärkasse beenden.",
+  "elevation.summary.sync_promote": "Diese Kasse zu einer eigenständigen Hauptkasse hochstufen und die Synchronisierung mit der aktuellen Hauptkasse beenden.",
   "elevation.summary.telemetry_off": "Die Telemetrie-Freigabe für Plugins ausschalten.",
   "elevation.summary.telemetry_on": "Die Telemetrie-Freigabe für Plugins einschalten.",
   "elevation.summary.till_name": "Diese Kasse in \"%s\" umbenennen.",
@@ -2509,7 +2509,7 @@
   "settings.tills.name_label": "Kassenname",
   "settings.tills.open": "Kassen verwalten / neue koppeln",
   "settings.tills.register_help": "Bargeldauszahlungen (z. B. eine Pfandrückgabe) werden auf der offenen Schicht dieses Kassenplatzes verbucht. Wenn Ihr Geschäft mehr als einen Kassenplatz hat, legen Sie dies vor dem Erfassen von Auszahlungen fest.",
-  "settings.tills.register_label": "Kassenplatz dieser Kasse",
+  "settings.tills.register_label": "Kassenplatz für Auszahlungen",
   "settings.tills.register_unset": "Nicht festgelegt — Kassenplatz wählen",
   "settings.title": "Systemeinstellungen",
   "settings.tse.awaiting_ready": "Die TSE-Einrichtung läuft — Ihr Signaturdienst wird vorbereitet. Diese Kasse übernimmt das Ergebnis automatisch.",
@@ -3499,5 +3499,8 @@
   "pos.scan_choice.voucher": "Gutschein",
   "pos.scan_choice.customer": "Kunde",
   "pos.scan_choice.promo": "Aktion",
-  "pos.scan_choice.receipt": "Beleg"
+  "pos.scan_choice.receipt": "Beleg",
+  "settings.tills.role_label": "Diese Kasse",
+  "settings.tills.role_main": "Hauptkasse",
+  "settings.tills.main_till_addr": "Hauptkasse: %s"
 }
