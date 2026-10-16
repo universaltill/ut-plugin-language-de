@@ -64,6 +64,8 @@ fiscalregister.col.status
 help.plugins
 import.export_title
 import.status
+import.system.col.detail
+import.system.col.name
 inventory.dialog_context
 issuereport.my_reports.status
 issuereport.screenshot_label
