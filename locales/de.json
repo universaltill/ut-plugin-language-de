@@ -2514,6 +2514,7 @@
   "settings.update.android.pin_needed": "Manager-PIN eingeben, um dieses Update zu installieren",
   "settings.update.android.progress": "Update wird heruntergeladen… %d%%",
   "settings.update.android.retry": "Update fehlgeschlagen — zum Wiederholen tippen",
+  "settings.update.android.install_again": "Android-Installationsprogramm nicht gesehen? Zum erneuten Öffnen tippen",
   "settings.update.apply_confirm": "Update jetzt herunterladen und installieren? Die Kasse startet danach neu.",
   "settings.update.auto_blocked": "Automatische Updates sind eingeschaltet, aber diese Kasse kann sie nicht selbst installieren: Ihr Installationsordner ist für die Kasse nicht beschreibbar. Wurde sie aus dem .deb-Paket installiert, installieren Sie das neueste erneut — das repariert den Ordner; andernfalls geben Sie dem Benutzer der Kasse Schreibrechte für diesen Ordner. Prüfen Sie dann noch einmal.",
   "settings.update.auto_enable": "Automatisch aktualisieren",
