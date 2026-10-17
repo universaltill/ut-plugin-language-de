@@ -3502,5 +3502,11 @@
   "pos.scan_choice.receipt": "Beleg",
   "settings.tills.role_label": "Diese Kasse",
   "settings.tills.role_main": "Hauptkasse",
-  "settings.tills.main_till_addr": "Hauptkasse: %s"
+  "settings.tills.main_till_addr": "Hauptkasse: %s",
+  "status.shop_currency_mismatch.label": "Währung weicht vom Shop ab",
+  "status.shop_currency_mismatch.hint": "Diese Kasse verkauft in %[1]s; Ihr Shop auf my. verwendet %[2]s. Ändern Sie die Währung der Kasse in den Einstellungen, sobald es für Ihre Aufzeichnungen unbedenklich ist. Der Verkauf läuft weiter.",
+  "import.file_plugin.detected": "%s hat diese Datei erkannt. Prüfen Sie die Vorschau unten – gespeichert wird erst, wenn Sie auf „Importieren“ tippen.",
+  "import.file_plugin.too_large": "Diese Datei ist größer als 32 MB, das Maximum, das ein Import-Plugin lesen kann. Teilen Sie sie in kleinere Dateien auf und importieren Sie diese nacheinander.",
+  "import.file_plugin.upload_again": "Um es erneut zu versuchen, wählen Sie die Datei und tippen Sie noch einmal auf „Vorschau“.",
+  "import.file_plugin.use_standard": "Stattdessen den Standard-Import verwenden"
 }
