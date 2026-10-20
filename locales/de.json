@@ -2326,7 +2326,7 @@
   "settings.display.effects_reason_sep": ", ",
   "settings.display.exit_to_os_btn": "Betriebssystem verlassen",
   "settings.display.exit_to_os_error": "Falsche PIN oder nicht berechtigt.",
-  "settings.display.exit_to_os_help": "Erfordert eine Manager-PIN. Ruft den Plattform-Exit-Hook auf (derzeit ohne Funktion, bis die Fenstermodus-Unterstützung für diese Plattform verfügbar ist).",
+  "settings.display.exit_to_os_help": "Erfordert eine Manager-PIN. Verlässt den Vollbild- oder Kiosk-Modus sofort und gibt das Fenster dieser Kasse an den Desktop des Betriebssystems zurück.",
   "settings.display.exit_to_os_kiosk_appliance": "Diese Kasse ist ein dediziertes Kiosk-Gerät ohne Betriebssystem-Desktop, zu dem gewechselt werden könnte — es wurde nichts geändert. Verwenden Sie stattdessen die Fenstermodus-Einstellung oben, um den Kiosk-Bildschirm auszuschalten.",
   "settings.display.exit_to_os_not_confirmed": "Das Fenster der Kasse wurde zum Schließen aufgefordert, hat dies aber noch nicht bestätigt — prüfen Sie den Bildschirm der Kasse. Der Exit-Vorgang wurde protokolliert.",
   "settings.display.exit_to_os_pin_label": "Manager-PIN",
