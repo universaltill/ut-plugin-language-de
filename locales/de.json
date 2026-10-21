@@ -2096,6 +2096,8 @@
   "reports.zpaper.vouchers_adjusted": "Korrigiert (%d)",
   "reports.zpaper.stornos_note": "stornierte Belege, kein Umsatz",
   "reports.zpaper.voided": "Storniert (%d)",
+  "reports.zpaper.cleared_title": "VOR ZAHLUNG GELEERT",
+  "reports.zpaper.cleared_baskets": "Geleert (%d)",
   "reports.zpaper.cash.title": "KASSENABGLEICH",
   "reports.zpaper.cash.opening_float": "Startgeld",
   "reports.zpaper.cash.cash_sales": "Barverkäufe",
