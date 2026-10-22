@@ -3585,5 +3585,9 @@
   "plugins.settings.error.stored_invalid": "Der gespeicherte Wert ist für dieses Feld nicht gültig, daher verwendet das Plugin ihn möglicherweise nicht. Er bleibt unverändert, bis Sie ihn ändern.",
   "plugins.settings.error.summary": "Es wurde nichts gespeichert. Korrigieren Sie die markierten Felder und speichern Sie erneut.",
   "plugins.settings.error.too_long": "Verwenden Sie höchstens %s Zeichen.",
-  "plugins.settings.error.url": "Geben Sie eine Webadresse ein, die mit http:// oder https:// beginnt (zum Beispiel https://192.168.1.20:8080/api)."
+  "plugins.settings.error.url": "Geben Sie eine Webadresse ein, die mit http:// oder https:// beginnt (zum Beispiel https://192.168.1.20:8080/api).",
+  "settings.enrol.terms.label": "Ich akzeptiere die Bedingungen für den Cloud-Dienst von Universal Till (Version %s).",
+  "settings.enrol.terms.link": "Bedingungen lesen",
+  "settings.enrol.terms.accepted": "Bedingungen akzeptiert: Version %s, %s",
+  "settings.enrol.terms_required": "Akzeptieren Sie die Bedingungen für den Cloud-Dienst von Universal Till, um diese Kasse zu registrieren."
 }
