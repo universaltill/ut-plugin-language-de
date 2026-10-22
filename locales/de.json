@@ -697,6 +697,7 @@
   "elevation.summary.display_mode": "Das Geräteprofil dieser Kasse auf %s setzen.",
   "elevation.summary.enrol_claim_code": "Einen neuen Store-Anspruchscode und QR-Link generieren.",
   "elevation.summary.enrol_now": "Jetzt versuchen, diese Kasse beim Marktplatz zu registrieren.",
+  "elevation.summary.enrol_terms": "Die Bedingungen für den Cloud-Dienst von Universal Till für dieses Geschäft akzeptieren.",
   "elevation.summary.enrol_pair": "Diese Kasse mit einem Geschäft in der Cloud koppeln und damit ihre aktuelle Cloud-Verbindung ersetzen.",
   "elevation.summary.eod_range_export": "Einen Z-Bericht für %s – %s exportieren.",
   "elevation.summary.eod_reprint": "Den Tagesabschlussbericht für %s erneut drucken.",
@@ -3589,5 +3590,10 @@
   "settings.enrol.terms.label": "Ich akzeptiere die Bedingungen für den Cloud-Dienst von Universal Till (Version %s).",
   "settings.enrol.terms.link": "Bedingungen lesen",
   "settings.enrol.terms.accepted": "Bedingungen akzeptiert: Version %s, %s",
-  "settings.enrol.terms_required": "Akzeptieren Sie die Bedingungen für den Cloud-Dienst von Universal Till, um diese Kasse zu registrieren."
+  "settings.enrol.terms_required": "Akzeptieren Sie die Bedingungen für den Cloud-Dienst von Universal Till, um diese Kasse zu registrieren.",
+  "settings.enrol.terms.accept_btn": "Bedingungen akzeptieren",
+  "settings.enrol.terms.send_btn": "An die Cloud senden",
+  "settings.enrol.terms.unsent": "Ihre Zustimmung ist auf dieser Kasse gespeichert, hat die Cloud aber noch nicht erreicht.",
+  "settings.enrol.terms.send_failed": "Die Cloud war nicht erreichbar. Ihre Zustimmung ist auf dieser Kasse gespeichert – versuchen Sie es erneut.",
+  "settings.enrol.terms.accept_required": "Setzen Sie das Häkchen, um die Bedingungen für den Cloud-Dienst von Universal Till zu akzeptieren."
 }
