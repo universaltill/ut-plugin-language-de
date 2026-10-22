@@ -2644,6 +2644,7 @@
   "setup.cloud.title": "Ihr Geschäft",
   "setup.cloud.hint": "Diese Angaben stammen aus Ihrem Geschäft auf my.universaltill.com. Als Nächstes folgen einige Fragen, die nur diese Kasse beantworten kann.",
   "setup.cloud.shop_name": "Name des Geschäfts",
+  "setup.cloud.shop_type": "Art des Geschäfts",
   "setup.cloud.shop_country": "Land",
   "setup.cloud.shop_currency": "Währung",
   "setup.cloud.continue": "Weiter",
