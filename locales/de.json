@@ -2381,6 +2381,7 @@
   "settings.enrol.pair_busy": "Koppeln …",
   "settings.enrol.pair_failed": "Koppeln fehlgeschlagen — prüfen Sie den Code und die Internetverbindung und versuchen Sie es erneut",
   "settings.enrol.pair_help": "Haben Sie einen Kopplungscode aus dem Cloud-Konto Ihres Geschäfts („Kasse hinzufügen oder neu koppeln“)? Geben Sie ihn hier ein, um diese Kasse zu diesem Geschäft hinzuzufügen oder eine Kasse wieder zu verbinden, die entfernt wurde oder neu gekoppelt werden muss. Dies ersetzt nur die Cloud-Verbindung dieser Kasse; ihre Verkäufe, Artikel und Einstellungen bleiben erhalten.",
+  "settings.enrol.pair_identity_pinned": "Die Cloud-Verbindung dieser Kasse wurde von der Person festgelegt, die sie installiert hat, daher kann sie hier nicht gekoppelt werden. Bitten Sie sie, diese Einstellung zu entfernen, und versuchen Sie es dann erneut.",
   "settings.enrol.pair_placeholder": "Kopplungscode",
   "settings.enrol.pair_replica_no_store": "Diese Kasse hat ihr Geschäft noch nicht von der Hauptkasse erhalten, daher wurde der Code nicht verwendet. Warten Sie, bis die Hauptkasse synchronisiert (oder prüfen Sie, ob sie erreichbar ist), und versuchen Sie es erneut.",
   "settings.enrol.pair_store_mismatch": "Dieser Code gehört zu einem anderen Geschäft als der Hauptkasse dieser Kasse. Fordern Sie einen Kopplungscode für dieses Geschäft an und versuchen Sie es erneut.",
