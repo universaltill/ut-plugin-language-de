@@ -60,6 +60,7 @@ catalog.net_quantity.unit.ml
 catalog.tab.details
 categories.col.name
 categories.col.status
+channel_orders.col.status
 countrysettings.col.symbol
 designer.code
 designer.receipt.logo_title
