@@ -3673,5 +3673,8 @@
   "channel_orders.detail.refunded_total": "Bisher erstattet",
   "channel_orders.detail.actions_note": "Annehmen, Verpacken und Versenden einer Bestellung erledigen Sie vorerst in my.universaltill.com. Diese Seite zeigt, was an dieser Kasse erfasst wurde.",
   "channel_orders.error.load_failed": "Die Online-Bestellungen konnten nicht geladen werden.",
-  "channel_orders.error.not_found": "Diese Online-Bestellung wurde nicht gefunden."
+  "channel_orders.error.not_found": "Diese Online-Bestellung wurde nicht gefunden.",
+  "plugins.settings.tab.errors": "%d Fehler in diesem Abschnitt",
+  "plugins.settings.tab.general": "Allgemein",
+  "plugins.settings.tab.list": "Einstellungsbereiche"
 }
