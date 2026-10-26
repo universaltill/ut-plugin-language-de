@@ -2147,6 +2147,8 @@
   "reports.zpaper.cash.calculated": "Berechnet",
   "reports.zpaper.cash.new_float": "Neues Wechselgeld",
   "reports.zpaper.receipts_range": "Belege %s - %s",
+  "reports.zpaper.restored_receipts": "Aus einer Sicherung wiederhergestellt: Belege laufen weiter ab %s (letzter in der Sicherung: %s)",
+  "reports.zpaper.restored_z": "Z-Nummern laufen weiter ab %d (letzte in der Sicherung: %d)",
   "scan.camera.button": "Mit Kamera scannen",
   "scan.camera.camera_busy": "Die Kamera wird von einer anderen App verwendet. Schließen Sie die andere App und versuchen Sie es erneut.",
   "scan.camera.camera_error": "Kamera nicht verfügbar",
