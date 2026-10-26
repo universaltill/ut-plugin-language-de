@@ -3673,5 +3673,11 @@
   "channel_orders.detail.refunded_total": "Bisher erstattet",
   "channel_orders.detail.actions_note": "Annehmen, Verpacken und Versenden einer Bestellung erledigen Sie vorerst in my.universaltill.com. Diese Seite zeigt, was an dieser Kasse erfasst wurde.",
   "channel_orders.error.load_failed": "Die Online-Bestellungen konnten nicht geladen werden.",
-  "channel_orders.error.not_found": "Diese Online-Bestellung wurde nicht gefunden."
+  "channel_orders.error.not_found": "Diese Online-Bestellung wurde nicht gefunden.",
+  "desktop.startup_failed.title": "Universal Till konnte nicht gestartet werden",
+  "desktop.startup_failed.body": "Das Kassenprogramm wurde direkt nach dem Öffnen beendet, daher gibt es noch nichts anzuzeigen.",
+  "desktop.startup_failed.step_retry": "Schließen Sie dieses Fenster und öffnen Sie Universal Till erneut.",
+  "desktop.startup_failed.step_reinstall": "Wenn es weiterhin nicht startet, installieren Sie Universal Till mit dem neuesten Installationsprogramm neu. Bei der Neuinstallation bleiben Ihre Verkäufe, Artikel und Einstellungen erhalten.",
+  "desktop.startup_failed.logs": "Wenn Sie Hilfe brauchen, senden Sie die Dateien desktop.log und till.log aus diesem Ordner:",
+  "desktop.startup_failed.detail": "Technische Details"
 }
