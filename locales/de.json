@@ -3619,7 +3619,7 @@
   "tracking.awaiting_payment": "Wartet auf Zahlung an der Theke",
   "receipt.total_incl_vat": "Gesamt inkl. MwSt.",
   "receipt.tracking.caption": "Scannen, um Ihre Bestellung zu verfolgen",
-  "designer.receipt.show_tracking_qr": "Bestellverfolgungs-QR-Code (kostenpflichtige Tarife)",
+  "designer.receipt.show_tracking_qr": "Bestellverfolgungs-QR-Code (ab Tarif Shop)",
   "designer.receipt.tracking_qr_needs_cloud": "Verfügbar, sobald die Bestellverfolgung in unsere Cloud umzieht.",
   "vouchers.adjust.title": "Guthaben korrigieren",
   "vouchers.adjust.intro": "Tragen Sie das Guthaben ein, das dieser Gutschein haben soll. Dabei fließt kein Geld: Die Änderung, Ihr Name und der Grund werden im Verlauf des Gutscheins und im Tagesabschlussbericht erfasst.",
