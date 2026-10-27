@@ -121,6 +121,7 @@ setup.country.pt
 status.offline
 status.online
 subscription.plan.chain
+subscription.plan.local_plus
 subscription.plan.pro
 subscription.plan.shop
 sync.chip_till_offline_one
