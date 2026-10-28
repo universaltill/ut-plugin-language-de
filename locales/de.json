@@ -2714,6 +2714,8 @@
   "setup.cloud.not_mine": "Das ist nicht mein Geschäft",
   "setup.cloud.pair_incomplete": "Die Kopplung mit Ihrem Online-Geschäft wurde nicht abgeschlossen, daher wird diese Kasse noch nicht synchronisiert. Der Code wurde verbraucht. Erstellen Sie auf my.universaltill.com einen neuen und koppeln Sie erneut unter Einstellungen, Kassen.",
   "setup.cloud.syncing": "Ihr Geschäft wird synchronisiert",
+  "setup.cloud.syncing_title": "Die Produkte Ihres Geschäfts sind unterwegs",
+  "setup.cloud.syncing_body": "Diese Kasse ist Ihrem Geschäft beigetreten und erhält gerade ihre Produkte. Das dauert einen Moment; der Verkaufsbildschirm öffnet sich von selbst, sobald sie angekommen sind. Sie können auch schon jetzt mit dem Verkauf beginnen.",
   "setup.cloud.error.invalid_code": "Dieser Code ist nicht korrekt oder abgelaufen. Erstellen Sie auf my.universaltill.com (Kassen, Kasse hinzufügen) einen neuen Code und versuchen Sie es erneut.",
   "setup.cloud.error.too_many": "Zu viele Versuche. Warten Sie einige Minuten und versuchen Sie es erneut.",
   "setup.cloud.error.no_network": "Die Cloud ist nicht erreichbar. Prüfen Sie die Internetverbindung dieser Kasse oder richten Sie stattdessen ein neues Geschäft ein.",
