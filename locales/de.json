@@ -2910,6 +2910,7 @@
   "sync.quarantine_none": "Keine Einträge in Quarantäne — alle Verkäufe aller Kassen wurden erfolgreich angewendet.",
   "sync.quarantine_open": "Einträge in Quarantäne anzeigen",
   "sync.quarantine_reason.duplicate_voucher_redemption": "Derselbe Gutschein zweimal in einem Verkauf eingelöst bei der Wiederholung",
+  "sync.quarantine_reason.single_purpose_voucher_top_up": "Aufladung eines Gutscheins für einen bestimmten Artikel bei der Wiederholung abgelehnt",
   "sync.quarantine_reason.unknown_line_reference": "Unbekanntes Produkt oder unbekannte Variante auf einer Verkaufsposition bei der Wiederholung",
   "sync.quarantine_reason.unknown_sale_reference": "Unbekannter Kassierer, Kunde, Kassenplatz oder Tisch bei der Wiederholung",
   "sync.quarantine_reason.unknown_voucher_redemption": "Unbekannter Gutschein bei der Einlösungswiederholung",
