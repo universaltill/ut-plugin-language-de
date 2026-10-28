@@ -1737,6 +1737,7 @@
   "pos.error.sale_not_found": "Verkauf nicht gefunden",
   "pos.error.sale_status_transition": "Dieser Verkauf kann nicht in diesen Status geändert werden — ein abgeschlossener Verkauf kann nur storniert werden.",
   "pos.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "pos.error.void_voucher_additional_till": "Bei diesem Verkauf wurde ein Gutschein verkauft oder aufgeladen, daher kann er auf einer zusätzlichen Kasse nicht storniert werden: Die Hauptkasse würde den Wert des Gutscheins behalten. Es wurde nichts geändert.",
   "pos.error.void_voucher_redeemed": "Bei diesem Verkauf wurde ein Gutschein ausgegeben, der bereits eingelöst wurde — er kann nicht storniert werden",
   "pos.error.order_type_off": "Mitnahme ist für dieses Geschäft ausgeschaltet — es verkauft keine Speisen oder Getränke zum Verzehr vor Ort.",
   "pos.toast.customer_linked": "Kunde %s verknüpft",
