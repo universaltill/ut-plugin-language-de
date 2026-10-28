@@ -2668,7 +2668,7 @@
   "setup.auto_register.label": "Diese Kasse jetzt bei der Universal-Till-Cloud registrieren",
   "setup.back": "Zurück",
   "setup.base_plugins.dismiss_btn": "Entfernen",
-  "setup.base_plugins.pending": "Ihr kostenloses %s-Sprachpaket wird im Hintergrund installiert — dies kann einige Minuten dauern, wenn Sie offline sind.",
+  "setup.base_plugins.pending": "Suche nach einem kostenlosen %s-Sprachpaket — falls der Plugin-Katalog eines enthält, installiert die Kasse es im Hintergrund.",
   "setup.base_plugins.pending_tax": "Ihr %s-Steuer-Plugin wird im Hintergrund installiert — dies kann einige Minuten dauern, wenn Sie offline sind.",
   "setup.base_plugins.not_published_tax": "Ihr %s-Steuer-Plugin ist noch nicht im Plugin-Katalog — die Kasse prüft weiter und installiert es, sobald es veröffentlicht ist.",
   "setup.base_plugins.title": "Kostenlose Plugins für Ihr Land",
