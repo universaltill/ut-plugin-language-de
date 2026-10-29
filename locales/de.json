@@ -3743,5 +3743,8 @@
   "channel_orders.detail.refunded_total": "Bisher erstattet",
   "channel_orders.detail.actions_note": "Annehmen, Verpacken und Versenden einer Bestellung erledigen Sie vorerst in my.universaltill.com. Diese Seite zeigt, was an dieser Kasse erfasst wurde.",
   "channel_orders.error.load_failed": "Die Online-Bestellungen konnten nicht geladen werden.",
-  "channel_orders.error.not_found": "Diese Online-Bestellung wurde nicht gefunden."
+  "channel_orders.error.not_found": "Diese Online-Bestellung wurde nicht gefunden.",
+  "sync.link.rejoin": "Erneut der Hauptkasse beitreten",
+  "sync.link.rejoin_hint": "Diese Kasse nutzt ihre alte Verbindung zur Hauptkasse nicht mehr, zum Beispiel weil ihre Daten auf einem neuen Gerät wiederhergestellt wurden. Sie verkauft weiter; treten Sie auf der Seite „Kassen“ erneut der Hauptkasse bei.",
+  "tills.rejoin_needed_help": "Erstellen Sie an der Hauptkasse einen Beitrittscode; nutzen Sie dann unten „Bestehendem Geschäft beitreten“ und geben Sie dieser Kasse einen neuen Namen. Ihre Verkäufe, die die Hauptkasse noch nicht erreicht haben, werden zuerst gesendet. Widerrufen Sie die Kasse, von der sie wiederhergestellt wurde, nicht, wenn diese noch in Betrieb ist."
 }
