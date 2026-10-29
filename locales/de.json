@@ -61,7 +61,7 @@
   "auth.clear": "Löschen",
   "auth.enter_pin": "Geben Sie Ihre PIN ein",
   "auth.error.invalid": "PIN nicht erkannt",
-  "auth.error.locked": "Zu viele Versuche — bitte 30 Sekunden warten",
+  "auth.error.locked": "Zu viele Versuche — bitte versuchen Sie es in Kürze erneut",
   "auth.error.pin_format": "Die PIN muss 4–8 Ziffern haben",
   "auth.error.pin_mismatch": "Die PINs stimmen nicht überein",
   "auth.error.unavailable": "Entschuldigung — die Kasse kann ihre eigenen Daten gerade nicht erreichen und Sie deshalb nicht anmelden. Schließen Sie die App vollständig und öffnen Sie sie erneut. Hilft das nicht, melden Sie das Problem, damit wir es prüfen können.",
