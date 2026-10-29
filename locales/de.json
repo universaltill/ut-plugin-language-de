@@ -1001,7 +1001,7 @@
   "inventory.days_left": "Resttage",
   "inventory.days_left_hint": "Prognostizierte Tage, bis dieser Artikel ausgeht — basierend auf den Verkäufen der letzten 28 Tage",
   "inventory.dialog_context": "{item} — {location}",
-  "inventory.empty": "Noch kein Bestand erfasst",
+  "inventory.empty": "Noch keine Artikel mit Bestandsführung. Legen Sie Artikel im Katalog an oder entfernen Sie dort bei einem Artikel das Häkchen „Kein Lagerbestand erfasst“.",
   "inventory.item_placeholder": "Artikelname oder Artikelnr. eingeben",
   "inventory.location": "Standort",
   "inventory.low_stock": "Niedriger Bestand",
