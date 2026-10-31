@@ -1,50 +1,32 @@
 #!/usr/bin/env bash
 # Tests for scripts/check-version-bump.sh (ut-docs#1940).
 #
+# The cases every plugin repo shares live in
+# scripts/check-version-bump.cases.sh, byte-identical in every ut-plugin-*
+# repo (canonical copy: ut-docs scripts/templates/check-version-bump.cases.sh,
+# ut-docs#5143) -- never edit it here. This file keeps only what is this
+# repo's own: the fixture layout (vb_fixture) and the entries mirror against
+# this repo's package.sh.
+#
 # Each case builds a throwaway git repo (real commits, so BASE_SHA/HEAD_SHA
-# and `git diff`/`git show` all behave exactly as they do against a real
-# PR) with just enough of this repo's layout for the script under test to
-# operate on, then runs the real script against a BASE_SHA..HEAD_SHA pair
-# and asserts both the exit code and that the failure output actually names
-# the changed shipped file(s) and the version -- a script that exits
-# non-zero for the wrong reason must not be mistaken for a passing test of
-# the real check.
+# and `git diff`/`git show` behave exactly as against a real PR), runs the
+# real script against a BASE_SHA..HEAD_SHA pair, and asserts both the exit
+# code and that the failure output names the reason.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-REAL_SCRIPT="$(pwd)/scripts/check-version-bump.sh"
-REAL_BODY="$(pwd)/scripts/check-version-bump.body.sh"
 PACKAGE_SH="$(pwd)/scripts/package.sh"
-FAILS=0
 
-work_dir=""
-cleanup() {
-    # `|| true`: under `set -e`, a trap function's own exit status can
-    # become the script's final exit status -- without this, a clean run
-    # that happens to fire EXIT while work_dir is still "" (nothing to
-    # clean up yet) would report failure via `[ -n "" ]`'s exit 1, even
-    # though every case passed.
-    [ -n "$work_dir" ] && rm -rf "$work_dir"
-    true
-}
-trap cleanup EXIT
+# Asset-only: package.sh bundles tracked files, so SHIPPED_PATTERNS lists the
+# bundled paths themselves.
+# shellcheck disable=SC2034 # read by the sourced cases file
+VB_VARIANT=assets
+# shellcheck disable=SC2034
+VB_SHIPPED_FILE=locales/de.json
 
-# fresh_repo
-# Builds a throwaway git repo ($case_dir) with an initial commit carrying a
-# minimal but complete layout (manifest.json v1.0.0, locales/de.json,
-# README.md, LICENSE, a workflow file, a docs file). Sets $base_sha to that
-# commit. The script under test is copied in (not symlinked -- it does
-# `cd "$(dirname "$0")/.."`, which resolves relative to ITS OWN path, so it
-# must run from inside the fixture).
-fresh_repo() {
-    [ -n "$work_dir" ] && rm -rf "$work_dir"
-    work_dir="$(mktemp -d)"
-    case_dir="${work_dir}/repo"
-    mkdir -p "${case_dir}/scripts" "${case_dir}/locales" "${case_dir}/.github/workflows" "${case_dir}/docs/code-reviews"
-    cp "$REAL_SCRIPT" "${case_dir}/scripts/check-version-bump.sh"
-    cp "$REAL_BODY" "${case_dir}/scripts/check-version-bump.body.sh"
-    chmod +x "${case_dir}/scripts/check-version-bump.sh"
-
+# vb_fixture: this repo's minimal layout, written into $case_dir.
+vb_fixture() {
+    mkdir -p "${case_dir}/locales"
     cat >"${case_dir}/manifest.json" <<'JSON'
 {
   "id": "com.universaltill.language-de",
@@ -56,136 +38,14 @@ JSON
     echo '{"a.one": "Eins"}' >"${case_dir}/locales/de.json"
     echo "# German pack" >"${case_dir}/README.md"
     echo "MIT" >"${case_dir}/LICENSE"
-    echo "name: CI" >"${case_dir}/.github/workflows/ci.yml"
-
-    (
-        cd "$case_dir"
-        git init -q
-        git config user.email test@example.com
-        git config user.name Test
-        git add -A
-        git commit -q -m "initial"
-    )
-    base_sha=$(cd "$case_dir" && git rev-parse HEAD)
 }
 
-# commit_change - stages whatever the caller already edited in $case_dir
-# and commits it, setting $head_sha.
-commit_change() {
-    (cd "$case_dir" && git add -A && git commit -q -m "change")
-    head_sha=$(cd "$case_dir" && git rev-parse HEAD)
-}
+# shellcheck source=scripts/check-version-bump.cases.sh
+. scripts/check-version-bump.cases.sh
 
-run_check() {
-    (cd "$case_dir" && BASE_SHA="$base_sha" HEAD_SHA="$head_sha" bash scripts/check-version-bump.sh)
-}
+vb_run_shared_cases
 
-assert_pass() {
-    local name="$1"
-    local out rc
-    set +e
-    out="$(run_check 2>&1)"
-    rc=$?
-    set -e
-    if [ "$rc" -ne 0 ]; then
-        echo "FAIL [$name]: expected exit 0, got $rc. Output:"
-        echo "$out"
-        FAILS=$((FAILS + 1))
-        return
-    fi
-    echo "ok   [$name]"
-}
-
-assert_fail_containing() {
-    local name="$1"
-    shift
-    local out rc
-    set +e
-    out="$(run_check 2>&1)"
-    rc=$?
-    set -e
-    if [ "$rc" -eq 0 ]; then
-        echo "FAIL [$name]: expected non-zero exit, got 0. Output:"
-        echo "$out"
-        FAILS=$((FAILS + 1))
-        return
-    fi
-    local needle
-    for needle in "$@"; do
-        if ! grep -qF -- "$needle" <<<"$out"; then
-            echo "FAIL [$name]: exited non-zero (good) but output did not mention expected reason ('$needle'). Output:"
-            echo "$out"
-            FAILS=$((FAILS + 1))
-            return
-        fi
-    done
-    echo "ok   [$name] (exit $rc, mentions: $*)"
-}
-
-# --- case 1: locale changed, version NOT bumped -> FAIL, names the file ---
-fresh_repo
-echo '{"a.one": "Eins", "a.two": "Zwei"}' >"${case_dir}/locales/de.json"
-commit_change
-assert_fail_containing "locale changed, no bump" \
-    "locales/de.json" "manifest.json" "1.0.0" "FAIL"
-
-# --- case 2: locale changed, version bumped -> PASS -----------------------
-fresh_repo
-echo '{"a.one": "Eins", "a.two": "Zwei"}' >"${case_dir}/locales/de.json"
-python3 -c "
-import json
-m = json.load(open('${case_dir}/manifest.json'))
-m['version'] = '1.0.1'
-json.dump(m, open('${case_dir}/manifest.json', 'w'))
-"
-commit_change
-assert_pass "locale changed, version bumped"
-
-# --- case 3: README changed, version NOT bumped -> FAIL --------------------
-fresh_repo
-echo "# German pack, updated" >"${case_dir}/README.md"
-commit_change
-assert_fail_containing "README changed, no bump" "README.md" "FAIL"
-
-# --- case 4: only manifest.json touched (version bump itself) -> PASS -----
-# The bump is itself a shipped-file change, and the version differs -- must
-# not require a SECOND shipped file to also have changed.
-fresh_repo
-python3 -c "
-import json
-m = json.load(open('${case_dir}/manifest.json'))
-m['version'] = '1.0.1'
-json.dump(m, open('${case_dir}/manifest.json', 'w'))
-"
-commit_change
-assert_pass "manifest-only version bump"
-
-# --- case 5: docs-only change -> PASS, no bump required --------------------
-fresh_repo
-echo "# review" >"${case_dir}/docs/code-reviews/2026-09-09-example.md"
-commit_change
-assert_pass "docs-only change, no bump required"
-
-# --- case 6: workflow-only change -> PASS, no bump required ----------------
-fresh_repo
-echo "name: CI (updated)" >"${case_dir}/.github/workflows/ci.yml"
-commit_change
-assert_pass "workflow-only change, no bump required"
-
-# --- case 7: manifest.json changed but NOT the version (e.g. permissions)
-# still counts as a shipped-file change, still requires the version to move.
-fresh_repo
-python3 -c "
-import json
-m = json.load(open('${case_dir}/manifest.json'))
-m['locales'] = ['de']
-m['description'] = 'updated blurb'
-json.dump(m, open('${case_dir}/manifest.json', 'w'))
-"
-commit_change
-assert_fail_containing "manifest changed without version bump" "manifest.json" "FAIL"
-
-# --- case 8: SHIPPED_PATTERNS mirrors package.sh's own bundle entries -----
+# --- per-repo case: SHIPPED_PATTERNS mirrors package.sh's own bundle entries -----
 # package.sh's `entries=(...)` line is the actual source of truth for what
 # ships; this parses the ACTUAL array contents out of that line (not a
 # hardcoded restatement of what we expect it to say) and asserts every name
@@ -222,166 +82,4 @@ else
     fi
 fi
 
-# --- case 9: base branch ALSO moved forward independently, with its own --
-# shipped change + bump (multi-lane / ut-docs#1940-review B1 regression).
-# A two-dot diff against a moving base.sha would let that OTHER PR's
-# landed bump silently cover for THIS PR's own missing one. This PR's own
-# change (relative to the true merge-base) does NOT bump -- must still
-# FAIL even though base_sha's tip now carries a higher version than this
-# PR's own unbumped head.
-fresh_repo
-mergebase_sha="$base_sha"
-# "main" advances independently with its own shipped change + bump.
-echo '{"a.one": "Eins", "a.three": "Drei"}' >"${case_dir}/locales/de.json"
-python3 -c "
-import json
-m = json.load(open('${case_dir}/manifest.json'))
-m['version'] = '1.0.1'
-json.dump(m, open('${case_dir}/manifest.json', 'w'))
-"
-(cd "$case_dir" && git add -A && git commit -q -m "main advances, bumped")
-main_tip_sha=$(cd "$case_dir" && git rev-parse HEAD)
-# This PR's own head branches from the ORIGINAL base, not main's advanced
-# tip, and changes a shipped file without bumping.
-(cd "$case_dir" && git checkout -q "$mergebase_sha")
-echo '{"a.one": "Eins", "a.two": "Zwei"}' >"${case_dir}/locales/de.json"
-(cd "$case_dir" && git add -A && git commit -q -m "PR change, no bump")
-pr_head_sha=$(cd "$case_dir" && git rev-parse HEAD)
-base_sha="$main_tip_sha"
-head_sha="$pr_head_sha"
-assert_fail_containing "base moved forward independently, PR itself didn't bump" \
-    "locales/de.json" "FAIL"
-
-# --- case 10: pre-release version suffix must not crash past the FAIL ----
-# path (ut-docs#1940-review B2 regression). validate.sh's version regex
-# (^\d+\.\d+\.\d+, unanchored at the end) and auto-tag-release.yml's own
-# pattern both already accept "-prerelease" suffixes, so this is a real
-# reachable state, not a hypothetical.
-fresh_repo
-python3 -c "
-import json
-m = json.load(open('${case_dir}/manifest.json'))
-m['version'] = '1.0.0-beta.1'
-json.dump(m, open('${case_dir}/manifest.json', 'w'))
-"
-(cd "$case_dir" && git add -A && git commit -q -m "adopt pre-release version scheme")
-base_sha=$(cd "$case_dir" && git rev-parse HEAD)
-echo '{"a.one": "Eins", "a.two": "Zwei"}' >"${case_dir}/locales/de.json"
-commit_change
-assert_fail_containing "pre-release version suffix, no bump" "FAIL"
-
-# --- case 11: version differs but is ALREADY TAGGED elsewhere ------------
-# (ut-docs#1940-review N1). auto-tag-release.yml no-ops on an existing tag,
-# so reusing one is the same silent-never-ships failure with a green guard.
-fresh_repo
-(cd "$case_dir" && git tag "v1.0.1")
-echo '{"a.one": "Eins", "a.two": "Zwei"}' >"${case_dir}/locales/de.json"
-python3 -c "
-import json
-m = json.load(open('${case_dir}/manifest.json'))
-m['version'] = '1.0.1'
-json.dump(m, open('${case_dir}/manifest.json', 'w'))
-"
-commit_change
-assert_fail_containing "bumped to an already-tagged version" "FAIL" "v1.0.1" "ALREADY TAGGED"
-
-# --- case 12 (ut-docs#4484): first PR of a new repo, no manifest.json at the
-# merge-base -> PASS. A new plugin repo starts with a commit that holds no
-# manifest (licence, ignore rules, review record); the first PR adds it.
-fresh_repo
-(cd "$case_dir" && git rm -q manifest.json && git commit -q -m "repo start: no manifest yet")
-base_sha=$(cd "$case_dir" && git rev-parse HEAD)
-(cd "$case_dir" && git checkout -q HEAD~1 -- manifest.json)
-echo "first release" >>"${case_dir}/README.md"
-commit_change
-assert_pass "first PR: no manifest.json at the merge-base"
-
-# --- case 13 (ut-docs#4484): the first-release path still refuses a version
-# that is already tagged -- the same silent never-ships failure.
-fresh_repo
-first_version=$(python3 -c 'import json, sys; print(json.load(open(sys.argv[1]))["version"])' "${case_dir}/manifest.json")
-(cd "$case_dir" && git rm -q manifest.json && git commit -q -m "repo start: no manifest yet" && git tag "v${first_version}")
-base_sha=$(cd "$case_dir" && git rev-parse HEAD)
-(cd "$case_dir" && git checkout -q HEAD~1 -- manifest.json)
-echo "first release" >>"${case_dir}/README.md"
-commit_change
-assert_fail_containing "first PR: version already tagged" "FAIL" "v${first_version}" "ALREADY TAGGED"
-
-# --- case 14 (ut-docs#4484): manifest.json present at the merge-base but
-# unparseable -> FAIL. Only a genuinely ABSENT manifest is a first release.
-fresh_repo
-echo '{ not json' >"${case_dir}/manifest.json"
-(cd "$case_dir" && git add -A && git commit -q -m "broken manifest")
-base_sha=$(cd "$case_dir" && git rev-parse HEAD)
-(cd "$case_dir" && git checkout -q HEAD~1 -- manifest.json)
-echo "change" >>"${case_dir}/README.md"
-commit_change
-assert_fail_containing "unparseable base manifest still fails closed" "could not read manifest.json version at merge-base"
-
-# --- case 15 (ut-docs#4484): stale branch forked before the first manifest
-# -> FAIL. main has since shipped manifest.json (deliberately untagged, so
-# only the stale-branch check can reject it); a branch forked from the
-# pre-manifest commit must not ride the first-release exemption.
-fresh_repo
-(cd "$case_dir" && git rm -q manifest.json && git commit -q -m "repo start: no manifest yet")
-fork=$(cd "$case_dir" && git rev-parse HEAD)
-(cd "$case_dir" && git checkout -q HEAD~1 -- manifest.json && git commit -q -m "first release")
-base_sha=$(cd "$case_dir" && git rev-parse HEAD)
-(cd "$case_dir" && git checkout -q -b stale "$fork" && git checkout -q "$base_sha" -- manifest.json)
-echo "later change" >>"${case_dir}/README.md"
-commit_change
-assert_fail_containing "stale branch forked before the first manifest" "FAIL" "forked before manifest.json existed"
-
-# --- case 16 (ut-docs#4484): no manifest.json at the merge-base OR the head
-# -> PASS. A new repo's early PR (README, licence) before the manifest
-# exists releases nothing, so there is nothing to bump.
-fresh_repo
-(cd "$case_dir" && git rm -q manifest.json && git commit -q -m "repo start: no manifest yet")
-base_sha=$(cd "$case_dir" && git rev-parse HEAD)
-echo "early docs" >>"${case_dir}/README.md"
-commit_change
-assert_pass "no manifest.json at the merge-base or the head"
-
-# --- case (ut-docs#4489): a hand-edited shared body fails its self-check --
-# scripts/check-version-bump.body.sh must be byte-identical to ut-docs's
-# canonical copy; any edit (here: one appended line) fails CI before the
-# guard logic runs.
-fresh_repo
-printf '# hand edit\n' >>"${case_dir}/scripts/check-version-bump.body.sh"
-head_sha="$base_sha"
-assert_fail_containing "hand-edited body fails its self-check" "differs from the canonical copy"
-
-# --- case (ut-docs#5147): scripts/package.sh changed, no bump -> FAIL -----
-# package.sh is the packaging recipe: adding or dropping an entry, or
-# changing the tar flags, changes the release artifact without touching any
-# bundled file. The fixture has no package.sh, so one is committed first.
-fresh_repo
-printf '#!/usr/bin/env bash\nentries=(manifest.json README.md)\n' >"${case_dir}/scripts/package.sh"
-(cd "$case_dir" && git add -A && git commit -q -m "add package.sh")
-base_sha=$(cd "$case_dir" && git rev-parse HEAD)
-echo 'entries+=(docs)' >>"${case_dir}/scripts/package.sh"
-commit_change
-assert_fail_containing "package.sh recipe changed, no bump" "scripts/package.sh" "FAIL"
-
-# --- case (ut-docs#5147): scripts/package.sh changed, version bumped -> PASS
-fresh_repo
-printf '#!/usr/bin/env bash\nentries=(manifest.json README.md)\n' >"${case_dir}/scripts/package.sh"
-(cd "$case_dir" && git add -A && git commit -q -m "add package.sh")
-base_sha=$(cd "$case_dir" && git rev-parse HEAD)
-echo 'entries+=(docs)' >>"${case_dir}/scripts/package.sh"
-python3 -c "
-import json
-m = json.load(open('${case_dir}/manifest.json'))
-m['version'] = '9.9.9'
-json.dump(m, open('${case_dir}/manifest.json', 'w'))
-"
-commit_change
-assert_pass "package.sh recipe changed, version bumped"
-
-if [ "$FAILS" -ne 0 ]; then
-    echo ""
-    echo "$FAILS case(s) failed."
-    exit 1
-fi
-echo ""
-echo "All check-version-bump.sh cases passed."
+vb_finish
