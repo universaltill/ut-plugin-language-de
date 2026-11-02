@@ -2171,7 +2171,7 @@
   "selforder.counter.place_order": "Bestellung aufgeben",
   "selforder.counter.title": "An der Theke zahlen",
   "selforder.decrease": "Menge verringern",
-  "selforder.exit": "Zu den Kasseneinstellungen (PIN erforderlich)",
+  "selforder.exit": "Kiosk-Modus verlassen (PIN erforderlich)",
   "selforder.increase": "Menge erhöhen",
   "selforder.no_items": "Keine Artikel gefunden.",
   "selforder.order_type.dine_in": "Vor Ort",
