@@ -921,7 +921,7 @@
   "import.export_save_failed": "Die CSV-Datei konnte nicht gespeichert werden.",
   "import.export_title": "Export",
   "import.file": "Exportdatei (CSV, Excel oder .bkp)",
-  "import.help": "Übernehmen Sie Ihre Artikel von einer anderen Kasse: Exportieren Sie dort Ihren Katalog (Loyverse-, Square- und SumUp-Exporte werden automatisch erkannt; jede CSV mit Namens- und Preisspalte funktioniert, ebenso eine Excel-Arbeitsmappe (.xlsx) mit denselben Spalten — ebenso wie eine .bkp-Sicherung von speedy kasse / pepperm cashbox, die direkt akzeptiert wird) und laden Sie die Datei hier hoch. Erst die Vorschau prüfen — gespeichert wird nichts, bis Sie auf Importieren drücken. Artikel, deren Barcode oder Artikelnummer bereits existiert, werden übersprungen — doppeltes Importieren ist also unbedenklich.",
+  "import.help": "Übernehmen Sie Ihre Artikel von einer anderen Kasse: Exportieren Sie dort Ihren Katalog (Loyverse-, Square-, SumUp- und Shopify-Exporte werden automatisch erkannt; jede CSV mit Namens- und Preisspalte funktioniert, ebenso eine Excel-Arbeitsmappe (.xlsx) mit denselben Spalten — ebenso wie eine .bkp-Sicherung von speedy kasse / pepperm cashbox, die direkt akzeptiert wird) und laden Sie die Datei hier hoch. Erst die Vorschau prüfen — gespeichert wird nichts, bis Sie auf Importieren drücken. Artikel, deren Barcode oder Artikelnummer bereits existiert, werden übersprungen — doppeltes Importieren ist also unbedenklich.",
   "import.import": "Importieren",
   "import.issue.apply_failed": "Diese Zeile konnte nicht gespeichert werden.",
   "import.issue.barcode_duplicate": "Barcode %s steht in mehr als einer Zeile.",
