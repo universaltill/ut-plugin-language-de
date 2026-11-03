@@ -3836,5 +3836,9 @@
   "settings.move.refused_source_unavailable": "Aus dem Geschäft dieser Kasse kann derzeit nicht umgezogen werden. Es hat sich nichts geändert.",
   "settings.move.refused_pending": "Für diese Kasse wartet bereits ein Umzug auf Genehmigung. Öffnen Sie ihn über den Hinweis oder warten Sie, bis er abläuft.",
   "settings.move.refused_declined_recently": "Diese Kasse hat kürzlich einen Umzug von diesem Konto abgelehnt. Versuchen Sie es morgen erneut.",
-  "settings.move.refused_rate_limited": "Zu viele Umzugsanfragen für diese Kasse. Versuchen Sie es später erneut."
+  "settings.move.refused_rate_limited": "Zu viele Umzugsanfragen für diese Kasse. Versuchen Sie es später erneut.",
+  "settings.update.android.authorized": "Update genehmigt",
+  "settings.update.error.busy": "Ein Update wird bereits installiert. Warten Sie, bis die Kasse neu startet.",
+  "settings.update.error.verify_failed": "Das heruntergeladene Update hat die Sicherheitsprüfung nicht bestanden und wurde nicht installiert. Versuchen Sie es später erneut.",
+  "settings.update.error.failed": "Das Update konnte nicht installiert werden. Versuchen Sie es später erneut."
 }
