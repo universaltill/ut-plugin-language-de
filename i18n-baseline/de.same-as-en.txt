@@ -22,6 +22,7 @@
 # verbatim, never-translated English string (a key present with an
 # whose key no longer exists at all must FAIL so it gets pruned here --
 agent.field.barcode
+agent.field.name
 app.name
 audit.col.details
 audit.system_actor
