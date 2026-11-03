@@ -4,3 +4,5 @@ dist/
 # automatically when a run ends (see universal-till/CLAUDE.md's "Agent
 # worktree hygiene").
 .claude/worktrees/
+# A committed agent worktree is a stray gitlink that breaks actions/checkout (ut-docs#5289).
+.worktrees/
