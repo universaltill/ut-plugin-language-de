@@ -2410,6 +2410,8 @@
   "settings.display.window_mode_fullscreen": "Vollbild",
   "settings.display.window_mode_kiosk": "Kiosk",
   "settings.display.window_mode_kiosk_appliance": "Diese Kasse ist ein dediziertes Kiosk-Gerät: Der Kiosk-Bildschirm wird von der Kasse selbst gesteuert, ohne Betriebssystem-Desktop dahinter. Um den Kiosk-Modus zu verlassen, wechseln Sie hier den Fenstermodus — „Betriebssystem verlassen“ gilt auf dieser Kasse nicht.",
+  "settings.display.window_mode_kiosk_help": "Vollbild und Kiosk verhalten sich hier gleich: Die Kasse füllt den ganzen Bildschirm, und „Betriebssystem verlassen“ bringt den Desktop zurück. Kiosk ist nicht das Geräteprofil „Selbstbestell-Kiosk“.",
+  "settings.display.window_mode_kiosk_help_appliance": "Nur Kiosk lässt diesen Bildschirm eingeschaltet. Vollbild, Maximiert und Normales Fenster schalten ihn aus. Kiosk ist nicht das Geräteprofil „Selbstbestell-Kiosk“.",
   "settings.display.window_mode_label": "Fenstermodus",
   "settings.display.window_mode_maximized": "Maximiert",
   "settings.display.window_mode_no_shell": "Vollbild- und Kiosk-Modus bleiben deaktiviert, bis die Universal-Till-Desktop-App auf dieser Kasse läuft — diese App besitzt das Fenster und ermöglicht es, den Vollbildmodus wieder zu verlassen.",
