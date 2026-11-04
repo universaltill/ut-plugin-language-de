@@ -585,6 +585,7 @@
   "common.error.invalid_upload": "Ungültiger Upload",
   "common.error.manager_or_admin_required": "Manager oder Administrator erforderlich",
   "common.error.network": "Verbindungsproblem. Überprüfen Sie Ihr Netzwerk und versuchen Sie es erneut.",
+  "common.error.outcome_unknown": "Die Verbindung ist abgebrochen, bevor die Kasse geantwortet hat – der Vorgang wurde also vielleicht ausgeführt, vielleicht auch nicht. Prüfen Sie das, bevor Sie es erneut versuchen.",
   "common.error.server": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
   "common.loading": "Wird geladen …",
   "common.money.invalid": "Betrag in Ziffern eingeben, mit Punkt oder Komma vor den Nachkommastellen (z. B. 3,50 oder 3.50).",
