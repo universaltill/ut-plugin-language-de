@@ -110,6 +110,8 @@ reports.eod.period_range
 reports.tips.form_note_hint
 reports.yuzde_usulu.form_note_hint
 settings.backup.title
+settings.currency_display.code
+settings.currency_display.symbol
 settings.display.effects_reason_pi
 settings.display.effects_reason_sep
 settings.display.effects_reason_webkitgtk
